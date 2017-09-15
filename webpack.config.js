@@ -1,7 +1,15 @@
 
 // 參考文件：https://segmentfault.com/a/1190000005089993
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
+var autoprefixer = require('autoprefixer') // 自動添加像是webkit-之類的前綴
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const extractSass = new ExtractTextPlugin({
+    filename: "/css/[name].css",
+    // disable: process.env.NODE_ENV === "development" // 為了 Hot Reload
+    disable: true // 為了 Hot Reload
+});
 
 var config = {
 	/* 頁面入口文件 */
@@ -46,12 +54,39 @@ var config = {
 
 	module: {
 
+
+		rules: [
+			{
+				test: /\.js$/, // 匹配.js文件，如果通過則使用下面的loader
+				loader: 'babel-loader', // 使用babel（babel-loader的簡寫）作為loader
+				exclude: /node_modules/ // 排除node_modules文件夾
+			},
+			{
+				test: /\.vue$/,
+				loader: 'vue-loader'
+			},
+			{
+	            test: /\.s[ac]ss$/,
+	            // loader: ["style-loader", "css-loader", "sass-loader"]
+	            use: extractSass.extract({
+	                use: [{
+	                    loader: "css-loader"
+	                }, {
+	                	loader: "postcss-loader"
+	                }, {
+	                    loader: "sass-loader"
+	                }],
+	                // 在開發環境使用 style-loader
+	                fallback: "style-loader"	//編譯後用什麼loader來提取css文件
+	            })
+        	}
+        ],
+
 		/* Loader 
 		多個loader用!連接起來
 		Loader會轉換再html裡面有import或者Require的Module
 		*/
-
-		loaders: [
+		/*loaders: [
 			{
 				test: /\.js$/, // 匹配.js文件，如果通過則使用下面的loader
 				loader: 'babel-loader', // 使用babel（babel-loader的簡寫）作為loader
@@ -61,14 +96,14 @@ var config = {
 				test: /\.vue$/,
 				loader: 'vue-loader'
 			}
-			/*
+			
 		    图片文件使用 url-loader 来处理，小于8kb的直接转为base64
             { 
 				test: /\.(png|jpg)$/, 
 				loader: 'url-loader?limit=8192'
             }
-            */
-		]
+            
+		]*/
 	},
 
 	/* resolve 其他解決方案配置*/
@@ -99,13 +134,15 @@ var config = {
 	devServer: {
   		inline: true,
   		hot:true
-	}
+	},
 
 
 	/* Plugins */
-	// plugins: [
- //    	new webpack.HotModuleReplacementPlugin()
- //  	]
+	plugins: [
+		extractSass,
+    	new webpack.HotModuleReplacementPlugin(),
+	    new webpack.NoErrorsPlugin()
+  	]
 }
 
 module.exports = config
