@@ -72,14 +72,21 @@ var config = {
 	                use: [{
 	                    loader: "css-loader"
 	                }, {
-	                	loader: "postcss-loader"
-	                }, {
 	                    loader: "sass-loader"
 	                }],
 	                // 在開發環境使用 style-loader
 	                fallback: "style-loader"	//編譯後用什麼loader來提取css文件
 	            })
-        	}
+        	},
+        	// image & font
+      		{ 
+      			test: /\.(woff|woff2|eot|ttf|otf)$/i, 
+      			loader: 'url-loader?limit=8192&name=[name].[ext]'
+      		},
+      		{ 
+      			test: /\.(jpe?g|png|gif|svg)$/i, 
+      			loader: 'url-loader?limit=8192&name=[name].[ext]'
+      		}
         ],
 
 		/* Loader 
@@ -135,6 +142,9 @@ var config = {
   		inline: true,
   		hot:true
 	},
+
+	// 开启source-map，webpack有多种source-map，在官网文档可以查到
+    devtool: 'eval-source-map',
 
 
 	/* Plugins */
