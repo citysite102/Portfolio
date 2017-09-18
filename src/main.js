@@ -1,37 +1,25 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+import router from './router/router.js';
+import App from './components/app.vue';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-default/index.css';
+
 import '../src/sass/main.sass';
 
-// init
-Vue.use(VueRouter);
 Vue.config.debug = true;
+Vue.use(ElementUI)
 
-
-// // pages
-import App from './components/app.vue';
-import About from './components/about.vue';
-
-// var App = Vue.extend({});
-var router = new VueRouter({
-  routes: [
-    { path: '/about', component: About },
-    { path: '/', component: App }
-  ],
-});
-
-// router.start(App, '#app')
-// router.redirect({//定义全局的重定向规则。全局的重定向会在匹配当前路径之前执行。
-    // '*':"/index"//重定向任意未匹配路径到/index
-// });
-
-
-new Vue({
+var VueApp = new Vue({
 	el: '#app',
-	router,
-	components: {
-		App
-	},
+	router: router,
 	data: {
 		message: "Hello Vue"
+	},
+	created: function() {
+
+	},
+	mounted: function() { 
+		// 加載 D3 之類的 Library
 	}
+	// render: h => h(App)
 })

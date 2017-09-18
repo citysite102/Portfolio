@@ -63,8 +63,13 @@ var config = {
 			},
 			{
 				test: /\.vue$/,
+				// use: ['vue-loader', 'eslint-loader']
 				loader: 'vue-loader'
 			},
+			{
+        		test: /\.css$/,
+        		use: ['style-loader', 'css-loader']
+      		},
 			{
 	            test: /\.s[ac]ss$/,
 	            // loader: ["style-loader", "css-loader", "sass-loader"]
@@ -82,7 +87,7 @@ var config = {
       		{ 
       			test: /\.(woff|woff2|eot|ttf|otf)$/i, 
       			loader: 'url-loader?limit=8192&name=[name].[ext]'
-      		},
+      		},	
       		{ 
       			test: /\.(jpe?g|png|gif|svg)$/i, 
       			loader: 'url-loader?limit=8192&name=[name].[ext]'
@@ -132,7 +137,10 @@ var config = {
 	     * Vue v2.x 之後 NPM Package 預設只會匯出 runtime-only 版本，若要使用 standalone 功能則需下列設定
 	     */
 	    alias: {
-	      vue: 'vue/dist/vue.js'
+	    	// 設定縮路徑
+	      	vue: 'vue/dist/vue.js',
+    		styles: path.resolve(__dirname, './src/sass'),
+    		assets: path.resolve(__dirname, './src/assets'),
 	    }
 	},
 

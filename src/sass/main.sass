@@ -1,4 +1,31 @@
+@import '~styles/fonts_config.sass'
+
+$default-background-color: #121212
+$default-background-color1: red   
+
+@mixin size($width, $height)
+	width: $width
+	height: $height
+
 *
-  font-family: 微軟正黑體
-  border: 1px solid blue
-  position: relative
+	position: relative
+	color: white
+	font-family: 'Graphik'
+	background-color: $default-background-color
+
+
+#container
+	max-width: 1440px
+	margin-left: auto
+	margin-right: auto
+
+h1
+	font-size: 84px
+h2 
+	font-size: 48px
+	font-weight: 900px
+h3
+	font-size: 24px
+	font-weight: 700px
+
+
