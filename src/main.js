@@ -1,11 +1,9 @@
 import Vue from 'vue';
 import router from './router/router.js';
-import App from './components/app.vue';
 import ElementUI from 'element-ui';
+
 import 'element-ui/lib/theme-default/index.css';
-
-import '../src/sass/main.sass';
-
+	
 Vue.config.debug = true;
 Vue.use(ElementUI)
 

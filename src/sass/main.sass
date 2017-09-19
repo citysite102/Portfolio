@@ -3,10 +3,12 @@
 $default-background-color: #121212
 $default-background-color1: red   
 
-$text-color-software: #65FEB2
-$text-color-ui: #57FCF8
-$text-color-mentor: #BA68FF
+$text-color-white: #FFFFFF
+$text-color-green: #65FEB2
+$text-color-blue: #57FCF8
+$text-color-purple: #BA68FF
 
+$shadow-color-blue: #3F89DD
 
 @mixin size($width, $height)
 	width: $width
@@ -24,16 +26,23 @@ $text-color-mentor: #BA68FF
 	margin-left: auto
 	margin-right: auto
 
+section
+	margin-top: 240px
+	margin-bottom: 240px
 h1
+	color: $text-color-white
 	font-size: 84px
+	font-weight: 900
 	
 h2 
+	color: $text-color-white
 	font-size: 40px
 	font-weight: 900
 	margin-top: 32px
 	margin-bottom: 32px
 
 h3, span
+	color: $text-color-white
 	font-size: 20px
 	font-weight: 500
 	margin-top: 10px

@@ -1,12 +1,8 @@
 <template lang="html">
   <div>
-    <card>      
-    </card>
-    <ol>
-      <li v-for="todo in todoDemo">
-        {{todo.text}}
-      </li>
-    </ol>
+    {{message}}
+    <div data-tilt>
+    </div>
   </div>
 </template>
 

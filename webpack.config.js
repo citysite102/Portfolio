@@ -1,5 +1,4 @@
 
-// 參考文件：https://segmentfault.com/a/1190000005089993
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer') // 自動添加像是webkit-之類的前綴
@@ -83,7 +82,6 @@ var config = {
 	                fallback: "style-loader"	//編譯後用什麼loader來提取css文件
 	            })
         	},
-        	// image & font
       		{ 
       			test: /\.(woff|woff2|eot|ttf|otf)$/i, 
       			loader: 'url-loader?limit=8192&name=[name].[ext]'
@@ -91,31 +89,13 @@ var config = {
       		{ 
       			test: /\.(jpe?g|png|gif|svg)$/i, 
       			loader: 'url-loader?limit=8192&name=[name].[ext]'
-      		}
-        ],
-
-		/* Loader 
-		多個loader用!連接起來
-		Loader會轉換再html裡面有import或者Require的Module
-		*/
-		/*loaders: [
-			{
-				test: /\.js$/, // 匹配.js文件，如果通過則使用下面的loader
-				loader: 'babel-loader', // 使用babel（babel-loader的簡寫）作為loader
-				exclude: /node_modules/ // 排除node_modules文件夾
-			},
-			{
-				test: /\.vue$/,
-				loader: 'vue-loader'
+      		},
+      		{
+			    // Expose Jquery 為全局變量
+			    test: require.resolve('jquery'),
+			    loader: 'expose-loader?jQuery!expose-loader?$'
 			}
-			
-		    图片文件使用 url-loader 来处理，小于8kb的直接转为base64
-            { 
-				test: /\.(png|jpg)$/, 
-				loader: 'url-loader?limit=8192'
-            }
-            
-		]*/
+        ],
 	},
 
 	/* resolve 其他解決方案配置*/
@@ -139,6 +119,7 @@ var config = {
 	    alias: {
 	    	// 設定縮路徑
 	      	vue: 'vue/dist/vue.js',
+	      	components: path.resolve(__dirname, './src/components'),
     		styles: path.resolve(__dirname, './src/sass'),
     		assets: path.resolve(__dirname, './src/assets'),
 	    }
@@ -159,8 +140,20 @@ var config = {
 	plugins: [
 		extractSass,
     	new webpack.HotModuleReplacementPlugin(),
-	    new webpack.NoErrorsPlugin()
+	    new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+          jquery: 'jquery',
+          'window.jQuery': 'jquery',
+          'root.jQuery': 'jquery',
+          tilt: 'tilt.js',
+      	}),
   	]
+
+  	/* Externals */
+  	// 防止将某些 import 的包(package)打包到 bundle 中，而是在运
+  	// 行时(runtime)再去从外部获取这些扩展依赖(external dependencies)。
+
 }
 
 module.exports = config

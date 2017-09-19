@@ -25,6 +25,7 @@
     background-color: $default-background-color
     height: auto
     width: 100%
+    z-index: 2
   #menu
     +size(40px, 40px)
     background-color: gray
