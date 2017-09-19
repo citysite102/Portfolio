@@ -27,7 +27,7 @@
                 </div>
             </el-col>
             <el-col :span="12">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="header-picture-container">
+                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="header-picture-container">
                     <div id="header-picture">
                         <h3 id="header-location">
                             2017_<br>Sanfrancisco
@@ -44,7 +44,7 @@
                 <h1 id="slogan-2">EVERY<br> DAY</h1>
             </el-col>
         </el-row>  
-    </section>>
+    </section>
     <section class="section-designer">
         <el-row>
             <el-col :span="10" :offset="4">
@@ -52,23 +52,34 @@
 Commercial Design."></titleContainer>
             </el-col>
             <el-col :span="10">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="work-1-container">
-                    <div class="work work-1">
+                <div>
+                    <div class="work-1-background">
+                        </div>
+                    <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-1-container work-image-container">
+                        <div class="work work-1">
+                        </div>
                     </div>
+                    <worksContainer class="work-container work-container-1" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
                 </div>
             </el-col>
         </el-row>
         <el-row>
             <el-col :span="10" :offset="3">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="work-2-container">
-                    <div class="work work-2">
+                <div>
+                    <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-2-container work-image-container">
+                        <div class="work work-2">
+                        </div>
+                        <worksContainer class="work-container work-container-2" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
                     </div>
                 </div>
             </el-col>
             <el-col :span="11">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="work-3-container">
-                    <div class="work work-3">
+                <div>
+                    <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-3-container work-image-container">
+                        <div class="work work-3">
+                        </div>
                     </div>
+                    <worksContainer class="work-container work-container-3" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
                 </div>
             </el-col>
         </el-row>    
@@ -79,14 +90,14 @@ Commercial Design."></titleContainer>
                 <h1 id="motto">It's all about<br>the way<br>you design.</h1>
             </el-col>
         </el-row>  
-    </section>>
+    </section>
     <section class="section-developer">
         <el-row>
             <el-col :span="11" :offset="3">
                 <titleContainer index="02" title="Developer" description="Swift, ObjectiveC, Html, CSS, Sass, Javascript, JQuery, Vue.js."></titleContainer>
             </el-col>
             <el-col :span="10">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="work-4-container">
+                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-4-container work-image-container">
                     <div class="work work-4">
                     </div>
                 </div>
@@ -94,13 +105,13 @@ Commercial Design."></titleContainer>
         </el-row>
         <el-row>
             <el-col :span="11" :offset="3">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="work-5-container">
+                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-5-container work-image-container">
                     <div class="work work-5">
                     </div>
                 </div>
             </el-col>
             <el-col :span="10">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" id="work-6-container">
+                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-6-container work-image-container">
                     <div class="work work-6">
                     </div>
                 </div>
@@ -121,6 +132,7 @@ Commercial Design."></titleContainer>
 <script>
   import HeaderBar from './Element/header.vue';
   import TitleContainer from './Element/title.vue';
+  import WorksContainer from './Element/works.vue';
   import tilt from 'tilt.js';
 
   export default {
@@ -130,33 +142,41 @@ Commercial Design."></titleContainer>
       }
     },
     mounted() { 
-      $('#header-picture-container').tilt({
+      $('.header-picture-container').tilt({
         glare: true,
-        maxGlare: .5
+        perspective: 1200,
+        transition: true
       });
-      $('#work-1-container').tilt({
+      $('.work-1-container').tilt({
         glare: true,
-        maxGlare: .5
+        maxGlare: .5,
+        perspective: 900,
+        transition: true
       });
-      $('#work-2-container').tilt({
+      $('.work-2-container').tilt({
         glare: true,
-        maxGlare: .5
+        perspective: 900,
+        transition: true
       });
-      $('#work-3-container').tilt({
+      $('.work-3-container').tilt({
         glare: true,
-        maxGlare: .5
+        perspective: 900,
+        transition: true
       });
-      $('#work-4-container').tilt({
+      $('.work-4-container').tilt({
         glare: true,
-        maxGlare: .5
+        perspective: 900,
+        transition: true
       });
-      $('#work-5-container').tilt({
+      $('.work-5-container').tilt({
         glare: true,
-        maxGlare: .5
+        perspective: 900,
+        transition: true
       });
-      $('#work-6-container').tilt({
+      $('.work-6-container').tilt({
         glare: true,
-        maxGlare: .5
+        perspective: 900,
+        transition: true
       });
     },
     methods: {
@@ -164,7 +184,8 @@ Commercial Design."></titleContainer>
     },
     components: {
       HeaderBar,
-      TitleContainer
+      TitleContainer,
+      WorksContainer
     }
   }
 </script>
@@ -203,7 +224,7 @@ Commercial Design."></titleContainer>
         background-color: #222222
         width: 1px
         height: 100%
-        opacity: 0.5
+        opacity: 0.8
         z-index: 0
 
     .ropes .rope:nth-child(1)
@@ -226,9 +247,10 @@ Commercial Design."></titleContainer>
         color: $text-color-blue
     #header-mentor
         color: $text-color-purple
-    #header-picture-container
+    .header-picture-container
         +size(560px, 400px)
         top: 20%
+        transform-style: preserve-3d
         // transform: translateY(-50%)
         #header-picture
             background-image: url('~assets/images/sample-city.png')
@@ -243,6 +265,7 @@ Commercial Design."></titleContainer>
             top: 24px
             left: -32px
             text-shadow: 2px 2px 4px black
+            transform: translateZ(20px)
 
 
     #slogan-1
@@ -258,20 +281,48 @@ Commercial Design."></titleContainer>
         line-height: 96px
 
 
+    .work-container
+        position: absolute
+        z-index: 3
+
+    .work-container-1
+        top: 80px
+        right: -60px
+    .work-container-2
+        top: 50%
+        left: -100px
+        transform: translateZ(20px)
+    .work-container-3
+        top: 50%
+        right: -60px
 
 
+    .work-image-container
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3)
     .section-designer
-        #work-1-container
+        .work-1-background
+            +size(250px, 310px)
+            color: transparent
+            box-sizing: border-box
+            position: absolute
+            top: -40px
+            left: 36px
+            border: 14px solid transparent
+            border-image: linear-gradient(to bottom right, $gradient-light-blue 0%, $gradient-dark-blue 100%);
+            border-image-slice: 1
+
+        .work-1-container
             +size(250px, 310px)
             .work-1
                 background-image: url('~assets/images/sample-city.png')
 
-        #work-2-container
+        .work-2-container
             +size(340px, 470px)
+            transform-style: preserve-3d
             .work-2
                 background-image: url('~assets/images/sample-city.png')
 
-        #work-3-container
+        .work-3-container
             +size(340px, 450px)
             margin-top: 160px
             .work-3
@@ -291,18 +342,18 @@ Commercial Design."></titleContainer>
         line-height: 96px
 
     .section-developer
-        #work-4-container
+        .work-4-container
             +size(400px, 440px)
             .work-4
                 background-image: url('~assets/images/sample-city.png')
 
-        #work-5-container
+        .work-5-container
             margin-top: -120px
             +size(400px, 440px)
             .work-5
                 background-image: url('~assets/images/sample-city.png')
 
-        #work-6-container
+        .work-6-container
             +size(400px, 440px)
             margin-top: 160px
             .work-6

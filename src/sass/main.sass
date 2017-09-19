@@ -10,6 +10,9 @@ $text-color-purple: #BA68FF
 
 $shadow-color-blue: #3F89DD
 
+$gradient-light-blue: #5DFCF8
+$gradient-dark-blue: #3985F7
+
 @mixin size($width, $height)
 	width: $width
 	height: $height
@@ -18,8 +21,9 @@ $shadow-color-blue: #3F89DD
 	position: relative
 	color: white
 	font-family: 'Graphik'
-	background-color: $default-background-color
 
+html
+	background-color: $default-background-color
 
 #container
 	max-width: 1180px
@@ -50,6 +54,14 @@ h3, span
 	margin-bottom: 10px
 	line-height: 28px
     letter-spacing: 12px
+
+p
+	color: $text-color-white
+	font-size: 12px
+	font-weight: 300
+	margin-top: 2px
+	margin-bottom: 2px
+	line-height: 20px
 
 h4
 	color: $text-color-white

@@ -30,7 +30,7 @@
         font-weight: 300
         letter-spacing: 4px
     .title 
-        margin-top: 0px
+        margin-top: 20px
     .description
         margin-top: -16px
         max-width: 360px
