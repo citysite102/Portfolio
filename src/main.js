@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import router from './router/router.js';
 import ElementUI from 'element-ui';
-
+import ScrollTrigger from 'scrolltrigger-classes'
 import 'element-ui/lib/theme-default/index.css';
 	
 Vue.config.debug = true;
@@ -12,9 +12,6 @@ var VueApp = new Vue({
 	router: router,
 	data: {
 		message: "Hello Vue"
-	},
-	created: function() {
-
 	},
 	mounted: function() { 
 		// 加載 D3 之類的 Library

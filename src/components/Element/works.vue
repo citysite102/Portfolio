@@ -19,7 +19,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
     .container
-        width: 240px
+        width: 280px
     .title 
         margin-top: 4px
         margin-bottom: 4px

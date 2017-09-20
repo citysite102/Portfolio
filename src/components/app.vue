@@ -1,231 +1,307 @@
 <template lang="html">
-  <div>
-    <headerBar></headerBar>
-    <div class="ropes">
-        <div class="rope"></div>
-        <div class="rope"></div>
-        <div class="rope"></div>
-        <div class="rope"></div>
-        <div class="rope"></div>
-    </div>
-    <section class="section-about">
-        <el-row>
-            <el-col :span="10" :offset="2">
-                <div id="header-info">
-                    <h2 id="header-name">
-                      Hi, I'm Samuel.
-                    </h2>
-                    <h3 id="header-software">
-                        Software developer,
-                    </h3>
-                    <h3 id="header-ui">
-                        UI Designer,
-                    </h3>
-                    <h3 id="header-mentor">
-                        Mentor <span>in Taiwan</span>
-                    </h3>
-                </div>
-            </el-col>
-            <el-col :span="12">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="header-picture-container">
-                    <div id="header-picture">
-                        <h3 id="header-location">
-                            2017_<br>Sanfrancisco
-                        </h3>
-                    </div>
-                </div>
-            </el-col>
-        </el-row>
-    </section>
-    <section class="section-slogan">
-        <el-row>
-            <el-col :span="10" :offset="2">
-                <h1 id="slogan-1">CREATE<br> MORE</h1>
-                <h1 id="slogan-2">EVERY<br> DAY</h1>
-            </el-col>
-        </el-row>  
-    </section>
-    <section class="section-designer">
-        <el-row>
-            <el-col :span="9" :offset="4">
-                <titleContainer index="01" title="Designer" description="User Interace, Graphic Design,
-Commercial Design."></titleContainer>
-            </el-col>
-            <el-col :span="10">
-                <div>
-                    <div class="work-1-background">
+    <div>
+        <headerBar></headerBar>
+        <div class="ropes">
+            <el-row :gutter="16">
+                <el-col :span="4">
+                    <div class="rope"></div>
+                </el-col>
+                <el-col :span="4">
+                    <div class="rope"></div>
+                </el-col>
+                <el-col :span="4">
+                    <div class="rope"></div>
+                </el-col>
+                <el-col :span="4">
+                    <div class="rope"></div>
+                </el-col>
+                <el-col :span="4">
+                    <div class="rope"></div>
+                </el-col>
+                <el-col :span="4">
+                    <div class="rope"></div>
+                </el-col>
+            </el-row>
+        </div>
+        <div id="container">
+            <section class="section-about">
+                <el-row :gutter="16">
+                    <el-col :span="10" :offset="2">
+                        <div id="header-info">
+                            <h1 id="header-name">
+                                Hi, I'm Samuel.
+                            </h1>
+                            <h2 id="header-software">
+                                Software developer,
+                            </h2>
+                            <h2 id="header-ui">
+                                UI Designer,
+                            </h2>
+                            <h2 id="header-mentor">
+                                Mentor <span>in Taiwan</span>
+                            </h2>
                         </div>
-                    <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-1-container work-image-container">
-                        <div class="work work-1">
+                    </el-col>
+                    <el-col :span="12">
+                        <transition
+                            name="custom-classes-transition"
+                            enter-active-class="fadeInUp"
+                            >
+                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="header-picture-container">
+                                <div id="header-picture">
+                                    <h3 id="header-location">
+                                        2017_<br>Sanfrancisco
+                                    </h3>
+                                </div>
+                            </div>
+                        </transition>
+                    </el-col>
+                </el-row>
+            </section>
+            <section class="section-slogan">
+                <el-row :gutter="16">
+                    <el-col :span="10" :offset="2">
+                        <h1 id="slogan-1">CREATE<br> MORE</h1>
+                        <h1 id="slogan-2">EVERY<br> DAY</h1>
+                    </el-col>
+                </el-row>  
+            </section>
+            <section class="section-designer">
+                <el-row :gutter="16">
+                    <el-col :span="9" :offset="4">
+                        <titleContainer index="01" title="Designer" description="User Interace, Graphic Design,
+        Commercial Design."></titleContainer>
+                    </el-col>
+                    <el-col :span="10">
+                        <div data-scroll>
+                            <div class="work-1-background">
+                                </div>
+                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-1-container work-image-container">
+                                <div class="work work-1">
+                                </div>
+                            </div>
+                            <worksContainer class="work-container work-container-1" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
                         </div>
-                    </div>
-                    <worksContainer class="work-container work-container-1" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                </div>
-            </el-col>
-        </el-row>
-        <el-row>
-            <el-col :span="9" :offset="3">
-                <div>
-                    <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-2-container work-image-container">
-                        <div class="work work-2">
+                    </el-col>
+                </el-row>
+                <el-row :gutter="16">
+                    <el-col :span="9" :offset="3">
+                        <div data-scroll>
+                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-2-container work-image-container">
+                                <div class="work work-2">
+                                </div>
+                                <worksContainer class="work-container work-container-2" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
+                            </div>
                         </div>
-                        <worksContainer class="work-container work-container-2" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                    </div>
-                </div>
-            </el-col>
-            <el-col :span="10">
-                <div>
-                    <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-3-container work-image-container">
-                        <div class="work work-3">
+                    </el-col>
+                    <el-col :span="10">
+                        <div data-scroll>
+                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-3-container work-image-container">
+                                <div class="work work-3">
+                                </div>
+                            </div>
+                            <worksContainer class="work-container work-container-3" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
                         </div>
-                    </div>
-                    <worksContainer class="work-container work-container-3" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                </div>
-            </el-col>
-        </el-row>    
-    </section>
-    <section class="section-motto">
-        <el-row>
-            <el-col :span="12" :offset="7">
-                <h1 id="motto">It's all about<br>the way<br>you design.</h1>
-            </el-col>
-        </el-row>  
-    </section>
-    <section class="section-developer">
-        <el-row>
-            <el-col :span="10" :offset="3">
-                <titleContainer index="02" title="Developer" description="Swift, ObjectiveC, Html, CSS, Sass, Javascript, JQuery, Vue.js."></titleContainer>
-            </el-col>
-            <el-col :span="11">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-4-container work-image-container">
-                    <div class="work work-4">
-                    </div>
-                </div>
-            </el-col>
-        </el-row>
-        <el-row>
-            <el-col :span="10" :offset="3">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-5-container work-image-container">
-                    <div class="work work-5">
-                    </div>
-                </div>
-            </el-col>
-            <el-col :span="11">
-                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-6-container work-image-container">
-                    <div class="work work-6">
-                    </div>
-                </div>
-            </el-col>
-        </el-row>    
-    </section>
-    <section class="section-educator">
-        <el-row>
-            <el-col :span="10" :offset="4">
-                <titleContainer index="03" title="Educator" description="An educator in Hahow, NTU, NTUST, NCCU with more than 500 students in Taiwan."></titleContainer>
-                <div class="educator-contact">
-                    <a>Looking for an educator?</a>
-                </div>
-            </el-col>
-        </el-row>
-        <el-row class="educator-container">
-            <el-col :span="6" :offset="3">
-                aaaa
-            </el-col>
-            <el-col :span="6">
-                aaaa
-            </el-col>
-            <el-col :span="6">
-                aaaa
-            </el-col>
-        </el-row>
+                    </el-col>
+                </el-row>    
+            </section>
+            <section class="section-motto">
+                <el-row :gutter="16">
+                    <el-col :span="12" :offset="7">
+                        <h1 id="motto">It's all about<br>the way<br>you design.</h1>
+                    </el-col>
+                </el-row>  
+            </section>
+            <section class="section-developer">
+                <el-row :gutter="16">
+                    <el-col :span="10" :offset="3">
+                        <titleContainer index="02" title="Developer" description="Swift, ObjectiveC, Html, CSS, Sass, Javascript, JQuery, Vue.js."></titleContainer>
+                    </el-col>
+                    <el-col :span="11">
+                        <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-4-container work-image-container">
+                            <div class="work work-4">
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="16">
+                    <el-col :span="10" :offset="3">
+                        <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-5-container work-image-container">
+                            <div class="work work-5">
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :span="11">
+                        <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-6-container work-image-container">
+                            <div class="work work-6">
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>    
+            </section>
+            <section class="section-educator">
+                <el-row :gutter="16">
+                    <el-col :span="9" :offset="3">
+                        <titleContainer index="03" title="Educator" description="An educator in Hahow, NTU, NTUST, NCCU with more than 500 students in Taiwan."></titleContainer>
+                        <div class="contact">
+                            <a>Looking for an educator?</a>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row class="educator-container" :gutter="16">
+                    <el-col :span="6" :offset="3">
+                        <div class="educator-work-1">
+                            
+                        </div>
+                        <worksContainer class="educator-info" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
+                    </el-col>
+                    <el-col :span="6">
+                        <div class="educator-work-2">
+                            
+                        </div>
+                        <worksContainer class="educator-info" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
+                    </el-col>
+                    <el-col :span="6">
+                        <div class="educator-work-3">
+                            
+                        </div>
+                        <worksContainer class="educator-info" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
+                    </el-col>
+                </el-row>
+            </section>
 
+            <section class="section-educator">
+                <el-row :gutter="16">
+                    <el-col :span="9" :offset="3">
+                        <titleContainer index="04" title="Writer" description="A writer with more than 1000 followers and more than 100k view’s count."></titleContainer>
+                        <div class="contact">
+                            <a>More Article?</a>
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row class="article-container" :gutter="16">
+                    <el-col :span="6" :offset="3">
+                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
+                    </el-col>
+                    <el-col :span="6">
+                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
+                    </el-col>
+                    <el-col :span="6">
+                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
+                    </el-col>
+                </el-row>
+            </section>
+        </div>
 
-    </section>
-
-  </div>
+      </div>
 </template>
 
 <script>
-  import HeaderBar from './Element/header.vue';
-  import TitleContainer from './Element/title.vue';
-  import WorksContainer from './Element/works.vue';
-  import tilt from 'tilt.js';
+    import HeaderBar from './Element/header.vue';
+    import TitleContainer from './Element/title.vue';
+    import WorksContainer from './Element/works.vue';
+    import ArticleContainer from './Element/article.vue';
+    import ScrollTrigger from 'scrolltrigger-classes'
+    import tilt from 'tilt.js';
+    export default {
+        data () {
+            return {
+                message: 'Helo, Vue.js 2.0.1'
+            }
+        },
+        methods: {
+            handleScroll: function(event) {
+                console.log('123123123');
+                let obj = document.querySelector('.section-developer');
+                let {top,bottom} = obj.getBoundingClientRect();
+                console.log('上:'+top+'下:'+bottom);
+                // let height = document.documentElement.clientHeight;
+                // this.scrolled = top < height && bottom >0;
+                // this.scrolled = window.scrollY > 100;
+            }
+        },
+        created() {
+            // window.addEventListener('scroll', this.handleScroll);
+            document.addEventListener('DOMContentLoaded', function(){
+                var trigger = new ScrollTrigger({
+                  toggle: {
+                    visible: 'visibleClass',
+                    hidden: 'hiddenClass'
+                  },
+                  offset: {
+                    x: 0,
+                    y: -80
+                  },
+                  addHeight: true,
+                  once: true
+                }, document.body, window);
 
-  export default {
-    data () {
-      return {
-        message: 'Helo, Vue.js 2.0.1'
-      }
-    },
-    methods: {
-        handleScroll () {
-            console.log("ScrollY:"+window.scrollY);
+                var callback = function(scrollLeft, scrollTop, width, height){
+                    console.log("GGWP");
+                };
+
+                trigger.attach(callback);
+            });
+        },
+        destroyed() {
+            window.removeEventListener('scroll', this.handleScroll);
+        },
+        mounted() { 
+            $('.header-picture-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                perspective: 1200,
+                transition: true,
+                speed: 2000
+            });
+            $('.work-1-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                maxGlare: .5,
+                perspective: 900,
+                transition: true
+            });
+            $('.work-2-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                perspective: 900,
+                transition: true
+            });
+            $('.work-3-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                perspective: 900,
+                transition: true
+            });
+            $('.work-4-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                perspective: 900,
+                transition: true
+            });
+            $('.work-5-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                perspective: 900,
+                transition: true
+            });
+            $('.work-6-container').tilt({
+                // glare: true,
+                scale: 1.05,
+                perspective: 900,
+                transition: true
+            });
+        },
+        components: {
+            HeaderBar,
+            TitleContainer,
+            WorksContainer,
+            ArticleContainer
         }
-    },
-    beforeMount () {
-      window.addEventListener('scroll', this.handleScroll);
-    },
-    beforeDestroy () {
-      window.removeEventListener('scroll', this.handleScroll);
-    },
-    mounted() { 
-      $('.header-picture-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        perspective: 1200,
-        transition: true,
-        speed: 2000
-      });
-      $('.work-1-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        maxGlare: .5,
-        perspective: 900,
-        transition: true
-      });
-      $('.work-2-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        perspective: 900,
-        transition: true
-      });
-      $('.work-3-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        perspective: 900,
-        transition: true
-      });
-      $('.work-4-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        perspective: 900,
-        transition: true
-      });
-      $('.work-5-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        perspective: 900,
-        transition: true
-      });
-      $('.work-6-container').tilt({
-        // glare: true,
-        scale: 1.05,
-        perspective: 900,
-        transition: true
-      });
-    },
-    methods: {
-
-    },
-    components: {
-      HeaderBar,
-      TitleContainer,
-      WorksContainer
     }
-  }
 </script>
 
-<style lang="sass">
+<style scope lang="sass">
     @import '~styles/main.sass'
     
     .section-about
@@ -236,8 +312,6 @@ Commercial Design."></titleContainer>
     .section-slogan
         margin-top: 40px
         margin-bottom: 40px
-
-
     .el-row 
         height: 100%
         background-color: transparent
@@ -252,42 +326,45 @@ Commercial Design."></titleContainer>
 
     .ropes
         position: absolute
-        top: 0px
+        top: 32px
         left: 0px
         height: 100%
         width: 100%
     .rope
-        position: absolute
         background-color: #222222
         width: 1px
         height: 100%
-        opacity: 0.8
+        opacity: 1.0
         z-index: 0
-
-    .ropes .rope:nth-child(1)
-        margin-left: calc(100%/6)
-    .ropes .rope:nth-child(2)
-        margin-left: calc(200%/6)
-    .ropes .rope:nth-child(3)
-        margin-left: calc(300%/6)
-    .ropes .rope:nth-child(4)
-        margin-left: calc(400%/6)
-    .ropes .rope:nth-child(5)
-        margin-left: calc(500%/6)
-    
+        margin-left: auto
+        margin-right: auto
 
     #header-name
-
+        font-size: 64px
+        width: 1000px
     #header-software
+        font-size: 28px
+        font-weight: 700
+        margin-top: 0px
+        margin-bottom: 0px
         color: $text-color-green
     #header-ui
+        font-size: 28px
+        font-weight: 700
+        margin-top: 16px
+        margin-bottom: 0px
         color: $text-color-blue
     #header-mentor
+        font-size: 28px
+        font-weight: 700
+        margin-top: 16px
+        margin-bottom: 0px
         color: $text-color-purple
     .header-picture-container
-        +size(560px, 400px)
-        top: 20%
+        +size(720px, 560px)
+        // top: 10%
         transform-style: preserve-3d
+        box-shadow: 16px 16px 50px $shadow-color-black
         // transform: translateY(-50%)
         #header-picture
             background-image: url('~assets/images/sample-city.png')
@@ -313,7 +390,7 @@ Commercial Design."></titleContainer>
 
     #slogan-2
         margin-top: 160px
-        text-shadow: 6px 6px 4px black
+        text-shadow: 16px 24px 50px $shadow-color-black
         letter-spacing: 12px
         line-height: 96px
 
@@ -333,9 +410,8 @@ Commercial Design."></titleContainer>
         top: 50%
         right: -40px
 
-
     .work-image-container
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3)
+        box-shadow: 16px 16px 50px $shadow-color-black
     .section-designer
         .work-1-background
             +size(260px, 310px)
@@ -345,22 +421,24 @@ Commercial Design."></titleContainer>
             top: -40px
             left: 36px
             border: 14px solid transparent
+            // opacity: 0
             border-image: linear-gradient(to bottom right, $gradient-light-blue 0%, $gradient-dark-blue 100%);
             border-image-slice: 1
 
         .work-1-container
             +size(260px, 310px)
+
             .work-1
                 background-image: url('~assets/images/sample-2.png')
 
         .work-2-container
-            +size(360px, 480px)
+            +size(340px, 480px)
             transform-style: preserve-3d
             .work-2
                 background-image: url('~assets/images/sample-1.png')
 
         .work-3-container
-            +size(360px, 480px)
+            +size(340px, 480px)
             margin-top: 160px
             .work-3
                 background-image: url('~assets/images/sample-3.png')
@@ -403,7 +481,7 @@ Commercial Design."></titleContainer>
             z-index: 3
 
 
-    .educator-contact
+    .contact
         margin-top: 72px
         margin-bottom: 24px
         a
@@ -412,5 +490,43 @@ Commercial Design."></titleContainer>
     .educator-container
         margin-top: 96px
         text-align: center
+
+    .educator-work-1
+        +size(280px, 180px)
+        background-image: url('~assets/images/sample-city.png')
+        background-size: cover
+        margin-bottom: 24px
+
+    .educator-work-2
+        +size(280px, 300px)
+        background-image: url('~assets/images/sample-city.png')
+        background-size: cover
+        margin-bottom: 24px
+
+    .educator-work-3
+        +size(280px, 220px)
+        background-image: url('~assets/images/sample-city.png')
+        background-size: cover
+        margin-bottom: 24px
+
+    .educator-info
+        text-align: left
+        width: 280px
+        top: 50%
+
+    .article-info
+        text-align: left
+        margin-top: 24px
+        padding-right: 72px
+
+    .hiddenClass 
+        transition: all 0.8s ease
+        opacity: 0.0
+        transform: translateY(30px)
+    
+    .visibleClass 
+        transition: all 0.8s ease
+        opacity: 1.0
+        transform: translateY(0px)
 
 </style>

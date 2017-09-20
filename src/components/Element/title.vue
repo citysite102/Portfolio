@@ -33,7 +33,7 @@
         margin-top: 20px
     .description
         margin-top: -16px
-        max-width: 360px
+        max-width: 400px
 
 
 </style>
