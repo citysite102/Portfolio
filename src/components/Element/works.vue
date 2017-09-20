@@ -23,4 +23,7 @@
     .title 
         margin-top: 4px
         margin-bottom: 4px
+        text-shadow: 2px 2px 4px black
+    .description
+        text-shadow: 1px 1px 3px black
 </style>
