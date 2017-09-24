@@ -4,6 +4,7 @@ $default-background-color: #121212
 $default-background-color1: red   
 
 $text-color-white: #FFFFFF
+$text-color-gray: #888888
 $text-color-green: #65FEB2
 $text-color-blue: #57FCF8
 $text-color-purple: #BA68FF
@@ -13,6 +14,11 @@ $shadow-color-black: rgba(0, 0, 0, 0.3)
 
 $gradient-light-blue: #5DFCF8
 $gradient-dark-blue: #3985F7
+$gradient-light-yellow: #4F9DFF
+$gradient-dark-yellow: #BA68FF
+
+$gradient-light-purple: #9B28DA
+$gradient-dark-purple: #853CFF
 
 @mixin size($width, $height)
 	width: $width
@@ -27,18 +33,19 @@ html
 	background-color: $default-background-color
 
 #container
-	max-width: 1440px
+	// max-width: 1440px
 	margin-left: auto
 	margin-right: auto
 
 section
-	margin-top: 280px
-	margin-bottom: 280px
+	margin-top: 320px
+	margin-bottom: 320px
 	background-color: transparent
 h1
 	color: $text-color-white
-	font-size: 84px
+	font-size: 72px
 	font-weight: 900
+	line-height: 90px
 	
 h2 
 	color: $text-color-white
@@ -54,13 +61,13 @@ h3, span, a
 	margin-top: 10px
 	margin-bottom: 10px
 	letter-spacing: 0px
-	line-height: 28px
+	line-height: 30px
 
 p
 	color: $text-color-white
-	font-size: 12px
+	font-size: 18px
 	font-weight: 300
 	margin-top: 2px
 	margin-bottom: 2px
-	line-height: 20px
+	line-height: 27px
 

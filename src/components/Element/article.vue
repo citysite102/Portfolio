@@ -23,10 +23,10 @@
     .title
         font-family: 'Playfair Display', serif
         font-style: italic
-        font-size: 20px
+        font-size: 24px
         font-weight: 300
-        letter-spacing: 4px
-        line-height: 30px
+        letter-spacing: 3px
+        line-height: 36px
 
     .description
         margin-top: 16px

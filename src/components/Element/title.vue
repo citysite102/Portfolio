@@ -26,14 +26,13 @@
     .index
         font-family: 'Playfair Display', serif
         font-style: italic
-        font-size: 24px
+        font-size: 28px
         font-weight: 300
         letter-spacing: 4px
     .title 
-        margin-top: 20px
+        margin-top: 24px
     .description
-        margin-top: -16px
-        max-width: 400px
+        margin-top: -12px
 
 
 </style>
