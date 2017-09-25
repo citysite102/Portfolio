@@ -82,16 +82,14 @@
                     <el-col :span="6">
                         <div>
                             <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-1-container work-image-container">
-                                <div class="work work-1">
-                                </div>
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
                             </div>
                         </div>
                     </el-col>
                     <el-col :span="6">
                         <div>
                             <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-2-container work-image-container">
-                                <div class="work work-2">
-                                </div>
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png"></hoverPicture>
                             </div>
                         </div>
                     </el-col>
@@ -100,16 +98,14 @@
                     <el-col :span="6" :offset="10">
                         <div>
                             <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-3-container work-image-container">
-                                <div class="work work-3">
-                                </div>
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-1.png"></hoverPicture>
                             </div>
                         </div>
                     </el-col>
                     <el-col :span="6">
                         <div>
                             <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-4-container work-image-container">
-                                <div class="work work-4">
-                                </div>
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png"></hoverPicture>
                             </div>
                         </div>
                     </el-col>
@@ -142,8 +138,10 @@
                             iOS, Deisgn, Web and Script
                         </h3>
                         <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="developer-container work-image-container">
-                            <div class="work work-developer">
-                            </div>
+                            <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
+
+                            <!-- <div class="work work-developer">
+                            </div> -->
                         </div>
                     </el-col>
                     <el-col :span="10">
@@ -212,6 +210,7 @@
 <script>
     import HeaderBar from './Element/header.vue';
     import BackgroundRope from './Element/background.vue';
+    import HoverPicture from './Element/hoverPicture.vue';
     import TitleContainer from './Element/title.vue';
     import WorksContainer from './Element/works.vue';
     import ArticleContainer from './Element/article.vue';
@@ -326,7 +325,8 @@
             TitleContainer,
             WorksContainer,
             ArticleContainer,
-            BackgroundRope
+            BackgroundRope,
+            HoverPicture
         }
     }
 </script>
@@ -350,6 +350,9 @@
     .header-info
         z-index: 5
 
+    .demo-picture
+        +size(200px, 200px)
+        background: red
     .background-ropes
         top: -160px
         left: 0px
@@ -509,27 +512,19 @@
         .work-1-container
             +size(340px, 340px)
             top: -160px
-            .work-1
-                background-image: url('~assets/images/sample-2.png')
 
         .work-2-container
             +size(340px, 340px)
-            .work-2
-                background-image: url('~assets/images/sample-4.png')
 
         .work-3-container
             +size(340px, 340px)
             margin-top: 60px
             top: -160px
             transform-style: preserve-3d
-            .work-3
-                background-image: url('~assets/images/sample-1.png')
 
         .work-4-container
             +size(340px, 340px)
             margin-top: 60px
-            .work-4
-                background-image: url('~assets/images/sample-3.png')
 
         .work
             height: 100%
@@ -588,8 +583,6 @@
             max-width: 600px
             max-height: 600px
             // +size(400px, 480px)
-            .work-developer
-                background-image: url('~assets/images/sample-2.png')
 
 
         .work-developer-index
