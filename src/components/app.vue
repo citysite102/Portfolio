@@ -1,29 +1,8 @@
 <template lang="html">
     <div>
         <headerBar></headerBar>
-        <div class="ropes">
-            <el-row :gutter="16">
-                <el-col :span="4">
-                    <div class="rope"></div>
-                </el-col>
-                <el-col :span="4">
-                    <div class="rope"></div>
-                </el-col>
-                <el-col :span="4">
-                    <div class="rope"></div>
-                </el-col>
-                <el-col :span="4">
-                    <div class="rope"></div>
-                </el-col>
-                <el-col :span="4">
-                    <div class="rope"></div>
-                </el-col>
-                <el-col :span="4">
-                    <div class="rope"></div>
-                </el-col>
-            </el-row>
-        </div>
         <div id="container">
+            <backgroundRope class="background-ropes"></backgroundRope>
             <section class="section-about">
                 <el-row :gutter="16">
                     <el-col :span="10" :offset="2">
@@ -74,6 +53,7 @@
             </section>
             <section class="section-slogan">
                 <el-row :gutter="16">
+                    <div class="ball-4 rellax" data-rellax-speed="2"></div>
                     <div class="ball-1 rellax"></div>
                     <el-col :span="10" :offset="2">
                         <div id="separator-1"></div>
@@ -96,7 +76,7 @@
                         DESIGN
                     </h1>
                     <div class="ball-2 rellax"></div>
-                    <el-col :span="7" :offset="3">
+                    <el-col :span="8" :offset="2">
                         <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design, Commercial Design."></titleContainer>
                     </el-col>
                     <el-col :span="6">
@@ -106,15 +86,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div data-scroll>
-                            <div class="work-1-background">
-                                </div>
-                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-1-container work-image-container">
-                                <div class="work work-1">
-                                </div>
-                            </div>
-                            <worksContainer class="work-container work-container-1" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                        </div> -->
                     </el-col>
                     <el-col :span="6">
                         <div>
@@ -142,24 +113,6 @@
                             </div>
                         </div>
                     </el-col>
-                    <!-- <el-col :span="9" :offset="3">
-                        <div data-scroll>
-                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-2-container work-image-container">
-                                <div class="work work-2">
-                                </div>
-                                <worksContainer class="work-container work-container-2" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                            </div>
-                        </div>
-                    </el-col>
-                    <el-col :span="10">
-                        <div data-scroll>
-                            <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-3-container work-image-container">
-                                <div class="work work-3">
-                                </div>
-                            </div>
-                            <worksContainer class="work-container work-container-3" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                        </div>
-                    </el-col> -->
                 </el-row>    
             </section>
             <section class="section-motto">
@@ -180,6 +133,14 @@
                     <div class="developer-square">
                     </div>
                     <el-col :span="12" :offset="2">
+                        <h3 class="work-developer-index">
+                            001
+                        </h3>
+                        <div class="work-developer-separator">
+                        </div>
+                        <h3 class="work-developer-subtitle">
+                            iOS, Deisgn, Web and Script
+                        </h3>
                         <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="developer-container work-image-container">
                             <div class="work work-developer">
                             </div>
@@ -195,7 +156,7 @@
                     <h1 class="educator-background">
                         EDUCATOR
                     </h1>
-                    <el-col :span="6" :offset="3">
+                    <el-col :span="7" :offset="2">
                         <titleContainer class="educator-titlecontainer" index="03" title="Educator" description="An educator in Hahow, NTU, NTUST, NCCU with more than 500 students in Taiwan."></titleContainer>
                         <div class="contact">
                             <a>Looking for an educator?</a>
@@ -209,57 +170,38 @@
                     </el-col>
                     <el-col :span="5" :offset="15">
                         <div class="educator-triangle"></div>
+                        <div class="ball-6 rellax"></div>
                         <div class="educator-work-3 work-image-container"></div>
                     </el-col>
-
                 </el-row>
-                <!-- <el-row class="educator-container" :gutter="16">
-                    <el-col :span="6" :offset="2">
-                        <div class="educator-work-1">
-                            
-                        </div>
-                        <worksContainer class="educator-info" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                    </el-col>
-                    <el-col :span="6">
-                        <div class="educator-work-2">
-                            
-                        </div>
-                        <worksContainer class="educator-info" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                    </el-col>
-                    <el-col :span="6">
-                        <div class="educator-work-3">
-                            
-                        </div>
-                        <worksContainer class="educator-info" title="Sample1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></worksContainer>
-                    </el-col>
-                </el-row> -->
             </section>
-
             <section class="section-writer">
                 <el-row :gutter="16">
-                    <el-col :span="10" :offset="3">
+                    <div class="ball-5 rellax" data-rellax-speed="2"></div>
+                    <el-col :span="10" :offset="2">
                         <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="A writer with more than 1000 followers and more than 100k view’s count. A writer with more than 1000 followers and more than 100k view’s count."></titleContainer>
                         <div class="contact">
                             <a>Read more article?</a>
                         </div>
                     </el-col>
                 </el-row>
-                <el-row class="article-container" :gutter="16">
-                    <el-col :span="6" :offset="3">
+                <el-row class="article-container" :gutter="0">
+                    <el-col class="writer-container" :span="6" :offset="2">
                         <div class="writer-work-1">
                         </div>
                         <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
                     </el-col>
-                    <el-col :span="6">
+                    <el-col class="writer-container" :span="6" :offset="1">
                         <div class="writer-work-2">
                         </div>
                         <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
                     </el-col>
-                    <el-col :span="6">
+                    <el-col class="writer-container" :span="6" :offset="1">
                         <div class="writer-work-3">
                         </div>
                         <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
                     </el-col>
+                    <div class="ball-7 rellax"></div>
                 </el-row>
             </section>
         </div>
@@ -269,6 +211,7 @@
 
 <script>
     import HeaderBar from './Element/header.vue';
+    import BackgroundRope from './Element/background.vue';
     import TitleContainer from './Element/title.vue';
     import WorksContainer from './Element/works.vue';
     import ArticleContainer from './Element/article.vue';
@@ -327,56 +270,47 @@
                 speed: 2000
             });
             $('.work-1-container').tilt({
-                // glare: true,
                 scale: 1.05,
                 maxGlare: .5,
                 perspective: 900,
                 transition: true
             });
             $('.work-2-container').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.work-3-container').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.work-4-container').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.developer-container').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.work-6-container').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.educator-work-1').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.educator-work-2').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
             });
             $('.educator-work-3').tilt({
-                // glare: true,
                 scale: 1.05,
                 perspective: 900,
                 transition: true
@@ -391,7 +325,8 @@
             HeaderBar,
             TitleContainer,
             WorksContainer,
-            ArticleContainer
+            ArticleContainer,
+            BackgroundRope
         }
     }
 </script>
@@ -415,20 +350,11 @@
     .header-info
         z-index: 5
 
-    .ropes
-        position: absolute
-        top: 32px
+    .background-ropes
+        top: -160px
         left: 0px
         height: 100%
         width: 100%
-    .rope
-        background-color: #222222
-        width: 1px
-        height: 100%
-        opacity: 0.9
-        z-index: 0
-        margin-left: auto
-        margin-right: auto
 
     .header-background
         position: absolute
@@ -524,6 +450,7 @@
         background-color: white
         margin-top: 40px
         margin-bottom: 16px
+
     #separator-3
         +size(480px, 2px)
         background-color: white
@@ -535,7 +462,7 @@
         // text-shadow: 6px 6px 0px $shadow-color-blue
         font-size: 84px
         letter-spacing: 12px
-        line-height: 96px
+        line-height: 120px
         margin-top: 0px
         margin-bottom: 0px
 
@@ -643,7 +570,7 @@
         margin-top: 480px
 
         .developer-titlecontainer
-            max-width: 360px
+            max-width: 440px
 
         .developer-square
             +size(36vw, 36vw)
@@ -663,6 +590,30 @@
             // +size(400px, 480px)
             .work-developer
                 background-image: url('~assets/images/sample-2.png')
+
+
+        .work-developer-index
+            font-family: 'Playfair Display', serif
+            font-style: italic
+            font-size: 28px
+            font-weight: 300
+            position: absolute
+            left: -10%
+
+
+        .work-developer-separator
+            +size(80px, 2px)
+            position: absolute
+            background-color: white
+            left: -12%
+            top: 10%
+        
+
+        .work-developer-subtitle
+            position: absolute
+            transform: rotate(-90deg) translateX(40%)
+            bottom: 0px
+            left: -18%    
 
         .work
             height: 100%
@@ -741,20 +692,24 @@
             a
                 color: $text-color-green
 
+        .writer-container
+            // border: solid 1px white
+            // padding: 16px
+
         .writer-work-1
-            +size(320px, 220px)
+            +size(100%, 280px)
             background-image: url('~assets/images/sample-city.png')
             background-size: cover
             margin-bottom: 24px
 
         .writer-work-2
-            +size(320px, 220px)
+            +size(100%, 280px)
             background-image: url('~assets/images/sample-city.png')
             background-size: cover
             margin-bottom: 24px
 
         .writer-work-3
-            +size(320px, 220px)
+            +size(100%, 280px)
             background-image: url('~assets/images/sample-city.png')
             background-size: cover
             margin-bottom: 24px
@@ -771,6 +726,7 @@
         left: 75%
         top: 20%
         position: absolute
+        filter: drop-shadow(0px 0px 6px rgba(116, 231, 255, 0.4))
         background-image: url('~assets/images/circle-blue.png')
         background-size: contain
         background-repeat: no-repeat
@@ -779,6 +735,7 @@
         left: 25%
         bottom: 20%
         position: absolute
+        filter: drop-shadow(0px 0px 6px rgba(97, 250, 255, 0.4))
         background-image: url('~assets/images/circle-green.png')
         background-size: contain
         background-repeat: no-repeat
@@ -788,6 +745,41 @@
         top: 200%
         position: absolute
         background-image: url('~assets/images/circle-yellow.png')
+        background-size: contain
+        background-repeat: no-repeat
+    .ball-4
+        +size(100px, 100px)
+        left: 60%
+        top: 200%
+        position: absolute
+        filter: drop-shadow(0px 0px 8px rgba(255, 237, 75, 0.5))
+        background-image: url('~assets/images/circle-yellow.png')
+        background-size: contain
+        background-repeat: no-repeat
+    .ball-5
+        +size(100px, 100px)
+        left: 38%
+        top: 100%
+        position: absolute
+        background-image: url('~assets/images/circle-green-blur.png')
+        background-size: contain
+        background-repeat: no-repeat
+    .ball-6
+        +size(140px, 140px)
+        left: 70%
+        bottom: 0%
+        position: absolute
+        filter: drop-shadow(0px 4px 6px rgba(182, 117, 255, 0.4))
+        background-image: url('~assets/images/circle-purple.png')
+        background-size: contain
+        background-repeat: no-repeat
+    .ball-7
+        +size(140px, 140px)
+        left: 73%
+        bottom: -150%
+        position: absolute
+        filter: drop-shadow(0px 0px 6px rgba(116, 231, 255, 0.4))
+        background-image: url('~assets/images/circle-blue.png')
         background-size: contain
         background-repeat: no-repeat
 

@@ -1,9 +1,19 @@
 <template lang="html">
-  <div>
-    <div class="header">
-      <div id="menu"></div>
-      <div id="switch"></div>
-    </div>
+    <div>
+        <div class="header">
+            <el-row :gutter="16">
+                <el-col :span="10" :offset="1">
+                    <div class="menu"></div>
+                </el-col>
+                <el-col :span="10" :offset="2">
+                    <ul class="link-container">
+                        <li class="link-item">Medium</li>
+                        <li class="link-item">Github</li>
+                        <li class="link-item">Facebook</li>
+                    </ul>
+                </el-col>
+            </el-row>
+        </div>
   </div>
 
 </template>
@@ -22,21 +32,29 @@
 <style scoped lang="sass">
   @import '~styles/main.sass'
   .header
-    background-color: $default-background-color
-    height: auto
+    background-color: clear
+    height: 180px
     width: 100%
+    margin-bottom: -100px
     z-index: 2
-  #menu
+  .menu
     +size(40px, 40px)
     background-color: gray
     display: inline-block
-    margin: 20px
-    padding: 0px
-  #switch
-    +size(40px, 40px)
-    background-color: gray
+    top: 50%
+    transform: translateY(-50%)
+    margin-left: 60px
+  .link-container
     display: inline-block
+    height: 100%
+    margin: 0px
     float: right
-    margin: 20px
-    padding: 0px
+  .link-item
+    font-size: 22px
+    list-style: none
+    display: inline-block
+    top: 50%
+    transform: translateY(-50%)
+    margin-right: 60px
+    // margin: 40px
 </style>
