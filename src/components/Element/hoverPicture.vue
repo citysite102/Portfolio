@@ -82,7 +82,8 @@
 
 
     .text-container
-        top: 15%
+        top: 50%
+        transform: translateY(-50%)
     .title-container
         height: auto
     .description-container
@@ -97,16 +98,16 @@
         letter-spacing: 1px
 
         opacity: 0
-        transform: translateY(20px)
-        transition: all 0.8s ease
+        transform: translateY(50px)
+        transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
 
 
     .description
         font-size: 18px
         line-height: 24px
         opacity: 0
-        transform: translateY(20px)
-        transition: all 0.8s ease
+        transform: translateY(50px)
+        transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
 
     .more-button
         width: 140px
@@ -125,8 +126,8 @@
         line-height: 30px
 
         opacity: 0
-        transform: translateY(20px)
-        transition: all 0.8s ease
+        transform: translateY(50px)
+        transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
 
 
 

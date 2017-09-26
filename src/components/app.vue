@@ -15,24 +15,32 @@
                             <h1 class="header-name">
                                 Hello, <br>I'm Samuel.
                             </h1>
-                            <h2 class="header-skill">
-                                Developer
-                            </h2>
-                            <h3 class="header-supplement">
-                                iOS, Web, Node.js 
-                            </h3>
-                            <h2 class="header-skill">
-                                UI Designer
-                            </h2>
-                            <h3 class="header-supplement">
-                                Mobile UI Design, Web UI Design 
-                            </h3>
-                            <h2 class="header-skill">
-                                Educator
-                            </h2>
-                            <h3 class="header-supplement">
-                                GUI, UI, iOS Coding, Coworking 
-                            </h3>
+                            <nav>
+                                <a class="skill-item" href="#" v-scroll-to="'.section-designer'">
+                                    <h2 class="skill-item-name skill-item-developer">
+                                        UI Designer
+                                    </h2>
+                                    <h3 class="skill-item-supplement">
+                                        Mobile UI Design, Web UI Design 
+                                    </h3>
+                                </a>
+                                <a class="skill-item" href="#" v-scroll-to="'.section-developer'">
+                                    <h2 class="skill-item-name skill-item-designer">
+                                        Developer
+                                    </h2>
+                                    <h3 class="skill-item-supplement" href="#" v-scroll-to="'.section-designer'">
+                                        iOS, Web, Node.js
+                                    </h3>
+                                </a>
+                                <a class="skill-item" href="#" v-scroll-to="'.section-educator'">
+                                    <h2 class="skill-item-name skill-item-educator">
+                                        Educator
+                                    </h2>
+                                    <h3 class="skill-item-supplement">
+                                        GUI, UI, iOS Coding, Coworking
+                                    </h3>
+                                </a>
+                            </nav>
                         </div>
                     </el-col>
                     <el-col :span="11">
@@ -139,9 +147,6 @@
                         </h3>
                         <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="developer-container work-image-container">
                             <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
-
-                            <!-- <div class="work work-developer">
-                            </div> -->
                         </div>
                     </el-col>
                     <el-col :span="10">
@@ -208,15 +213,32 @@
 </template>
 
 <script>
+    import Vue from 'vue';
     import HeaderBar from './Element/header.vue';
     import BackgroundRope from './Element/background.vue';
     import HoverPicture from './Element/hoverPicture.vue';
     import TitleContainer from './Element/title.vue';
     import WorksContainer from './Element/works.vue';
     import ArticleContainer from './Element/article.vue';
-    import ScrollTrigger from 'scrolltrigger-classes'
-    import Rellax from 'rellax'
+    import ScrollTrigger from 'scrolltrigger-classes';
+    import ScrollTo from 'vue-scrollto';
+    import Rellax from 'rellax';
     import tilt from 'tilt.js';
+
+
+    var VueScrollTo = require('vue-scrollto');
+    Vue.use(VueScrollTo, {
+        container: "body",
+        duration: 1000,
+        easing: "ease",
+        offset: -240,
+        cancelable: true,
+        onDone: false,
+        onCancel: false,
+        x: false,
+        y: true
+    });
+
     export default {
         data () {
             return {
@@ -290,11 +312,6 @@
                 transition: true
             });
             $('.developer-container').tilt({
-                scale: 1.05,
-                perspective: 900,
-                transition: true
-            });
-            $('.work-6-container').tilt({
                 scale: 1.05,
                 perspective: 900,
                 transition: true
@@ -411,6 +428,58 @@
         width: 1000px
         font-weight: 800
         text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6)
+
+    .skill-item:hover .skill-item-name::before
+        transform: scale3d(1,1,1)
+    .skill-item:hover .skill-item-supplement
+        color: white
+        transform: translateX(8px)
+    .skill-item
+        display: block
+        width: 400px
+        text-decoration: none
+        cursor: pointer
+    .skill-item-name
+        font-size: 28px
+        font-weight: 700
+        display: inline-block
+        margin-bottom: 8px
+        letter-spacing: 1px
+        transition: transform 0.5s
+        transition-timing-function: cubic-bezier(0.2,1,0.3,1)
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6)
+        padding-right: 16px
+        
+        &:before
+            content: ''
+            position: absolute
+            z-index: -1
+            bottom: 0
+            left: -8px
+            width: 100%
+            height: 50%
+            opacity: 1.0
+            transform: scale3d(0,1,1)
+            transform-origin: 0% 50%
+            transition: transform 0.5s
+            transition-timing-function: cubic-bezier(0.2,1,0.3,1)
+    .skill-item-developer
+        &:before
+            background: linear-gradient(to right, $gradient-dark-purple, $gradient-light-purple)
+    .skill-item-designer
+        &:before
+            background: linear-gradient(to right, $gradient-dark-purple, $gradient-light-purple)
+    .skill-item-educator
+        &:before
+            background: linear-gradient(to right, $gradient-dark-purple, $gradient-light-purple)
+
+    .skill-item-supplement
+        font-size: 20px
+        color: $text-color-gray
+        margin-bottom: 8px
+        transition: all 0.5s
+        transition-timing-function: cubic-bezier(0.2,1,0.3,1)
+
     .header-skill
         font-size: 28px
         font-weight: 700
