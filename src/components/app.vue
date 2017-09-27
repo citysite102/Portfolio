@@ -6,6 +6,9 @@
         </transition>
         <div id="container">
             <backgroundRope class="background-ropes"></backgroundRope>
+            <transition name="slide-fade">
+                <pageIndicator v-show="isPageIndicatorShow" class="page-control" :currentIndex="pageIndex"></pageIndicator>
+            </transition>
             <section class="section-about">
                 <el-row :gutter="16">
                     <el-col :span="10" :offset="2">
@@ -85,6 +88,23 @@
                         </div>
                     </el-col>
                 </el-row>
+                <!-- <el-row class="section-scroll-hint">
+                    <el-col :span="20" :offset="2">
+                        <transition appear appear-to-class="fade-enter-content"
+                                    appear-active-class="fade-enter-active-scroll">
+                            <div class="mouse">
+                                <div class="mouse-icon">
+                                    <span class="mouse-wheel"></span>
+                                </div>
+                            </div>
+                        </transition>
+                        <transition appear appear-to-class="fade-enter-content"
+                                    appear-active-class="fade-enter-active-scroll">
+                            <div class="scroll-hint">Scroll
+                            </div>
+                        </transition>
+                    </el-col>
+                </el-row> -->
             </section>
             <section class="section-slogan">
                 <el-row :gutter="16">
@@ -113,6 +133,7 @@
                     <div class="ball-2 rellax"></div>
                     <el-col :span="8" :offset="2">
                         <titleContainer data-scroll class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design, Commercial Design."></titleContainer>
+                        <moreButton data-scroll></moreButton>
                     </el-col>
                     <el-col :span="6">
                         <transition name="fade-delay1">
@@ -266,11 +287,13 @@
 <script>
     import Vue from 'vue';
     import HeaderBar from './Element/header.vue';
+    import PageIndicator from './Element/pageIndication.vue';
     import BackgroundRope from './Element/background.vue';
     import HoverPicture from './Element/hoverPicture.vue';
     import TitleContainer from './Element/title.vue';
     import WorksContainer from './Element/works.vue';
     import ArticleContainer from './Element/article.vue';
+    import MoreButton from './Element/moreButton.vue';
     import ScrollTrigger from 'scrolltrigger-classes';
     import ScrollTo from 'vue-scrollto';
     import Rellax from 'rellax';
@@ -278,6 +301,7 @@
 
 
     var VueScrollTo = require('vue-scrollto');
+
     Vue.use(VueScrollTo, {
         container: "body",
         duration: 1000,
@@ -295,7 +319,9 @@
             return {
                 isDesignContentShow: false,
                 isEducatorContentShow: false,
-                isWriterContentShow: false
+                isWriterContentShow: false,
+                isPageIndicatorShow: false,
+                pageIndex: 1
             }
         },
         methods: {
@@ -304,6 +330,7 @@
                 let obj = document.querySelector('.section-developer');
                 let {top,bottom} = obj.getBoundingClientRect();
                 console.log('上:'+top+'下:'+bottom);
+                // console.log(this.$.indicator.currentIndex);
                 // let height = document.documentElement.clientHeight;
                 // this.scrolled = top < height && bottom >0;
                 // this.scrolled = window.scrollY > 100;
@@ -336,15 +363,45 @@
                 }, document.body, window);
 
                 var callback = function(scrollLeft, scrollTop, width, height){
-                    console.log("Left:"+scrollLeft+ " Top:"+ scrollTop);
-                    if (scrollTop > 1000) {
+                    // console.log("Left:"+scrollLeft+ " Top:"+ scrollTop);
+                    // console.log(instance.pageIndex);
+                    // console.log($(document))
+
+                    if (scrollTop > 1800) {
+                        instance.isPageIndicatorShow = true;
+                    } else {
+                        instance.isPageIndicatorShow = false;
+                    }
+
+                    if (scrollTop > 1800 && scrollTop < 3800) {
+                        instance.pageIndex = 1;
+                    } else if (scrollTop > 3800 && scrollTop < 4800) {
+                        instance.pageIndex = 2;
+                    } else if (scrollTop > 4800 && scrollTop < 6000) {
+                        instance.pageIndex = 3;
+                    } else if (scrollTop > 6000) {
+                        instance.pageIndex = 4;
+                    }
+
+
+                    if (scrollTop > 1600) {
                         instance.isDesignContentShow = true;
+                        // if (scrollTop < 4300) {
+                            // instance.pageIndex = 2;
+                            // $(document).trigger('index.update', [2]);
+                        // }
                     }
                     if (scrollTop > 4300) {
                         instance.isEducatorContentShow = true;
+                        // if (scrollTop < 5300) {
+                            // instance.pageIndex = 3;
+                            // $(document).trigger('index.update', [3]);
+                        // }
                     }
                     if (scrollTop > 5300) {
                         instance.isWriterContentShow = true;
+                        // instance.pageIndex = 4;
+                        // $(document).trigger('index.update', [4]);
                     }
                 };
 
@@ -415,7 +472,9 @@
             WorksContainer,
             ArticleContainer,
             BackgroundRope,
-            HoverPicture
+            HoverPicture,
+            MoreButton,
+            PageIndicator
         }
     }
 </script>
@@ -453,6 +512,24 @@
         left: 0px
         height: 100%
         width: 100%
+
+    .page-control
+        position: fixed
+        width: 100px
+        left: 24px
+
+    .slide-fade-enter
+        opacity: 0
+        // transform: translateY(140px)
+    .slide-fade-enter-active
+        transition: all 0.6s ease 0.05s
+    .slide-fade-enter-to
+        opacity: 1
+        transform: translateY(0px)
+    .slide-fade-leave-active
+        transition: all 0.6s ease 0.05s
+    .slide-fade-leave-to
+        opacity: 0
 
     .header-background
         position: absolute
@@ -501,7 +578,7 @@
         top: 150px
         left: 120px
         background: linear-gradient(to right, $gradient-light-blue, $gradient-dark-blue)
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4)
+        // box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4)
 
     .header-name
         width: 1000px
@@ -589,7 +666,7 @@
             opacity: 0
             animation: imageFadeIn 0.8s ease-out 1.2s forwards
             .revealer
-                width: calc(100% + 50px)
+                width: calc(100% + 20px)
                 height: 100%
                 transform: scale3d(0,1,1)
                 background-color: $default-background-color
@@ -602,7 +679,51 @@
             left: -32px
             text-shadow: 2px 2px 4px black
             transform: translateZ(20px)
+    .section-scroll-hint
+        height: 100px
+    .mouse
+        margin-top: 64px
+        margin-bottom: 10px
+        margin-left: auto
+        margin-right: auto
+        // display: inline-block
+    .mouse-icon
+        width: 25px
+        height: 45px
+        border: 2px solid white
+        border-radius: 15px
+        cursor: pointer
+        position: relative
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+    .mouse-wheel
+        height: 4px
+        width: 4px
+        margin: 2px auto 0
+        display: block
+        background-color: white
+        // border-radius: 50%
+        animation: 1.6s ease infinite wheel-up-down
 
+    .scroll-hint
+        font-size: 20px
+        font-weight: 600
+        letter-spacing: 1px
+        margin: 2px auto 0
+        text-align: center
+
+    @keyframes wheel-up-down
+        0%
+            transform: translateY(4px)
+            opacity: 0
+        40%
+            opacity: 1
+        80%
+            transform: translateY(24px)
+            opacity: 0
+        100%
+            opacity: 0
 
     #separator-1
         +size(124px, 16px)
@@ -622,8 +743,6 @@
         margin-bottom: 16px
 
     #slogan-1
-        // color: $text-color-green
-        // text-shadow: 6px 6px 0px $shadow-color-blue
         font-size: 84px
         letter-spacing: 12px
         line-height: 120px
@@ -661,6 +780,7 @@
 
     .work-image-container
         box-shadow: 16px 16px 50px $shadow-color-black
+
     .section-designer
         max-width: 1600px
         margin-left: auto
@@ -679,13 +799,11 @@
 
         .work-3-container
             +size(340px, 340px)
-            margin-top: 60px
-            top: -160px
-            transform-style: preserve-3d
+            top: -240px
 
         .work-4-container
             +size(340px, 340px)
-            margin-top: 60px
+            top: -80px
 
         .work
             height: 100%
@@ -738,12 +856,10 @@
             background: linear-gradient(to bottom right, $gradient-light-blue, $gradient-dark-blue)
 
         .developer-container
-            // margin-top: 120px
             width: 36vw
             height: 36vw
             max-width: 600px
             max-height: 600px
-            // +size(400px, 480px)
 
 
         .work-developer-index
@@ -1001,20 +1117,22 @@
     .fade-enter-active-image
         transform-origin: 100% 50%;
         // animation: imageIn 0.5s cubic-bezier(1,0.01,0.38,1) 1.2s forwards
-        animation: imageIn 1.0s cubic-bezier(0.0,0.78,0.12,0.9) 1.2s forwards
+        animation: imageIn 1.0s cubic-bezier(0.0,0.78,0.12,0.9) 1.1s forwards
     .fade-enter-content
         opacity: 0
         transition: all 0.0s
     .fade-enter-active-headerbar
-        animation: headerBarIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.6s forwards
+        animation: headerBarIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.7s forwards
+    .fade-enter-active-scroll
+        animation: scrollIconIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.6s forwards
     .fade-enter-active-div-1
-        animation: divSlideIn 0.4s cubic-bezier(1,0.01,0.38,1) 0.8s forwards
+        animation: divSlideIn 0.4s cubic-bezier(1,0.01,0.38,1) 0.5s forwards
     .fade-enter-active-content-1
-        animation: contentIn 0.5s ease-out 0.3s forwards
+        animation: contentIn 0.4s ease-out 0.3s forwards
     .fade-enter-active-content-2
-        animation: contentIn 0.5s ease-out 0.5s forwards
+        animation: contentIn 0.4s ease-out 0.5s forwards
     .fade-enter-active-content-3
-        animation: contentIn 0.5s ease-out 0.7s forwards
+        animation: contentIn 0.4s ease-out 0.7s forwards
     .fade-enter-active-content-4
         animation: contentIn 0.5s ease-out 0.9s forwards
     .fade-enter-active-content-5
@@ -1034,6 +1152,13 @@
         0%
             transform: translateY(-120px)
             opacity: 1.0
+        100%
+            transform: translateY(0px)
+            opacity: 1.0
+    @keyframes scrollIconIn
+        0%
+            transform: translateY(120px)
+            opacity: 0.0
         100%
             transform: translateY(0px)
             opacity: 1.0

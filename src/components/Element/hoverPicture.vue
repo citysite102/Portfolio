@@ -115,7 +115,6 @@
         border: solid 2px white
         cursor: pointer
 
-        padding-top: 10px
         font-size: 18px
         font-weight: 600
         margin-top: 10px
@@ -123,7 +122,7 @@
         margin-left: auto
         margin-right: auto
         letter-spacing: 1px
-        line-height: 30px
+        line-height: 36px
 
         opacity: 0
         transform: translateY(50px)
