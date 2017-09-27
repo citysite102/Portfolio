@@ -112,22 +112,28 @@
     .more-button
         width: 140px
         height: 36px
-        border: solid 1px white
+        border: solid 2px white
         cursor: pointer
 
         padding-top: 10px
         font-size: 18px
-        font-weight: 500
+        font-weight: 600
         margin-top: 10px
         margin-bottom: 10px
         margin-left: auto
         margin-right: auto
-        letter-spacing: 0px
+        letter-spacing: 1px
         line-height: 30px
 
         opacity: 0
         transform: translateY(50px)
         transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
+
+        &:hover
+            background-color: white
+            color: $default-background-color
+            border-color: transparent
+
 
 
 

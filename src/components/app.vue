@@ -960,36 +960,36 @@
 
     .fade-delay1-enter
         opacity: 0
-        transform: translateY(120px)
+        transform: translateY(140px)
     .fade-delay1-enter-active
-        transition: all 0.8s
+        transition: all 0.8s ease
     .fade-delay1-enter-to
         opacity: 1
         transform: translateY(0px)
 
     .fade-delay2-enter
         opacity: 0
-        transform: translateY(120px)
+        transform: translateY(140px)
     .fade-delay2-enter-active
-        transition: all 0.8s ease 0.1s
+        transition: all 0.8s ease 0.15s
     .fade-delay2-enter-to
         opacity: 1
         transform: translateY(0px)
 
     .fade-delay3-enter
         opacity: 0
-        transform: translateY(120px)
+        transform: translateY(140px)
     .fade-delay3-enter-active
-        transition: all 0.8s ease 0.2s
+        transition: all 0.8s ease 0.3s
     .fade-delay3-enter-to
         opacity: 1
         transform: translateY(0px)
 
     .fade-delay4-enter
         opacity: 0
-        transform: translateY(120px)
+        transform: translateY(140px)
     .fade-delay4-enter-active
-        transition: all 0.8s ease 0.3s
+        transition: all 0.8s ease 0.45s
     .fade-delay4-enter-to
         opacity: 1
         transform: translateY(0px)
