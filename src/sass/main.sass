@@ -1,12 +1,14 @@
 @import '~styles/fonts_config.sass'
+@import url('https://fonts.googleapis.com/css?family=Yrsa:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 $default-background-color: #101010
-$default-background-color1: red   
+$default-footer-color: #101010
 
 $text-color-white: #FFFFFF
-$text-color-gray-light: #cccccc
+$text-color-gray-light: #bbbbbb
 $text-color-gray: #888888
-$text-color-green: #65FEB2
+$text-color-green: #5EEBA5
 $text-color-blue: #57FCF8
 $text-color-purple: #BA68FF
 
@@ -34,12 +36,14 @@ $gradient-dark-green: #18DB60
 	position: relative
 	color: white
 	font-family: 'Graphik'
+	// width: 100%
 
 html, body
 	background-color: $default-background-color
 	margin: 0
 	padding: 0
 	height: 100%
+	width: 100%
 
 #container
 	// max-width: 1440px
@@ -65,12 +69,12 @@ h2
 
 h3, span, a
 	color: $text-color-white
-	font-size: 20px
+	font-size: 24px
 	font-weight: 500
 	margin-top: 10px
 	margin-bottom: 10px
 	letter-spacing: 0px
-	line-height: 30px
+	line-height: 35px
 
 p
 	color: $text-color-white
@@ -79,4 +83,12 @@ p
 	margin-top: 2px
 	margin-bottom: 2px
 	line-height: 27px
+
+.fade-router-enter-active, .fade-router-leave-active 
+  transition: opacity 0.3s
+
+
+.fade-router-enter, .fade-router-leave-active 
+  opacity: 0
+
 

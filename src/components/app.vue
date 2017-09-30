@@ -2,10 +2,10 @@
     <div>
         <transition appear appear-to-class="fade-enter-content"
                                     appear-active-class="fade-enter-active-headerbar">
-            <headerBar></headerBar>
+            <headerBar :showAbout="true" :showWork="false"></headerBar>
         </transition>
-        <div id="container">
-            <backgroundRope class="background-ropes"></backgroundRope>
+        <div class="container">
+            <backgroundRope class="background-ropes" showcolorline=true></backgroundRope>
             <transition name="slide-fade">
                 <pageIndicator v-show="isPageIndicatorShow" class="page-control" :currentIndex="pageIndex"></pageIndicator>
             </transition>
@@ -18,7 +18,7 @@
                             </h1>
                             <transition appear appear-to-class="fade-enter-content"
                                     appear-active-class="fade-enter-active-div-1">
-                                <div class="header-separator">
+                                <div v-cloak class="header-separator">
                                 </div>
                             </transition>
                             <transition appear appear-to-class="fade-enter-content"
@@ -51,7 +51,7 @@
                                     </transition>
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-4">
-                                        <h3 class="skill-item-supplement" href="#" v-scroll-to="'.section-designer'">
+                                        <h3 class="skill-item-supplement" href="#" >
                                             iOS, Web, Node.js
                                         </h3>
                                     </transition>
@@ -74,7 +74,7 @@
                         </div>
                     </el-col>
                     <el-col :span="11">
-                        <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="header-picture-container">
+                        <div class="header-picture-container">
                             <div id="header-picture">
                                 <transition appear
                             appear-active-class="fade-enter-active-image">
@@ -126,28 +126,36 @@
                 </el-row>  
             </section>
             <section class="section-designer">
-                <el-row :gutter="16">
-                    <h1 class="design-background">
-                        DESIGN
-                    </h1>
-                    <div class="ball-2 rellax"></div>
-                    <el-col :span="8" :offset="2">
-                        <titleContainer data-scroll class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design, Commercial Design."></titleContainer>
-                        <moreButton data-scroll></moreButton>
-                    </el-col>
-                    <el-col :span="6">
+                    <el-row :gutter="16">
+                        <transition name="fade-delay-bg">
+                            <h1 v-show="isDesignContentShow" class="design-background">
+                                DESIGN
+                            </h1>
+                        </transition>
                         <transition name="fade-delay1">
+                            <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
+                        </transition>
+                        <el-col :span="8" :offset="2">
+                            <transition name="fade-delay1">
+                                <titleContainer v-show="isDesignContentShow" class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design."></titleContainer>
+                            </transition>
+                            <transition name="fade-delay1">
+                                <moreButton v-show="isDesignContentShow"></moreButton>
+                            </transition>
+                        </el-col>
+                    <el-col :span="6">
+                        <transition name="fade-delay2">
                             <div v-show="isDesignContentShow">
-                                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-1-container work-image-container">
+                                <div class="work-1-container work-image-container">
                                     <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
                                 </div>
                             </div>
                         </transition>
                     </el-col>
                     <el-col :span="6">
-                        <transition name="fade-delay2">
+                        <transition name="fade-delay3">
                             <div v-show="isDesignContentShow">
-                                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-2-container work-image-container">
+                                <div class="work-2-container work-image-container">
                                     <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png"></hoverPicture>
                                 </div>
                             </div>
@@ -156,18 +164,18 @@
                 </el-row>
                 <el-row :gutter="16">
                     <el-col :span="6" :offset="10">
-                        <transition name="fade-delay3">
+                        <transition name="fade-delay4">
                             <div v-show="isDesignContentShow">
-                                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-3-container work-image-container">
+                                <div class="work-3-container work-image-container">
                                     <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-1.png"></hoverPicture>
                                 </div>
                             </div>
                         </transition>
                     </el-col>
                     <el-col :span="6">
-                        <transition name="fade-delay4">
+                        <transition name="fade-delay5">
                             <div v-show="isDesignContentShow">
-                                <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="work-4-container work-image-container">
+                                <div class="work-4-container work-image-container">
                                     <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png"></hoverPicture>
                                 </div>
                             </div>
@@ -193,20 +201,63 @@
                     <div class="developer-square">
                     </div>
                     <el-col :span="12" :offset="2">
-                        <h3 class="work-developer-index">
-                            001
-                        </h3>
+                        <!-- <transition name="fade-text" mode="out-in">
+                            <h3 class="work-developer-index" :key=projectIndexs[projectIndex]>
+                                {{projectIndexs[projectIndex]}}
+                            </h3>
+                        </transition>
                         <div class="work-developer-separator">
-                        </div>
-                        <h3 class="work-developer-subtitle">
-                            iOS, Deisgn, Web and Script
-                        </h3>
-                        <div data-tilt data-tilt-perspective="2500" data-tilt-transition="true" class="developer-container work-image-container">
-                            <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
-                        </div>
+                        </div> -->
+                        <transition name="fade-text" mode="out-in">
+                            <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
+                                2016.8 &nbsp ─ &nbsp 2017.12
+                            </h3>
+                        </transition>
+                        <transition name="fade-text" mode="in-out">
+                            <div v-if="projectIndex==0" class="developer-container work-image-container">
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
+                                <!-- <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
+                                    2016/8 - 2017/12
+                                </h3> -->
+                            </div>
+                            <div v-else-if="projectIndex==1" class="developer-container work-image-container">
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png"></hoverPicture>
+                            </div>
+                            <div v-else-if="projectIndex==2" class="developer-container work-image-container">
+                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png"></hoverPicture>
+                            </div>
+                        </transition>
                     </el-col>
                     <el-col :span="10">
-                        <titleContainer data-scroll class="developer-titlecontainer" index="02" title="Developer" description="Swift, ObjectiveC, Html, CSS, Sass, Javascript, JQuery, Vue.js, Swift, ObjectiveC, Html, CSS, Sass, Javascript, JQuery, Vue.js."></titleContainer>
+                        <transition name="fade-delay1">
+                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Developer" description="A developer with Swift, ObjectiveC, Html, CSS, Sass, Javascript, JQuery, Vue.js experience."></titleContainer>
+                        </transition>
+                        <transition name="fade-delay2">
+                            <div v-show="isDeveloperContentShow" class= "developer-project-select">
+                                <ul>
+                                    <li v-bind:class="{ projectSelected: projectIndex==0}" v-on:click="selectProject(0)">001</li>
+                                    <li v-bind:class="{ projectSelected: projectIndex==1}"v-on:click="selectProject(1)">002</li>
+                                    <li v-bind:class="{ projectSelected: projectIndex==2}"v-on:click="selectProject(2)">003</li>
+                                </ul>
+                            </div>
+                        </transition>
+                        <transition name="fade-delay3">
+                            <div v-show="isDeveloperContentShow" class="developer-project-content">
+                                <transition name="fade-text" mode="out-in">
+                                    <h3 class="project-name" :key=projectTitles[projectIndex]>{{projectTitles[projectIndex]}}
+                                    </h3>
+                                </transition>
+                                <!-- <transition name="fade-text" mode="out-in">
+                                    <p class="project-time" :key=projectTimes[projectIndex]>{{projectTimes[projectIndex]}}
+                                    </p>
+                                </transition> -->
+                                <transition name="fade-text" mode="out-in">
+                                    <p class="project-description":key=projectDescriptions[projectIndex]>{{projectDescriptions[projectIndex]}}
+                                    </p>
+                                </transition>
+                            </div>
+                        </transition>
+
                     </el-col>
                 </el-row>
             </section>
@@ -224,17 +275,17 @@
                         </el-col>
                     </transition>
                     <transition name="fade-delay3">
-                        <el-col v-show="isEducatorContentShow" class="educatore-work-1-col" :span="5" :offset="1">
+                        <el-col v-show="isEducatorContentShow" class="educator-work-1-col" :span="5" :offset="1">
                             <div class="educator-work-1 work-image-container"></div>
                         </el-col>
                     </transition>
                     <transition name="fade-delay2">
-                        <el-col v-show="isEducatorContentShow" class="educatore-work-2-col" :span="5">
+                        <el-col v-show="isEducatorContentShow" class="educator-work-2-col" :span="5">
                             <div class="educator-work-2 work-image-container"></div>
                         </el-col>
                     </transition>
                     <transition name="fade-delay4">
-                        <el-col v-show="isEducatorContentShow" class="educatore-work-3-col" :span="5" :offset="15">
+                        <el-col v-show="isEducatorContentShow" class="educator-work-3-col" :span="5" :offset="15">
                             <div class="educator-triangle"></div>
                             <div class="ball-6 rellax"></div>
                             <div class="educator-work-3 work-image-container"></div>
@@ -280,13 +331,14 @@
                 </el-row>
             </section>
         </div>
-
-      </div>
+        <footerBar></footerBar>
+    </div>
 </template>
 
 <script>
     import Vue from 'vue';
     import HeaderBar from './Element/header.vue';
+    import FooterBar from './Element/footer.vue';
     import PageIndicator from './Element/pageIndication.vue';
     import BackgroundRope from './Element/background.vue';
     import HoverPicture from './Element/hoverPicture.vue';
@@ -301,6 +353,7 @@
 
 
     var VueScrollTo = require('vue-scrollto');
+    var scrollFunction;
 
     Vue.use(VueScrollTo, {
         container: "body",
@@ -318,37 +371,37 @@
         data () {
             return {
                 isDesignContentShow: false,
+                isDeveloperContentShow: false,
                 isEducatorContentShow: false,
                 isWriterContentShow: false,
                 isPageIndicatorShow: false,
-                pageIndex: 1
+                pageIndex: 1,
+                projectIndex: 0,
+                projectTitles: ['Tickle', 'Kapi', 'Cosign'],
+                projectTimes: ['2016.1-2017.1', '2016.2-2017.2', '2016.3-2017.3'],
+                projectDescriptions: ['1Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '2Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '3Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet'],
+                projectJobs: ['Engineer, UI Deisgn and Script','Cofounder, iOS developement','Cofunder, web developement'],
+                projectIndexs: ['001','002','003'],
+                projectImages: ['../../src/assets/images/sample-2.png', '../../src/assets/images/sample-3.png', '../../src/assets/images/sample-4.png']
             }
         },
         methods: {
+            selectProject: function(index) {
+                console.log("Select");
+                // var projectName = document.getElementsByClassName("project-name");
+                // console.log(projectName);
+                // console.log(projectName[0]);
+                // projectName[0].innerHTML="123";
+                this.projectIndex = index;
+            },
             handleScroll: function(event) {
-                console.log('123123123');
                 let obj = document.querySelector('.section-developer');
                 let {top,bottom} = obj.getBoundingClientRect();
-                console.log('上:'+top+'下:'+bottom);
-                // console.log(this.$.indicator.currentIndex);
-                // let height = document.documentElement.clientHeight;
-                // this.scrolled = top < height && bottom >0;
-                // this.scrolled = window.scrollY > 100;
             },
-            beforeAppear: function(el) {
-                console.log('beforeAppear')
-            },
-            appear: function(el) {
-                console.log('appear!')
-            },
-            afterAppear: function(el) {
-                console.log('afterAppear!')
-            }
-        },
-        created() {
-            // window.addEventListener('scroll', this.handleScroll);
-            var instance = this;
-            document.addEventListener('DOMContentLoaded', function(){
+            triggerEvent: function(instance) {
+                console.log(instance);
+                console.log("已加入");
+
                 var trigger = new ScrollTrigger({
                   toggle: {
                     visible: 'visibleClass',
@@ -362,8 +415,10 @@
                   once: true
                 }, document.body, window);
 
+                console.log("已加入" + trigger);
+
                 var callback = function(scrollLeft, scrollTop, width, height){
-                    // console.log("Left:"+scrollLeft+ " Top:"+ scrollTop);
+                    console.log("Left:"+scrollLeft+ " Top:"+ scrollTop);
                     // console.log(instance.pageIndex);
                     // console.log($(document))
 
@@ -384,12 +439,15 @@
                     }
 
 
-                    if (scrollTop > 1600) {
+                    if (scrollTop > 1400) {
                         instance.isDesignContentShow = true;
                         // if (scrollTop < 4300) {
                             // instance.pageIndex = 2;
                             // $(document).trigger('index.update', [2]);
                         // }
+                    }
+                    if (scrollTop > 3400) {
+                        instance.isDeveloperContentShow = true;
                     }
                     if (scrollTop > 4300) {
                         instance.isEducatorContentShow = true;
@@ -398,7 +456,7 @@
                             // $(document).trigger('index.update', [3]);
                         // }
                     }
-                    if (scrollTop > 5300) {
+                    if (scrollTop > 5500) {
                         instance.isWriterContentShow = true;
                         // instance.pageIndex = 4;
                         // $(document).trigger('index.update', [4]);
@@ -406,12 +464,25 @@
                 };
 
                 trigger.attach(callback);
-            });
+            }
+        },
+        created() {
+            // window.addEventListener('scroll', this.handleScroll);
+            var instance = this;
+            document.addEventListener('DOMContentLoaded', this.triggerEvent(this));
         },
         destroyed() {
+            // 記得要移除掉 Evenet Listener，否則再下一次進來這個 Component 時就會不運作
+            var instance = this;
+            document.removeEventListener('DOMContentLoaded', this.triggerEvent(instance))
             // window.removeEventListener('scroll', this.handleScroll);
         },
         mounted() { 
+            console.log(this.isDesignContentShow);
+            this.isDesignContentShow = false;
+            this.isEducatorContentShow = false;
+            this.isWriterContentShow = false;
+
             $('.header-picture-container').tilt({
                 // glare: true,
                 scale: 1.05,
@@ -442,7 +513,7 @@
             });
             $('.developer-container').tilt({
                 scale: 1.02,
-                perspective: 900,
+                perspective: 3000,
                 transition: true
             });
             $('.educator-work-1').tilt({
@@ -468,6 +539,7 @@
         },
         components: {
             HeaderBar,
+            FooterBar,
             TitleContainer,
             WorksContainer,
             ArticleContainer,
@@ -482,27 +554,20 @@
 <style scope lang="sass">
     @import '~styles/main.sass'
 
-    // @keyframes imageMove 
-    //   0%
-    //     background-position-x: 0%
-    //   50%
-    //     background-position-x: 50%
-    //   100%
-    //     background-position-x: 0%
+    [v-cloak]
+        display: none;
     
     .section-about
         background-color: transparent
-        margin-top: 80px
+        margin-top: 64px
         width: 100%
         height: 720px
     .section-slogan
         margin-top: 120px
         margin-bottom: 120px
     .el-row 
-        height: 100%
         background-color: transparent
     .el-col 
-        height: 100%
         background-color: transparent
     .header-info
         z-index: 5
@@ -600,10 +665,10 @@
         cursor: pointer
 
     .skill-item-name
-        font-size: 28px
+        font-size: 30px
         font-weight: 700
         display: inline-block
-        margin-bottom: 8px
+        margin-bottom: 6px
         letter-spacing: 1px
         transition: transform 0.5s
         transition-timing-function: cubic-bezier(0.2,1,0.3,1)
@@ -634,9 +699,10 @@
             background: linear-gradient(to right, $gradient-dark-purple, $gradient-light-purple)
 
     .skill-item-supplement
-        font-size: 20px
+        font-size: 22px
         color: $text-color-gray
         margin-bottom: 8px
+        margin-top: 1px
         transition: all 0.5s
         transition-timing-function: cubic-bezier(0.2,1,0.3,1)
 
@@ -656,6 +722,7 @@
         min-height: 720px
         transform-style: preserve-3d
         box-shadow: 16px 16px 50px $shadow-color-black
+
         #header-picture
             background-image: url('~assets/images/sample-city.png')
             background-size: cover
@@ -665,9 +732,10 @@
             z-index: 3
             opacity: 0
             animation: imageFadeIn 0.8s ease-out 1.2s forwards
+
             .revealer
                 width: calc(100% + 20px)
-                height: 100%
+                height: 720px
                 transform: scale3d(0,1,1)
                 background-color: $default-background-color
 
@@ -726,40 +794,41 @@
             opacity: 0
 
     #separator-1
-        +size(124px, 16px)
+        +size(124px, 12px)
         background-color: white
         margin-bottom: 36px
 
     #separator-2
-        +size(640px, 2px)
+        +size(124px, 12px)
         background-color: white
-        margin-top: 40px
+        margin-top: 32px
         margin-bottom: 16px
 
     #separator-3
-        +size(480px, 2px)
+        // +size(480px, 2px)
         background-color: white
         margin-top: 40px
         margin-bottom: 16px
 
     #slogan-1
         font-size: 84px
-        letter-spacing: 12px
+        letter-spacing: 24px
         line-height: 120px
-        margin-top: 0px
-        margin-bottom: 0px
+        margin-top: 4px
+        margin-bottom: 4px
 
     #slogan-2
         font-size: 84px
         text-shadow: 16px 24px 50px $shadow-color-black
-        letter-spacing: 12px
+        letter-spacing: 24px
         line-height: 96px
-        margin-top: 0px
-        margin-bottom: 0px
+        margin-top: 4px
+        margin-bottom: 4px
 
     #slogan-small
         font-size: 24px
-        line-height: 40px
+        line-height: 32px
+        margin-top: 36px
         margin-bottom: -24px
 
 
@@ -788,7 +857,7 @@
         margin-top: 480px
 
         .designer-titlecontainer
-            max-width: 360px
+            max-width: 400px
 
         .work-1-container
             +size(340px, 340px)
@@ -880,10 +949,75 @@
         
 
         .work-developer-subtitle
+            font-size: 16px
             position: absolute
             transform: rotate(-90deg) translateX(40%)
-            bottom: 0px
-            left: -18%    
+            bottom: 10%
+            left: -13% 
+            text-align: right
+            line-height: 28px
+            letter-spacing: 1px
+            font-weight: 500
+            // opacity: 0.8
+            // font-weight: 700
+            // font-size: 140px
+            // left: -8%
+            // bottom: 12%
+            // text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3)
+            // z-index: 5
+
+        .developer-project-select
+            font-size: 36px
+            margin-top: 64px
+            margin-bottom: 96px   
+
+            ul
+                padding: 0px
+            li 
+                font-family: 'Playfair Display', serif
+                font-style: italic
+                color: $text-color-gray
+                text-decoration: none
+                display: inline-block
+                margin-right: 40px
+                cursor: pointer
+                transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9)
+                &:hover
+                    color: white
+
+
+            .projectSelected
+                transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9)
+                color: white
+                animation:
+                &:after
+                    content: ''
+                    position: absolute
+                    background: white
+                    bottom: -8px
+                    left: -6px
+                    height: 2px
+                    width: calc(100% + 12px)
+                    transform: scale3d(1, 1, 1)
+                    transform-origin: 0% 50%
+                    animation: selectFadeIn 0.3s ease-in forwards
+
+        .developer-project-content
+            width: 480px
+            .project-name
+                font-size: 26px
+                font-weight: 600
+                margin-bottom: 14px
+            .project-time
+                // color: $text-color-gray
+                font-size: 20px
+                font-weight: 500
+                margin-bottom: 8px
+            .project-description
+                font-size: 20px
+                font-weight: 500
+                // font-weight: 300
+            
 
         .work
             height: 100%
@@ -900,19 +1034,36 @@
         height: 720px
 
         .educator-titlecontainer
-            max-width: 320px
+            max-width: 400px
 
         .contact
             margin-top: 48px
-            margin-bottom: 24px
+            margin-bottom: 32px
             a
                 color: $text-color-green
+                cursor: pointer
+                &:hover
+                    &:after
+                        transform: scale3d(1, 1, 1)
+                &:after
+                    content: ''
+                    position: absolute
+                    background: #5EEBA5
+                    transition: transform 0.4s
+                    transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9)
+                    bottom: -8px
+                    left: -6px
+                    height: 3px
+                    width: calc(100% + 12px)
+                    transform: scale3d(0, 1, 1)
+                    transform-origin: 0% 50%
+            
 
         .educator-container
             margin-top: 96px
             text-align: center
 
-        .educatore-work-1-col
+        .educator-work-1-col
             height: 280px
         .educator-work-1
             +size(280px, 400px)
@@ -920,7 +1071,7 @@
             background-size: cover
             margin-bottom: 40px
 
-        .educatore-work-2-col
+        .educator-work-2-col
             height: 400px
         .educator-work-2
             +size(400px, 400px)
@@ -929,7 +1080,8 @@
             top: -180px
             margin-bottom: 40px
 
-        .educatore-work-3-col
+        .educator-work-3-col
+            top: 320px
             height: 240px
         .educator-work-3
             +size(240px, 240px)
@@ -966,9 +1118,25 @@
             max-width: 560px
         .contact
             margin-top: 48px
-            margin-bottom: 40px
+            margin-bottom: 80px
             a
                 color: $text-color-green
+                cursor: pointer
+                &:hover
+                    &:after
+                        transform: scale3d(1, 1, 1)
+                &:after
+                    content: ''
+                    position: absolute
+                    background: #5EEBA5
+                    transition: transform 0.2s
+                    transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9)
+                    bottom: -6px
+                    left: -6px
+                    height: 3px
+                    width: calc(100% + 12px)
+                    transform: scale3d(0, 1, 1)
+                    transform-origin: 0% 50%
 
         .writer-container
             // border: solid 1px white
@@ -1072,57 +1240,78 @@
         transform: translateY(0px)
 
 
+    .fade-text-enter-active, .fade-text-leave-active 
+        transition: opacity 0.3s ease
 
+    .fade-text-enter, .fade-text-leave-active
+        opacity: 0
+
+
+    .fade-delay-bg-enter
+        opacity: 0.04
+        transform: translateY(200px)
+    .fade-delay-bg-enter-active
+        transition: all 0.8s cubic-bezier(0.22, 0.86, 0.72, 0.99)
+    .fade-delay-bg-enter-to
+        opacity: 0.04
+        transform: translateY(0px)
 
     .fade-delay1-enter
         opacity: 0
-        transform: translateY(140px)
+        transform: translateY(200px)
     .fade-delay1-enter-active
-        transition: all 0.8s ease
+        transition: all 0.8s cubic-bezier(0.22, 0.86, 0.72, 0.99)
     .fade-delay1-enter-to
         opacity: 1
         transform: translateY(0px)
 
     .fade-delay2-enter
         opacity: 0
-        transform: translateY(140px)
+        transform: translateY(200px)
     .fade-delay2-enter-active
-        transition: all 0.8s ease 0.15s
+        transition: all 0.8s cubic-bezier(0.22, 0.86, 0.72, 0.99) 0.15s
     .fade-delay2-enter-to
         opacity: 1
         transform: translateY(0px)
 
     .fade-delay3-enter
         opacity: 0
-        transform: translateY(140px)
+        transform: translateY(200px)
     .fade-delay3-enter-active
-        transition: all 0.8s ease 0.3s
+        transition: all 0.8s cubic-bezier(0.22, 0.86, 0.72, 0.99) 0.3s
     .fade-delay3-enter-to
         opacity: 1
         transform: translateY(0px)
 
     .fade-delay4-enter
         opacity: 0
-        transform: translateY(140px)
+        transform: translateY(200px)
     .fade-delay4-enter-active
-        transition: all 0.8s ease 0.45s
+        transition: all 0.8s cubic-bezier(0.22, 0.86, 0.72, 0.99) 0.45s
     .fade-delay4-enter-to
         opacity: 1
         transform: translateY(0px)
 
 
-
+    .fade-delay5-enter
+        opacity: 0
+        transform: translateY(200px)
+    .fade-delay5-enter-active
+        transition: all 0.8s cubic-bezier(0.22, 0.86, 0.72, 0.99) 0.6s
+    .fade-delay5-enter-to
+        opacity: 1
+        transform: translateY(0px)
 
 
     .fade-enter-active-image
         transform-origin: 100% 50%;
         // animation: imageIn 0.5s cubic-bezier(1,0.01,0.38,1) 1.2s forwards
-        animation: imageIn 1.0s cubic-bezier(0.0,0.78,0.12,0.9) 1.1s forwards
+        animation: imageIn 0.8s cubic-bezier(0.23,1.02,0.34,0.9) 1.1s forwards
     .fade-enter-content
         opacity: 0
         transition: all 0.0s
     .fade-enter-active-headerbar
-        animation: headerBarIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.7s forwards
+        animation: headerBarIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.6s forwards
     .fade-enter-active-scroll
         animation: scrollIconIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.6s forwards
     .fade-enter-active-div-1
@@ -1150,11 +1339,12 @@
 
     @keyframes headerBarIn
         0%
-            transform: translateY(-120px)
+            transform: translateY(-140px)
             opacity: 1.0
         100%
             transform: translateY(0px)
             opacity: 1.0
+
     @keyframes scrollIconIn
         0%
             transform: translateY(120px)
@@ -1178,6 +1368,18 @@
             opacity: 0
         100%
             opacity: 1.0
+
+    @keyframes selectFadeIn 
+        0%
+            opacity: 0
+            // transform: translateY(10px)
+            transform: scale3d(0,1,1)
+            transform-origin: 0% 50%
+        100%
+            opacity: 1.0
+            // transform: translateY(0px)
+            transform: scale3d(1,1,1)
+            transform-origin: 0% 50%
 
     @keyframes contentIn 
         0%

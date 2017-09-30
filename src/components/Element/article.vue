@@ -18,15 +18,14 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-    @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
     .title
-        font-family: 'Playfair Display', serif
+        font-family: 'Yrsa', serif
         font-style: italic
-        font-size: 24px
+        font-size: 30px
         font-weight: 300
-        letter-spacing: 3px
-        line-height: 36px
+        letter-spacing: 2px
+        line-height: 34px
 
     .description
         margin-top: 16px

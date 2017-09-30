@@ -18,14 +18,12 @@
     props: ['currentIndex'],
     watch: {
         'currentIndex': function(val) {
-            console.log("改變啦----"+val);
+            // console.log("改變啦----"+val);
         }
     },
     mounted: function() {
-        console.log("000---");
         var _this = this;
         $(document).on('index.update', function(e, response) {
-            console.log("!!!");
             _this.$set('currentIndex', response);
         });
     },

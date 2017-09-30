@@ -53,9 +53,10 @@
         box-sizing: border-box
         vertical-align: top
         line-height: 56px
-        margin-left: 16px
+        margin-left: 18px
         // padding-left: 16px
         transition: all 1.0s cubic-bezier(0,1.09,0.56,1)
+        font-size: 22px
 
         // &:before, &:after
         //     content: '';
@@ -92,10 +93,10 @@
         transition: all 1.0s cubic-bezier(0,1.09,0.56,1) 0.05s
 
     .more-button
-        width: 180px
+        width: 210px
         height: 56px
         cursor: pointer
-        font-size: 18px
+        font-size: 22px
         font-weight: 600
         margin-top: 88px
         margin-bottom: 88px
@@ -138,6 +139,7 @@
 
             .text
                 transform: translateX(6px)
+                text-shadow: 6px 6px 10px #1A5FC0
             .icon
                 transform: translateX(12px)
                 // filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.8))
@@ -145,9 +147,14 @@
                 transform: scale3d(1, 1, 1)
 
     .bg-container
-        height: 100%
-        width: 100%
+        // height: 100%
+        // width: 100%
+        width: 214px
+        height: 58px
+        margin: 0px
         position: absolute
+        top: -1px
+        left: -1px
         background: linear-gradient(to bottom right, $gradient-light-blue, $gradient-dark-blue)
         transition: all 0.4s cubic-bezier(0,1.09,0.56,1)
         transform: scale3d(0, 1, 1)

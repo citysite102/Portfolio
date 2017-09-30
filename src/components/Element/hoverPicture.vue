@@ -55,6 +55,7 @@
         height: 100%
         width: 100%
         text-align: center
+        overflow: hidden
 
         &:hover
             .title, .description, .more-button
@@ -64,7 +65,8 @@
             // &:before
             .inner
                 filter: brightness(0.4)
-                background-size: 150% auto
+                transform: scale3d(1.2,1.2,1)
+                // background-size: 180% auto
         
         // &:before
         .inner
@@ -72,13 +74,13 @@
             position: absolute
             left: 0
             top: 0
-            // background-color: red
-            // background-image: url('~assets/images/sample-2.png')
             width: 100%
             height: 100%
-            background-size: 140% auto
+            // background-size: 140% auto
+            background-size: cover
             background-position: center // 置中排列
-            transition-duration: 0.5s
+            transition: all 0.5s, background 0.4s ease-in, transform 0.5s
+            
 
 
     .text-container
@@ -112,7 +114,7 @@
     .more-button
         width: 140px
         height: 36px
-        border: solid 2px white
+        border: solid 3px white
         cursor: pointer
 
         font-size: 18px
