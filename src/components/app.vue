@@ -10,7 +10,7 @@
                 <pageIndicator v-show="isPageIndicatorShow" class="page-control" :currentIndex="pageIndex"></pageIndicator>
             </transition>
             <section class="section-about">
-                <el-row :gutter="16">
+                <el-row class="center-align" :gutter="16">
                     <el-col :span="10" :offset="2">
                         <div class="header-info">
                             <h1 class="header-background">
@@ -52,7 +52,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-4">
                                         <h3 class="skill-item-supplement" href="#" >
-                                            iOS, Web, Node.js
+                                            iOS, Web, Vue.js, Node.js
                                         </h3>
                                     </transition>
                                 </a>
@@ -66,7 +66,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-5">
                                         <h3 class="skill-item-supplement">
-                                            GUI, UI, iOS Coding, Coworking
+                                            iOS, Web, UI/UX, Communication
                                         </h3>
                                     </transition>
                                 </a>
@@ -88,23 +88,33 @@
                         </div>
                     </el-col>
                 </el-row>
-                <!-- <el-row class="section-scroll-hint">
+                <el-row class="section-scroll-hint">
                     <el-col :span="20" :offset="2">
                         <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-scroll">
-                            <div class="mouse">
+                                    appear-active-class="fade-enter-active-scroll" name="slide-fade">
+                            <div v-show="isScrollHintShow" class="mouse">
                                 <div class="mouse-icon">
                                     <span class="mouse-wheel"></span>
                                 </div>
                             </div>
                         </transition>
                         <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-scroll">
-                            <div class="scroll-hint">Scroll
+                                    appear-active-class="fade-enter-active-scroll" name="slide-fade">
+                            <div v-show="isScrollHintShow" class="scroll-hint">SCROLL&nbsp&nbsp
                             </div>
                         </transition>
+                        <!-- <transition appear appear-to-class="fade-enter-content"
+                                    appear-active-class="fade-enter-active-scroll" name="slide-fade">
+                            <div v-show="isScrollHintShow" class="scroll-hint">SCROLL
+                            </div>
+                        </transition>
+                        <transition appear appear-to-class="fade-enter-content"
+                                    appear-active-class="fade-enter-active-scroll" name="slide-fade">
+                            <div v-show="isScrollHintShow" class="scroll-line">
+                            </div>
+                        </transition> -->
                     </el-col>
-                </el-row> -->
+                </el-row>
             </section>
             <section class="section-slogan">
                 <el-row :gutter="16">
@@ -127,22 +137,18 @@
             </section>
             <section class="section-designer">
                     <el-row :gutter="16">
-                        <transition name="fade-delay-bg">
+                        <!-- <transition name="fade-delay-bg"> -->
                             <h1 v-show="isDesignContentShow" class="design-background">
                                 DESIGN
                             </h1>
-                        </transition>
+                        <!-- </transition> -->
                         <transition name="fade-delay1">
-                            <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
+                            <el-col v-show="isDesignContentShow" :span="8" :offset="2">
+                                <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design."></titleContainer>
+                                <moreButton></moreButton>
+                                <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
+                            </el-col>
                         </transition>
-                        <el-col :span="8" :offset="2">
-                            <transition name="fade-delay1">
-                                <titleContainer v-show="isDesignContentShow" class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design."></titleContainer>
-                            </transition>
-                            <transition name="fade-delay1">
-                                <moreButton v-show="isDesignContentShow"></moreButton>
-                            </transition>
-                        </el-col>
                     <el-col :span="6">
                         <transition name="fade-delay2">
                             <div v-show="isDesignContentShow">
@@ -310,7 +316,7 @@
                         <el-col v-show="isWriterContentShow" class="writer-container" :span="6" :offset="2">
                             <div class="writer-work-1">
                             </div>
-                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
+                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="漸層配色"></articleContainer>
                         </el-col>
                     </transition>
                     <transition name="fade-delay3">
@@ -370,6 +376,7 @@
     export default {
         data () {
             return {
+                isScrollHintShow: true,
                 isDesignContentShow: false,
                 isDeveloperContentShow: false,
                 isEducatorContentShow: false,
@@ -422,6 +429,12 @@
                     // console.log(instance.pageIndex);
                     // console.log($(document))
 
+                    if (scrollTop > 100) {
+                        instance.isScrollHintShow = false;
+                    } else {
+                        instance.isScrollHintShow = true;
+                    }
+
                     if (scrollTop > 1800) {
                         instance.isPageIndicatorShow = true;
                     } else {
@@ -464,12 +477,28 @@
                 };
 
                 trigger.attach(callback);
+            },
+            setWindowHeight: function() {
+                var windowHeight = window.innerHeight;
+                document.body.style.height = windowHeight + "px";
+                console.log(document.body.style.height);
+                var aboutSection = document.getElementsByClassName("section-about");
+                console.log(aboutSection);
+                if (windowHeight > 1200) {
+                    aboutSection[0].style.height = windowHeight-320 + 'px';
+                    aboutSection[0].style.marginTop = (windowHeight-1200)*0.5+64 + 'px';
+                } else {
+                    aboutSection[0].style.height = 720 + 'px';
+                    // aboutSection[0].style.marginTop = 64 + 'px';
+
+                }
             }
         },
         created() {
             // window.addEventListener('scroll', this.handleScroll);
             var instance = this;
             document.addEventListener('DOMContentLoaded', this.triggerEvent(this));
+            window.addEventListener("resize", this.setWindowHeight);
         },
         destroyed() {
             // 記得要移除掉 Evenet Listener，否則再下一次進來這個 Component 時就會不運作
@@ -482,7 +511,7 @@
             this.isDesignContentShow = false;
             this.isEducatorContentShow = false;
             this.isWriterContentShow = false;
-
+            this.setWindowHeight()
             $('.header-picture-container').tilt({
                 // glare: true,
                 scale: 1.05,
@@ -532,7 +561,7 @@
                 transition: true
             });
             var rellax = new Rellax('.rellax', {
-                speed: 3,
+                speed: 4,
                 center: false,
                 round: true,
             });
@@ -561,10 +590,11 @@
         background-color: transparent
         margin-top: 64px
         width: 100%
-        height: 720px
+        height: auto
     .section-slogan
         margin-top: 120px
         margin-bottom: 120px
+
     .el-row 
         background-color: transparent
     .el-col 
@@ -587,12 +617,12 @@
         opacity: 0
         // transform: translateY(140px)
     .slide-fade-enter-active
-        transition: all 0.6s ease 0.05s
+        transition: all 0.5s ease 0.05s
     .slide-fade-enter-to
         opacity: 1
         transform: translateY(0px)
     .slide-fade-leave-active
-        transition: all 0.6s ease 0.05s
+        transition: all 0.5s ease 0.05s
     .slide-fade-leave-to
         opacity: 0
 
@@ -748,7 +778,25 @@
             text-shadow: 2px 2px 4px black
             transform: translateZ(20px)
     .section-scroll-hint
+        bottom: 72px
+        right: 104px
+        // left: 50%
+        // transform: translateX(-50%)
+        position: fixed
         height: 100px
+
+    .scroll-hint
+        font-size: 12px
+        // font-weight: 300
+        letter-spacing: 1px
+        margin: 16px auto 
+        text-align: center
+
+    .scroll-line
+        width: 3px
+        height: 80px
+        background: white
+        margin: 24px auto
     .mouse
         margin-top: 64px
         margin-bottom: 10px
@@ -774,12 +822,6 @@
         // border-radius: 50%
         animation: 1.6s ease infinite wheel-up-down
 
-    .scroll-hint
-        font-size: 20px
-        font-weight: 600
-        letter-spacing: 1px
-        margin: 2px auto 0
-        text-align: center
 
     @keyframes wheel-up-down
         0%
@@ -855,6 +897,7 @@
         margin-left: auto
         margin-right: auto
         margin-top: 480px
+        height: 720px
 
         .designer-titlecontainer
             max-width: 400px
@@ -1178,8 +1221,8 @@
         background-repeat: no-repeat
     .ball-2
         +size(160px, 160px)
-        left: 25%
-        bottom: 20%
+        left: 50%
+        bottom: 50%
         position: absolute
         filter: drop-shadow(0px 0px 6px rgba(97, 250, 255, 0.4))
         background-image: url('~assets/images/circle-green.png')
@@ -1222,7 +1265,7 @@
     .ball-7
         +size(140px, 140px)
         left: 73%
-        bottom: -140%
+        bottom: -240%
         position: absolute
         filter: drop-shadow(0px 0px 6px rgba(116, 231, 255, 0.4))
         background-image: url('~assets/images/circle-blue.png')
