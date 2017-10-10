@@ -14,7 +14,7 @@
                     <el-col :span="10" :offset="2">
                         <div class="header-info">
                             <h1 class="header-background">
-                                ABOUT
+                                HELLO
                             </h1>
                             <transition appear appear-to-class="fade-enter-content"
                                     appear-active-class="fade-enter-active-div-1">
@@ -31,7 +31,7 @@
                                 <a class="skill-item" href="#" v-scroll-to="'.section-designer'">
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-3">
-                                        <h2 class="skill-item-name skill-item-developer">
+                                        <h2 class="skill-item-name skill-item-designer">
                                             UI Designer
                                         </h2>
                                     </transition>
@@ -45,7 +45,7 @@
                                 <a class="skill-item" href="#" v-scroll-to="'.section-developer'">
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-4">
-                                        <h2 class="skill-item-name skill-item-designer">
+                                        <h2 class="skill-item-name skill-item-developer">
                                             Developer
                                         </h2>
                                     </transition>
@@ -130,7 +130,7 @@
                 <el-row :gutter="16">
                     <el-col :span="22" :offset="2">
                         <div id="separator-2"></div>
-                        <h3 id="slogan-small">I'm always looking for great idea, awesome partner<br>please contact me if your are same as me.</h3>
+                        <h3 id="slogan-small">I am on constant search for interesting ideas and great teammates. <br>If you are on the same hunt, send me a shoutout on Facebook/via email! <br>Let’s brain storming on some cool side projects together.</h3>
                         <div id="separator-3"></div>
                     </el-col>
                 </el-row>  
@@ -145,7 +145,8 @@
                         <transition name="fade-delay1">
                             <el-col v-show="isDesignContentShow" :span="8" :offset="2">
                                 <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design."></titleContainer>
-                                <moreButton></moreButton>
+                                <moreButton>
+                                </moreButton>
                                 <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
                             </el-col>
                         </transition>
@@ -153,7 +154,8 @@
                         <transition name="fade-delay2">
                             <div v-show="isDesignContentShow">
                                 <div class="work-1-container work-image-container">
-                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
+                                    <hoverPicture class="work" title="TICKLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/design-tickle.png" directLink="design-tickle">
+                                    </hoverPicture>
                                 </div>
                             </div>
                         </transition>
@@ -162,7 +164,9 @@
                         <transition name="fade-delay3">
                             <div v-show="isDesignContentShow">
                                 <div class="work-2-container work-image-container">
-                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png"></hoverPicture>
+                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png">
+                                        
+                                    </hoverPicture>
                                 </div>
                             </div>
                         </transition>
@@ -173,7 +177,9 @@
                         <transition name="fade-delay4">
                             <div v-show="isDesignContentShow">
                                 <div class="work-3-container work-image-container">
-                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-1.png"></hoverPicture>
+                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-1.png">
+                                        
+                                    </hoverPicture>
                                 </div>
                             </div>
                         </transition>
@@ -182,7 +188,9 @@
                         <transition name="fade-delay5">
                             <div v-show="isDesignContentShow">
                                 <div class="work-4-container work-image-container">
-                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png"></hoverPicture>
+                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png">
+                                        
+                                    </hoverPicture>
                                 </div>
                             </div>
                         </transition>
@@ -206,7 +214,7 @@
                     </h1>
                     <div class="developer-square">
                     </div>
-                    <el-col :span="12" :offset="2">
+                    <el-col :span="10" :offset="4">
                         <!-- <transition name="fade-text" mode="out-in">
                             <h3 class="work-developer-index" :key=projectIndexs[projectIndex]>
                                 {{projectIndexs[projectIndex]}}
@@ -316,7 +324,7 @@
                         <el-col v-show="isWriterContentShow" class="writer-container" :span="6" :offset="2">
                             <div class="writer-work-1">
                             </div>
-                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="漸層配色"></articleContainer>
+                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="If you’re a newcomer to design, here’s the right place!! "></articleContainer>
                         </el-col>
                     </transition>
                     <transition name="fade-delay3">
@@ -520,24 +528,24 @@
                 speed: 2000
             });
             $('.work-1-container').tilt({
-                scale: 1.05,
+                scale: 1.1,
                 maxGlare: .5,
-                perspective: 900,
+                perspective: 1500,
                 transition: true
             });
             $('.work-2-container').tilt({
-                scale: 1.05,
-                perspective: 900,
+                scale: 1.1,
+                perspective: 1500,
                 transition: true
             });
             $('.work-3-container').tilt({
-                scale: 1.05,
-                perspective: 900,
+                scale: 1.1,
+                perspective: 1500,
                 transition: true
             });
             $('.work-4-container').tilt({
-                scale: 1.05,
-                perspective: 900,
+                scale: 1.1,
+                perspective: 1500,
                 transition: true
             });
             $('.developer-container').tilt({
@@ -591,6 +599,8 @@
         margin-top: 64px
         width: 100%
         height: auto
+        padding-top: 0px
+        // padding-bottom: 0px
     .section-slogan
         margin-top: 120px
         margin-bottom: 120px
@@ -663,7 +673,7 @@
         font-weight: 800
         letter-spacing: 0px
         line-height: 150px
-        left: -2%
+        left: 6%
         top: -43%
 
     .header-separator
@@ -853,19 +863,19 @@
         margin-bottom: 16px
 
     #slogan-1
-        font-size: 84px
-        letter-spacing: 24px
-        line-height: 120px
-        margin-top: 4px
-        margin-bottom: 4px
+        font-size: 96px
+        letter-spacing: 12px
+        line-height: 112px
+        margin-top: 16px
+        margin-bottom: 16px
 
     #slogan-2
-        font-size: 84px
+        font-size: 96px
         text-shadow: 16px 24px 50px $shadow-color-black
-        letter-spacing: 24px
-        line-height: 96px
-        margin-top: 4px
-        margin-bottom: 4px
+        letter-spacing: 12px
+        line-height: 112px
+        margin-top: 16px
+        margin-bottom: 16px
 
     #slogan-small
         font-size: 24px
@@ -893,7 +903,7 @@
         box-shadow: 16px 16px 50px $shadow-color-black
 
     .section-designer
-        max-width: 1600px
+        max-width: 1920px
         margin-left: auto
         margin-right: auto
         margin-top: 480px
@@ -903,18 +913,19 @@
             max-width: 400px
 
         .work-1-container
-            +size(340px, 340px)
-            top: -160px
+            +size(400px, 400px)
+            top: -200px
 
         .work-2-container
-            +size(340px, 340px)
+            +size(400px, 400px)
+            top: -60px
 
         .work-3-container
-            +size(340px, 340px)
-            top: -240px
+            +size(400px, 400px)
+            top: -220px
 
         .work-4-container
-            +size(340px, 340px)
+            +size(400px, 400px)
             top: -80px
 
         .work
@@ -950,7 +961,7 @@
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4)
 
     .section-developer
-        max-width: 1600px
+        max-width: 1920px
         margin-left: auto
         margin-right: auto
         margin-top: 480px
@@ -961,17 +972,17 @@
         .developer-square
             +size(36vw, 36vw)
             position: absolute
-            top: -3.5vw
-            left: 11vw
-            max-width: 600px
-            max-height: 600px 
+            top: -2.5vw
+            left: 18vw
+            max-width: 640px
+            max-height: 640px 
             background: linear-gradient(to bottom right, $gradient-light-blue, $gradient-dark-blue)
 
         .developer-container
             width: 36vw
             height: 36vw
-            max-width: 600px
-            max-height: 600px
+            max-width: 640px
+            max-height: 640px
 
 
         .work-developer-index
@@ -1070,7 +1081,7 @@
 
 
     .section-educator
-        max-width: 1600px
+        max-width: 1920px
         margin-left: auto
         margin-right: auto
         margin-top: 480px
@@ -1109,7 +1120,7 @@
         .educator-work-1-col
             height: 280px
         .educator-work-1
-            +size(280px, 400px)
+            +size(320px, 420px)
             background-image: url('~assets/images/sample-e-1.png')
             background-size: cover
             margin-bottom: 40px
@@ -1127,14 +1138,14 @@
             top: 320px
             height: 240px
         .educator-work-3
-            +size(240px, 240px)
+            +size(280px, 280px)
             background-image: url('~assets/images/sample-e-3.png')
             background-size: cover
-            top: -430px
+            top: -420px
             margin-bottom: 40px
 
         .educator-triangle
-            +size(240px, 240px)
+            +size(280px, 280px)
             position: absolute
             top: -400px
             left: 32px
@@ -1151,7 +1162,7 @@
             top: 50%
 
     .section-writer
-        max-width: 1600px
+        max-width: 1920px
         margin-left: auto
         margin-right: auto
         margin-top: -200px
@@ -1186,20 +1197,20 @@
             // padding: 16px
 
         .writer-work-1
-            +size(100%, 280px)
-            background-image: url('~assets/images/sample-city.png')
+            +size(100%, 360px)
+            background-image: url('~assets/images/article-1.png')
             background-size: cover
             margin-bottom: 24px
 
         .writer-work-2
-            +size(100%, 280px)
-            background-image: url('~assets/images/sample-city.png')
+            +size(100%, 360px)
+            background-image: url('~assets/images/article-2.png')
             background-size: cover
             margin-bottom: 24px
 
         .writer-work-3
-            +size(100%, 280px)
-            background-image: url('~assets/images/sample-city.png')
+            +size(100%, 360px)
+            background-image: url('~assets/images/article-3.png')
             background-size: cover
             margin-bottom: 24px
 

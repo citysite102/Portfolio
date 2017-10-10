@@ -21,7 +21,8 @@
             <el-row class="button-container" type="flex" justify="center">
                 <el-col :span="18">
                     <div class="more-button">
-                        MORE
+                        <a class="link" :href="'/#/' + directLink">MORE</a>
+                        
                     </div>
                 </el-col>
             </el-row>
@@ -33,7 +34,7 @@
 
 <script>
   export default {
-    props: ["title", "description", "imageSource"],
+    props: ["title", "description", "imageSource", "directLink"],
     methods: {
         mouseOver: function(){
             // this.style.color = 'red';
@@ -129,6 +130,14 @@
         opacity: 0
         transform: translateY(50px)
         transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
+
+        a
+            text-decoration: none
+            font-size: 18px
+            font-weight: 600
+            &:hover
+                color: $default-background-color
+
 
         &:hover
             background-color: white
