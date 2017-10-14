@@ -21,6 +21,10 @@ export default new Router({
         path: '/design-tickle', 
         component: DesignTickle 
     },
+    {   
+        path: '/design-element', 
+        component: DesignElement 
+    },
     { 
     	path: '/', 
     	component: App 

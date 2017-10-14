@@ -32,7 +32,9 @@
                 </el-col>
             </transition>
         </el-row>
-        <div class="hero-image"></div>
+        <div class="hero-image">
+            <img src="../assets/images/design-header.png"/>
+        </div>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
@@ -45,18 +47,13 @@
                 <div class="tickle-work tickle-1"></div>
             </el-col>
         </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="3" :offset="3">
-                    <h2 class="intro-title">
-                        Interface
-                    </h2>
-                </el-col>
-            </transition>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    Interface
+                </h2>
+            </el-col>
+            <el-col :span="10" :offset="1">
                 <h2 class="intro-content">
                     It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
                 </h2>
@@ -94,15 +91,13 @@
                 </transition>
             </el-col>
         </el-row>
-        <el-row :gutter="16">
+        <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
                     Visual
                 </h2>
             </el-col>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
+            <el-col :span="10" :offset="1">
                 <h2 class="intro-content">
                     It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
                 </h2>
@@ -125,15 +120,13 @@
                 <div class="tickle-work tickle-icon"></div>
             </el-col>
         </el-row>
-        <el-row :gutter="16">
+        <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    AR Experience
+                    AR/3D <br>Experience
                 </h2>
             </el-col>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
+            <el-col :span="10" :offset="1">
                 <h2 class="intro-content">
                     It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
                 </h2>
@@ -147,29 +140,21 @@
             </el-col>
         </el-row> -->
         <el-row :gutter="16">
-            <el-col :span="18" :offset="2">
+            <el-col :span="20" :offset="2">
                 <div class="tickle-work tickle-ar"></div>
             </el-col>
         </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="3" :offset="3">
-                    <h2 class="intro-title">
-                        Flow
-                    </h2>
-                </el-col>
-            </transition>
-        </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
-                    </h2>
-                </el-col>
-            </transition>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    Flow
+                </h2>
+            </el-col>
+            <el-col :span="10" :offset="1">
+                <h2 class="intro-content">
+                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                </h2>
+            </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">
@@ -179,7 +164,7 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
+                <el-col :span="10" :offset="7">
                     <h2 class="intro-content">
                         It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
                     </h2>
@@ -192,7 +177,7 @@
             </el-col>
         </el-row>
         <el-row :gutter="16">
-                <el-col :span="10" :offset="3">
+                <el-col :span="10" :offset="7">
                     <h2 class="intro-content">
                         It seems that the cycling apps have already got all of the possible functions.It seems that the cycling apps have already got all of the possible functions.
                     </h2>
@@ -204,7 +189,7 @@
             </el-col>
         </el-row>
         <el-row :gutter="16">
-                <el-col :span="10" :offset="3">
+                <el-col :span="10" :offset="7">
                     <h2 class="intro-content">
                         It seems that the cycling apps have already got all of the possible functions.It seems that the cycling apps have already got all of the possible functions.
                     </h2>
@@ -215,25 +200,17 @@
                 <div class="tickle-work tickle-flow-3"></div>
             </el-col>
         </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="3" :offset="3">
-                    <h2 class="intro-title">
-                        Code+Analytics
-                    </h2>
-                </el-col>
-            </transition>
-        </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions.
-                    </h2>
-                </el-col>
-            </transition>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    Code<br>&<br>Analytics
+                </h2>
+            </el-col>
+            <el-col :span="10" :offset="1">
+                <h2 class="intro-content">
+                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                </h2>
+            </el-col>
         </el-row>
         <el-row :gutter="16" class="container-logo">
             <el-col :span="3" :offset="3">
@@ -255,25 +232,17 @@
                 <div class="tickle-work tickle-4"></div>
             </el-col> -->
         </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="3" :offset="3">
-                    <h2 class="intro-title">
-                        Marketing
-                    </h2>
-                </el-col>
-            </transition>
-        </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions.
-                    </h2>
-                </el-col>
-            </transition>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    Marketing
+                </h2>
+            </el-col>
+            <el-col :span="10" :offset="1">
+                <h2 class="intro-content">
+                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                </h2>
+            </el-col>
         </el-row>
         <el-row :gutter="16" class="section-banner">
             <el-col :span="18" :offset="3">
@@ -289,40 +258,36 @@
                 <div class="tickle-work tickle-banner-right banner-6"></div>
             </el-col>
         </el-row>
-        <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="3" :offset="3">
-                    <h2 class="intro-title">
-                        Assets
-                    </h2>
-                </el-col>
-            </transition>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    Assets
+                </h2>
+            </el-col>
+            <el-col :span="10" :offset="1">
+                <h2 class="intro-content">
+                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                </h2>
+            </el-col>
         </el-row>
         <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions.
-                    </h2>
-                </el-col>
-            </transition>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="18" :offset="3" class="section-asset">
+            <el-col :span="18" :offset="3" class="section-asset-left">
                 <div class="tickle-work tickle-assets assets-1"></div>
                 <div class="tickle-work tickle-assets assets-2"></div>
                 <div class="tickle-work tickle-assets assets-3"></div>
                 <div class="tickle-work tickle-assets assets-4"></div>
                 <div class="tickle-work tickle-assets assets-5"></div>
-            </el-col>
-            <el-col :span="18" :offset="3" class="section-asset-left">
                 <div class="tickle-work tickle-assets assets-12"></div>
                 <div class="tickle-work tickle-assets assets-13"></div>
                 <div class="tickle-work tickle-assets assets-14"></div>
                 <div class="tickle-work tickle-assets assets-15"></div>
             </el-col>
+<!--             <el-col :span="18" :offset="3" class="section-asset-left">
+                <div class="tickle-work tickle-assets assets-12"></div>
+                <div class="tickle-work tickle-assets assets-13"></div>
+                <div class="tickle-work tickle-assets assets-14"></div>
+                <div class="tickle-work tickle-assets assets-15"></div>
+            </el-col> -->
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
@@ -367,32 +332,41 @@
 
     .container-work
         width: 100%
-        max-width: 2200px 
+        // max-width: 2200px 
         margin-left: auto
         margin-right: auto
     
     .hero-image
         width: 100%
-        height: 1200px
+        height: auto
         margin-top: 40px
-        background-image: url('~assets/images/design-header.png')
-        background-size: cover
-        background-position: center
+        // max-height: 1400px
+        // overflow: hidden
+        // background-image: url('~assets/images/design-header.png')
+        // background-size: cover
+        // background-position: center
         // background-attachment: fixed
         // height: 100%
         // width: 100%
+        img
+            width: 100%
+            height: 100%
 
     .header-name-work
         margin-top: 180px
-        margin-bottom: 40px
+        margin-bottom: 120px
         font-size: 120px
         letter-spacing: 0px
 
+    .title-container-tickle
+        height: auto
+        margin-top: 120px
+        margin-bottom: 80px
 
     .intro-title
         font-size: 40px
         font-weight: 700
-        margin-top: 120px
+        // margin-top: 120px
         margin-bottom: 16px
         line-height: 42px
         width: 400px
@@ -455,9 +429,9 @@
         background-image: url('~assets/images/design-tickle-ipad.png')
         background-size: cover
         background-position: center
-        // margin-left: auto
-        // margin-right: auto
-        float: right
+        margin-left: auto
+        margin-right: auto
+        // float: right
         margin-top: 100px
 
 
@@ -669,7 +643,7 @@
         display: inline-flex
         flex-wrap: wrap
         justify-content: flex-start
-        align-content: flex-start
+        // align-content: flex-start
 
     .tickle-assets
         width: 280px
@@ -680,9 +654,9 @@
         background-position: center
 
     .tickle-assets-l
-        width: 360px
-        height: 360px
-        margin-right: 28px
+        width: 380px
+        height: 380px
+        margin-right: 31px
         margin-top: 24px
         background-size: cover
         background-position: center

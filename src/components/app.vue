@@ -164,8 +164,7 @@
                         <transition name="fade-delay3">
                             <div v-show="isDesignContentShow">
                                 <div class="work-2-container work-image-container">
-                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png">
-                                        
+                                    <hoverPicture class="work" title="Elements" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png" directLink="design-element">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -316,6 +315,30 @@
                             <div class="contact">
                                 <a>Read more article?</a>
                             </div>
+                        </el-col>
+                    </transition>
+                </el-row>
+                <el-row class="article-container" :gutter="0">
+                    <transition name="fade-delay2">
+                        <el-col v-show="isWriterContentShow" class="writer-container" :span="6" :offset="2">
+                            <div class="writer-work-1">
+                            </div>
+                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="If you’re a newcomer to design, here’s the right place!! "></articleContainer>
+                        </el-col>
+                    </transition>
+                    <transition name="fade-delay3">
+                        <el-col v-show="isWriterContentShow" class="writer-container" :span="6" :offset="1">
+                            <div class="writer-work-2">
+                            </div>
+                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
+                        </el-col>
+                    </transition>
+                    <transition name="fade-delay4">
+                        <el-col v-show="isWriterContentShow" class="writer-container" :span="6" :offset="1">
+                            <div class="writer-work-3">
+                            </div>
+                            <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></articleContainer>
+                            <div class="ball-7 rellax"></div>
                         </el-col>
                     </transition>
                 </el-row>
@@ -884,7 +907,7 @@
 
     #slogan-small
         font-size: 24px
-        line-height: 32px
+        line-height: 36px
         margin-top: 36px
         margin-bottom: -24px
 
@@ -977,8 +1000,8 @@
         .developer-square
             +size(36vw, 36vw)
             position: absolute
-            top: -2.5vw
-            left: 18vw
+            top: -6%
+            left: 20%
             max-width: 640px
             max-height: 640px 
             background: linear-gradient(to bottom right, $gradient-light-blue, $gradient-dark-blue)
@@ -1173,6 +1196,8 @@
         margin-top: -200px
         min-height: 840px
 
+        .article-container
+            margin-top: 80px
         .writer-titlecontainer
             max-width: 560px
         .contact
