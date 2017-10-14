@@ -32,7 +32,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-3">
                                         <h2 class="skill-item-name skill-item-designer">
-                                            UI Designer
+                                            UI/UX Designer
                                         </h2>
                                     </transition>
                                     <transition appear appear-to-class="fade-enter-content"
@@ -46,7 +46,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-4">
                                         <h2 class="skill-item-name skill-item-developer">
-                                            Developer
+                                            Software Developer
                                         </h2>
                                     </transition>
                                     <transition appear appear-to-class="fade-enter-content"
@@ -60,7 +60,7 @@
                                     <transition appear
                                     appear-to-class="fade-enter-content" appear-active-class="fade-enter-active-content-5">
                                         <h2 class="skill-item-name skill-item-educator">
-                                            Educator
+                                            Speaker
                                         </h2>
                                     </transition>
                                     <transition appear appear-to-class="fade-enter-content"
@@ -176,7 +176,7 @@
                         <transition name="fade-delay4">
                             <div v-show="isDesignContentShow">
                                 <div class="work-3-container work-image-container">
-                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-1.png">
+                                    <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png">
                                         
                                     </hoverPicture>
                                 </div>
