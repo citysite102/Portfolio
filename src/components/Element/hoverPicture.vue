@@ -22,7 +22,6 @@
                 <el-col :span="18">
                     <div class="more-button">
                         <a class="link" :href="'/#/' + directLink">MORE</a>
-                        
                     </div>
                 </el-col>
             </el-row>
@@ -135,6 +134,11 @@
             text-decoration: none
             font-size: 18px
             font-weight: 600
+            display: block
+            width: 100%
+            height: 100%
+            margin: 0px
+            margin-top: 2px
             &:hover
                 color: $default-background-color
 

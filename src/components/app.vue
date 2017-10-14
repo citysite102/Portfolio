@@ -1,10 +1,10 @@
 <template lang="html">
     <div>
-        <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-headerbar">
-            <headerBar :showAbout="true" :showWork="false"></headerBar>
-        </transition>
         <div class="container">
+            <transition appear appear-to-class="fade-enter-content"
+                                    appear-active-class="fade-enter-active-headerbar">
+                <headerBar :showAbout="true" :showWork="false"></headerBar>
+            </transition>
             <backgroundRope class="background-ropes" showcolorline=true></backgroundRope>
             <transition name="slide-fade">
                 <pageIndicator v-show="isPageIndicatorShow" class="page-control" :currentIndex="pageIndex"></pageIndicator>
@@ -144,7 +144,7 @@
                         <!-- </transition> -->
                         <transition name="fade-delay1">
                             <el-col v-show="isDesignContentShow" :span="8" :offset="2">
-                                <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="User Interace, Graphic Design, Commercial Design, and some cool stuff Design. User Interace, Graphic Design."></titleContainer>
+                                <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="I am a Mobile/Web UI designer. My daily tasks also include visual design and business content design. Hence, a strong focus is put on design skills learning in my time."></titleContainer>
                                 <moreButton>
                                 </moreButton>
                                 <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
@@ -594,6 +594,11 @@
     [v-cloak]
         display: none;
     
+    .container
+        max-width: 2200px
+        margin-left: auto
+        margin-right: auto
+
     .section-about
         background-color: transparent
         margin-top: 64px
@@ -910,7 +915,7 @@
         height: 720px
 
         .designer-titlecontainer
-            max-width: 400px
+            max-width: 420px
 
         .work-1-container
             +size(400px, 400px)
@@ -922,11 +927,11 @@
 
         .work-3-container
             +size(400px, 400px)
-            top: -220px
+            top: -280px
 
         .work-4-container
             +size(400px, 400px)
-            top: -80px
+            top: -140px
 
         .work
             height: 100%

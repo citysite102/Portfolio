@@ -8,7 +8,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
                     <!-- <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="
                     0.375,0.375 45.63,38.087 0.375,75.8 "/> -->
-                    <line x1="-44" y1="0" x2="32" y2="0"></line>
+                    <line x1="-40" y1="0" x2="32" y2="0"></line>
                     <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" points="
                     18.0,-12.0 30,0 18.0,12.0 "/>
                 </svg>

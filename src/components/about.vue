@@ -25,7 +25,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="8" :offset="2">
                     <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                        Samuel is a believer in hard work, team communication and the power of good design. His career thrives from his solid academic training in NTUST Electrical Engineering to his vast project-based experiences in app development. He values design thinking for great user experience.
                     </h2>
                 </el-col>
             </transition>
@@ -47,7 +47,9 @@
             </el-col>
             <el-col :span="8" :offset="2">
                 <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions.
+                    Samuel also cares deeply about giving back to the community. He acts as an active attendee/host of meet-ups across the fields in design and engineering to help bring talents together for the greater good. Chances of sharing his experience also come at him on various platforms. You can find him giving lectures on Hahow (an online learning website) and on campus.<br><br>
+Aside from work, Samuel likes to document his life through camera lenses. He often travels to connect with different lifestyles and cultures to make sure he stays updated with the world.
+
                 </h2>
             </el-col>
         </el-row>
@@ -98,6 +100,9 @@
 
     .container-about
         width: 100%
+        max-width: 2200px
+        margin-left: auto
+        margin-right: auto
         // height: 1200px
     .header-name-about
         margin-top: 180px
@@ -107,6 +112,8 @@
         font-weight: 600
         margin-top: 100px
         margin-bottom: 32px
+        margin-left: 0px
+        margin-right: 0px
         line-height: 42px
         width: 180px
         float: right
