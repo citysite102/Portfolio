@@ -3,9 +3,9 @@
     <p class="title">
         {{title}}
     </p>
-    <p class="description">
+    <h3 class="description">
         {{description}}
-    </p>
+    </h3>
   </div>
 
 </template>
@@ -22,13 +22,13 @@
     .title
         font-family: 'Yrsa', serif
         font-style: italic
-        font-size: 30px
+        font-size: 28px
         font-weight: 300
         letter-spacing: 2px
         line-height: 34px
 
     .description
-        margin-top: 16px
+        margin-top: 8px
         max-width: 400px
 
 

@@ -3,7 +3,7 @@
         <headerBar class="about-header" :showWorks="true"></headerBar>
         <backgroundRope class="background-ropes"></backgroundRope>
         <el-row :gutter="16">
-            <el-col :span="16" :offset="4">
+            <el-col :span="16" :offset="2">
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
                     <h1 class="header-name-about">
@@ -15,16 +15,16 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="8" :offset="4">
-                    <h2 class="intro-title">
+                <el-col :span="3" :offset="7">
+                    <h2 class="intro-title-about">
                         About Me
                     </h2>
                 </el-col>
             </transition>
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="8" :offset="2">
-                    <h2 class="intro-content">
+                <el-col :span="10" :offset="2">
+                    <h2 class="intro-content-about">
                         Samuel is a believer in hard work, team communication and the power of good design. His career thrives from his solid academic training in NTUST Electrical Engineering to his vast project-based experiences in app development. He values design thinking for great user experience.
                     </h2>
                 </el-col>
@@ -40,13 +40,13 @@
             </transition>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="8" :offset="4">
-                <h2 class="intro-title">
+            <el-col :span="3" :offset="7">
+                <h2 class="intro-title-about">
                     
                 </h2>
             </el-col>
-            <el-col :span="8" :offset="2">
-                <h2 class="intro-content">
+            <el-col :span="10" :offset="2">
+                <h2 class="intro-content-about">
                     Samuel also cares deeply about giving back to the community. He acts as an active attendee/host of meet-ups across the fields in design and engineering to help bring talents together for the greater good. Chances of sharing his experience also come at him on various platforms. You can find him giving lectures on Hahow (an online learning website) and on campus.<br><br>
 Aside from work, Samuel likes to document his life through camera lenses. He often travels to connect with different lifestyles and cultures to make sure he stays updated with the world.
 
@@ -54,13 +54,13 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="8" :offset="4">
-                <h2 class="intro-title">
+            <el-col :span="3" :offset="7">
+                <h2 class="intro-title-about">
                     Experience
                 </h2>
             </el-col>
-            <el-col :span="8" :offset="2">
-                <h2 class="intro-content">
+            <el-col :span="10" :offset="2">
+                <h2 class="intro-content-about">
                     <b>Facebook, Instagram</b> | May, 2016 - August 2016<br>
                     It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions.<br><br>
                     <b>Expii, Inc.</b> | May, 2016 - August 2016<br>
@@ -106,8 +106,9 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
         // height: 1200px
     .header-name-about
         margin-top: 180px
-        font-size: 100px
-    .intro-title
+        font-size: 80px
+
+    .intro-title-about
         font-size: 32px
         font-weight: 600
         margin-top: 100px
@@ -116,31 +117,26 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
         margin-right: 0px
         line-height: 42px
         width: 180px
-        float: right
-    .intro-content
-        // font-size: 40px
-        // font-weight: 700
-        // margin-top: 32px
-        // margin-bottom: 32px
-        // line-height: 52px
-        // width: 720px
-        font-size: 26px
-        font-weight: 400
+        // float: right
+
+    .intro-content-about
+        font-size: 20px
+        font-weight: 300
         margin-top: 100px
         margin-bottom: 32px
-        line-height: 42px
-        width: 720px
+        line-height: 32px
+        width: 100%
         float: right
 
     .profile-image
         // width: 100%
-        width: 1080px
-        height: 800px
+        width: 675px
+        height: 500px
         background-image: url('~assets/images/profile.png')
         background-size: contain
         background-repeat: no-repeat
         float: right
-        margin-top: 64px
+        margin-top: 48px
         margin-bottom: 0px
   
 

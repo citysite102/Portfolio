@@ -15,6 +15,9 @@ var VueApp = new Vue({
 	},
 	mounted: function() { 
 		// 加載 D3 之類的 Library
+		router.beforeEach(function (to, from, next) {
+		  window.scrollTo(0, 0)
+		  next();
+		})
 	}
-	// render: h => h(App)
 })

@@ -1,17 +1,62 @@
 <template lang="html">
-    <div class="container-about">
-        <headerBar class="about-header" :showWorks="true"></headerBar>
-        <backgroundRope class="background-ropes"></backgroundRope>
+    <div class="container-ios">
+        <headerBar class="ios-header" :showWorks="true"></headerBar>
         <el-row :gutter="16">
-            <el-col :span="16" :offset="4">
+            <el-col :span="16" :offset="2">
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
-                    <h1 class="header-name-about">
-                        About.
+                    <h1 class="header-name-work">
+                        iOS Works.
                     </h1>   
                 </transition>
             </el-col>
         </el-row>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content">
+                <el-col :span="3" :offset="3">
+                    <h2 class="intro-title-first">
+                        Howhow
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="10" :offset="3">
+                    <h2 class="intro-content">
+                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體，除此之外，Tickle 可以讓你輕鬆地透過程式來控制各種不同的機器人和智慧型家電。
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <div class="hero-image">
+            <img src="../assets/images/hero-howhow.png"/>
+        </div>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content">
+                <el-col :span="3" :offset="3">
+                    <h2 class="intro-title">
+                        Waiting
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="10" :offset="3">
+                    <h2 class="intro-content">
+                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體，除此之外，Tickle 可以讓你輕鬆地透過程式來控制各種不同的機器人和智慧型家電。
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <div class="hero-image">
+            <img src="../assets/images/hero-waiting.png"/>
+        </div>
         <footerBar></footerBar>
     </div>
 </template>
@@ -37,45 +82,55 @@
 <style scope lang="sass">
     @import '~styles/main.sass'
 
-    .container-about
+    .container-ios
         width: 100%
-        // height: 1200px
-    .header-name-about
-        margin-top: 180px
-        font-size: 100px
+        // max-width: 2200px 
+        margin-left: auto
+        margin-right: auto
+    
+    .hero-image
+        width: 100%
+        height: auto
+        margin-top: 40px
+        img
+            width: 100%
+            height: 100%
+
+    .header-name-work
+        margin-top: 120px
+        margin-bottom: 120px
+        font-size: 80px
+        letter-spacing: 0px
+
+
+    .intro-title-first
+        font-size: 32px
+        font-weight: 700
+        margin-top: -4px
+        margin-bottom: 18px
+        line-height: 42px
+        width: 400px
+        margin-left: 0px
+        margin-right: 0px
     .intro-title
         font-size: 32px
-        font-weight: 600
-        margin-top: 100px
-        margin-bottom: 32px
+        font-weight: 700
+        margin-top: 120px
+        margin-bottom: 18px
         line-height: 42px
-        width: 180px
-        float: right
-    .intro-content
-        // font-size: 40px
-        // font-weight: 700
-        // margin-top: 32px
-        // margin-bottom: 32px
-        // line-height: 52px
-        // width: 720px
-        font-size: 26px
-        font-weight: 400
-        margin-top: 100px
-        margin-bottom: 32px
-        line-height: 42px
-        width: 720px
-        float: right
+        width: 400px
+        margin-left: 0px
+        margin-right: 0px
 
-    .profile-image
-        // width: 100%
-        width: 1080px
-        height: 800px
-        background-image: url('~assets/images/profile.png')
-        background-size: contain
-        background-repeat: no-repeat
-        float: right
-        margin-top: 64px
-        margin-bottom: 0px
+    .intro-content
+        font-size: 18px
+        font-weight: 300
+        margin-top: 0px
+        margin-bottom: 24px
+        margin-left: 0px
+        margin-right: 0px
+        line-height: 30px
+        max-width: 800px
   
 
     .fade-enter-content

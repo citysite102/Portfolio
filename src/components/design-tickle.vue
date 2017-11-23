@@ -17,7 +17,7 @@
                                 appear-active-class="fade-enter-active-profile-content">
                 <el-col :span="3" :offset="3">
                     <h2 class="intro-title">
-                        About Tickle
+                        關於 Tickle
                     </h2>
                 </el-col>
             </transition>
@@ -27,7 +27,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="3">
                     <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體；除此之外，Tickle 也可以讓你輕鬆地透過程式來控制各種不同的機器人和控制器。
                     </h2>
                 </el-col>
             </transition>
@@ -35,10 +35,11 @@
         <div class="hero-image">
             <img src="../assets/images/design-header.png"/>
         </div>
-        <el-row :gutter="16">
+        <!-- <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                    在團隊中，我主要負責的工作內容包含 iOS 的產品開發以及不同平台產品的介面設計（包含 iOS 與 Web）；我需要持續的確保產品視覺的一制性，調整與優化使用者的操作流程，同時考慮使用者的需求與行銷團隊的需求來規劃介面上的平衡點。
+
                 </h2>
             </el-col>
         </el-row>
@@ -46,23 +47,27 @@
             <el-col :span="20" :offset="2">
                 <div class="tickle-work tickle-1"></div>
             </el-col>
-        </el-row>
+        </el-row> -->
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    Interface
-                </h2>
-            </el-col>
-            <el-col :span="10" :offset="1">
-                <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    介面設計
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="22" :offset="1">
-                <div class="tickle-work tickle-ui-1">
-                </div>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="10" :offset="3">
+                    <h2 class="intro-content">
+                        在 Tickle 團隊中，我主要負責 iOS 的產品開發以及不同平台產品的介面設計（包含 iPad, iPhone 與 Web）；我需要持續的確保產品視覺的一制性，調整與優化使用者的操作流程，同時考慮使用者與行銷團隊的需求來進行介面設計。<br><br>由於同時作為團隊的工程師與設計師，在設計與規劃的過程中，我需要同時考慮程式開發的可行性，並評估在時限內該如何完成各種不同的挑戰。
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="24">
+                <img class="tickle-work tickle-ui-1" src="../assets/images/design-tickle-iphone.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16">
@@ -70,15 +75,14 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
                     <h2 class="intro-content-center">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                        Tickle 的設計不單純只有角色、介面等視覺上面的內容，由於它是一個架構和功能都相當複雜的產品，這樣的因素也大幅度的提升不同螢幕尺寸設計上的困難度。如何在開發或規劃新功能時兼顧操作性、可讀性和娛樂性，一直都是我在 Tickle 團隊中相當具有挑戰性的過程。
                     </h2>
                 </el-col>
             </transition>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">
-                <div class="tickle-work tickle-ui-2"></div>
-                <!-- <div class="tickle-work tickle-ui-3"></div> -->
+                <img class="tickle-work tickle-ui-2" src="../assets/images/design-tickle-ipad.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16">
@@ -94,24 +98,26 @@
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    Visual
-                </h2>
-            </el-col>
-            <el-col :span="10" :offset="1">
-                <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    視覺規範
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="24" :offset="0" class="col-visual">
-                <div class="tickle-work tickle-visual"></div>
+            <el-col :span="10" :offset="3">
+                <h2 class="intro-content">
+                    Tickle 的主要設計規範是由前輩 Sean 所設計與規劃，在前輩離職後由我接手進行和調整。<br><br>Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為 San Francisco；在暗色系背景上的配色基本以明亮色系為主，標準色沿用舊版本的海洋藍綠色。
+                </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="16" :offset="4" class="col-visual">
+                <img class="tickle-work tickle-visual" src="../assets/images/design-tickle-guide.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                    由於 Tickle App 目前的使用者大部分是孩童（學生），在設計 icon 時的第一原則就是確保它的可辨識性，如何快速的讓使用者瞭解按鈕的用途一直是我持續努力的目標。
                 </h2>
             </el-col>
         </el-row>
@@ -123,151 +129,108 @@
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    AR/3D <br>Experience
-                </h2>
-            </el-col>
-            <el-col :span="10" :offset="1">
-                <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    AR / 3D
                 </h2>
             </el-col>
         </el-row>
-        <!-- <el-row :gutter="16">
-            <el-col :span="16" :offset="4" class="ar-icon-container">
-                <div class="tickle-work ar-icon"></div>
-                <div class="tickle-work scenekit-icon"></div>
-                <div class="tickle-work sprite-icon"></div>
+        <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
+                <h2 class="intro-content">
+                    Tickle 在 5.0 版本以前搭配 iOS 的 SpriteKit 做出了相當令人驚豔的 2D 操作介面，讓使用者可以透過拖拉程式區塊來做出自己的 2D 遊戲，在新版本的 Tickle 中，我們進一步的支援了 3D 和 AR 的功能。<br><br>對於使用者而言，從 2D 轉移到 3D 甚至是 AR 肯定是一個截然不同的操作體驗；對於我們而言，從地板材質的選擇、程式運作的效能、角色與使用者的互動到照相機的視角等等，每一個環節都是介面設計上一個新的嘗試。
+                </h2>
             </el-col>
-        </el-row> -->
+        </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="tickle-work tickle-ar"></div>
+                <img class="tickle-work tickle-ar" src="../assets/images/design-tickle-ar-3d2.png"/>
+
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    Flow
+                    流程規劃
                 </h2>
             </el-col>
-            <el-col :span="10" :offset="1">
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
                 <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    在 Tickle 這個團隊中，新功能的迭代或者需求上的修改都是相當頻繁的。從確定新功能開始，我會著手開始進行流程上的規劃，同時持續和團隊成員討論確定有沒有開發上的困難或者步驟上的遺漏；由於人力分配和時間的因素，通常我們不會進行 Prototype 的測試， 而是直接進入視覺設計與開發的步驟。<br><br>視覺設計與程式開發的階段是一個相當彈性的合作過程；由於同時作為團隊的設計師與其中一位工程師，我能夠清楚的瞭解不同組件或者客製化介面所需的開發時間，並進一步決定應該要先完成哪些畫面的視覺內容。
+
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">
-                <div class="tickle-work tickle-flow-0"></div>
+                <img class="tickle-work tickle-flow-0" src="../assets/images/design-tickle-flow-0.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <transition appear appear-to-class="fade-enter-content"
-                                appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="7">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
-                    </h2>
-                </el-col>
-            </transition>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="22" :offset="1">
-                <div class="tickle-work tickle-flow-1"></div>
+            <el-col :span="10" :offset="3">
+                <h2 class="intro-content">
+                    通常在視覺完成到一定程度後，我們會透過流程圖的方式再次檢視是否有遺漏的部分；舉例來說，由於 Tickle 有大量來自學校的學生使用者，在會員註冊的流程裡面就需要另外加入家長認證的步驟，除此之外，我們也在不停的嘗試透過用字、流程的改善來提升會員註冊的成功率。<br><br>
+                </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-                <el-col :span="10" :offset="7">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions.It seems that the cycling apps have already got all of the possible functions.
-                    </h2>
-                </el-col>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="22" :offset="1">
-                <div class="tickle-work tickle-flow-2"></div>
-            </el-col>
-        </el-row>
-        <el-row :gutter="16">
-                <el-col :span="10" :offset="7">
-                    <h2 class="intro-content">
-                        It seems that the cycling apps have already got all of the possible functions.It seems that the cycling apps have already got all of the possible functions.
-                    </h2>
-                </el-col>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="22" :offset="1">
-                <div class="tickle-work tickle-flow-3"></div>
+            <el-col :span="24">
+                <img class="tickle-work tickle-flow-1" src="../assets/images/design-tickle-flow-1.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    Code<br>&<br>Analytics
+                    機器人與裝置
                 </h2>
             </el-col>
-            <el-col :span="10" :offset="1">
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
                 <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    Tickle 是一個整合了許多不一樣的機器人或裝置的平台；不同的裝置可能會因為連線方式的差異（Wifi，Bluetooth，BLE），或是產品性質的不同而需要另外設計一套完全不同的連線流程。
                 </h2>
             </el-col>
         </el-row>
-        <el-row :gutter="16" class="container-logo">
-            <el-col :span="3" :offset="3">
-                <div class="tickle-work tickle-code">
-                    <img src="../assets/images/xcode-logo.png"/>
-                </div>
+        <el-row :gutter="16">
+            <el-col :span="18" :offset="3">
+                <img class="tickle-work tickle-flow-2" src="../assets/images/design-tickle-devices.png"/>
             </el-col>
-            <el-col :span="6" :offset="1">
-                <div class="tickle-work tickle-analytics-1">
-                    <img src="../assets/images/ga-logo.png"/>
-                </div>
-            </el-col>
-            <el-col :span="3" :offset="2">
-                <div class="tickle-work tickle-analytics-2">
-                    <img src="../assets/images/am-logo.png"/>
-                </div>
-            </el-col>
-            <!-- <el-col :span="20" :offset="2">
-                <div class="tickle-work tickle-4"></div>
-            </el-col> -->
         </el-row>
-        <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
-                    Marketing
-                </h2>
-            </el-col>
-            <el-col :span="10" :offset="1">
+                <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
                 <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    以下面的流程圖為例，Sphero 是一個透過藍牙連線的機器人，使用者必須要先從設定畫面中的藍芽與 Sphero 進行配對後才能在 Tickle 中連線使用，因此我們另外設計了一套教學流程提供給使用者。
                 </h2>
             </el-col>
         </el-row>
-        <el-row :gutter="16" class="section-banner">
-            <el-col :span="18" :offset="3">
-                <div class="tickle-work tickle-banner banner-1"></div>
-                <div class="tickle-work tickle-banner-right banner-2"></div>
-            </el-col>
-            <el-col :span="18" :offset="3">
-                <div class="tickle-work tickle-banner banner-3"></div>
-                <div class="tickle-work tickle-banner-right banner-4"></div>
-            </el-col>
-            <el-col :span="18" :offset="3">
-                <div class="tickle-work tickle-banner banner-5"></div>
-                <div class="tickle-work tickle-banner-right banner-6"></div>
+        <el-row :gutter="16">
+            <el-col :span="24">
+                <img class="tickle-work tickle-flow-3" src="../assets/images/design-tickle-sphero-tutorial.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="3" :offset="3">
                 <h2 class="intro-title">
-                    Assets
+                    介面素材
                 </h2>
             </el-col>
-            <el-col :span="10" :offset="1">
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
                 <h2 class="intro-content">
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them. It seems that the cycling apps have already got all of the possible functions : )<br><br>It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.
+                    除了介面設計以外，我也會需要配合行銷團隊的需求來製作一些行銷使用的 Banner 或者素材。
                 </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="18" :offset="3" class="section-asset-left">
+                <div class="tickle-work tickle-assets-l assets-6"></div>
+                <div class="tickle-work tickle-assets-l assets-7"></div>
+                <div class="tickle-work tickle-assets-l assets-8"></div>
+                <div class="tickle-work tickle-assets-l assets-9"></div>
+                <div class="tickle-work tickle-assets-l assets-10"></div>
+                <div class="tickle-work tickle-assets-l assets-11"></div>
             </el-col>
         </el-row>
         <el-row :gutter="16">
@@ -282,26 +245,87 @@
                 <div class="tickle-work tickle-assets assets-14"></div>
                 <div class="tickle-work tickle-assets assets-15"></div>
             </el-col>
-<!--             <el-col :span="18" :offset="3" class="section-asset-left">
-                <div class="tickle-work tickle-assets assets-12"></div>
-                <div class="tickle-work tickle-assets assets-13"></div>
-                <div class="tickle-work tickle-assets assets-14"></div>
-                <div class="tickle-work tickle-assets assets-15"></div>
-            </el-col> -->
         </el-row>
-        <el-row :gutter="16">
-            <el-col :span="20" :offset="2">
-                <h2 class="intro-content-center">
-                    It seems that the cycling apps have already got all of the possible functions.
-                </h2>
-            </el-col>
-            <el-col :span="18" :offset="3" class="section-asset-left">
+        <!-- <el-row :gutter="16">
+            <el-col :span="20" :offset="2" class="section-asset-left">
                 <div class="tickle-work tickle-assets-l assets-6"></div>
                 <div class="tickle-work tickle-assets-l assets-7"></div>
                 <div class="tickle-work tickle-assets-l assets-8"></div>
                 <div class="tickle-work tickle-assets-l assets-9"></div>
                 <div class="tickle-work tickle-assets-l assets-10"></div>
                 <div class="tickle-work tickle-assets-l assets-11"></div>
+            </el-col>
+        </el-row> -->
+        <el-row :gutter="16">
+            <el-col :span="16" :offset="2">
+                <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-title">
+                    <h1 class="header-name-work">
+                        Marketing.
+                    </h1>   
+                </transition>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    程式與分析
+                </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
+                <h2 class="intro-content">
+                    數據一直都是一個介面調整上相當重要的考量因素，Tickle 透過 Google Analytic 和 Amplitude 持續觀察使用者的操作行為，不同流程的完成狀況等等來作為後續更新的依據。
+                </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16" class="container-logo">
+            <el-col :span="3" :offset="3">
+                <div class="tickle-code">
+                    <img src="../assets/images/xcode-logo.png"/>
+                </div>
+            </el-col>
+            <el-col :span="6" :offset="1">
+                <div class="tickle-analytics-1">
+                    <img src="../assets/images/ga-logo.png"/>
+                </div>
+            </el-col>
+            <el-col :span="3" :offset="2">
+                <div class="tickle-analytics-2">
+                    <img src="../assets/images/am-logo.png"/>
+                </div>
+            </el-col>
+            <!-- <el-col :span="20" :offset="2">
+                <div class="tickle-work tickle-4"></div>
+            </el-col> -->
+        </el-row>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="3" :offset="3">
+                <h2 class="intro-title">
+                    行銷資源
+                </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="10" :offset="3">
+                <h2 class="intro-content">
+                    除了介面設計以外，我也會需要配合行銷團隊的需求來製作一些行銷使用的 Banner 或者素材。
+                </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16" class="section-banner">
+            <el-col :span="20" :offset="2">
+                <div class="tickle-work tickle-banner banner-1"></div>
+                <div class="tickle-work tickle-banner-right banner-2"></div>
+            </el-col>
+            <el-col :span="20" :offset="2">
+                <div class="tickle-work tickle-banner banner-3"></div>
+                <div class="tickle-work tickle-banner-right banner-4"></div>
+            </el-col>
+            <el-col :span="20" :offset="2">
+                <div class="tickle-work tickle-banner banner-5"></div>
+                <div class="tickle-work tickle-banner-right banner-6"></div>
             </el-col>
         </el-row>
         <footerBar></footerBar>
@@ -332,7 +356,7 @@
 
     .container-work
         width: 100%
-        // max-width: 2200px 
+        max-width: 1600px 
         margin-left: auto
         margin-right: auto
     
@@ -340,58 +364,51 @@
         width: 100%
         height: auto
         margin-top: 40px
-        // max-height: 1400px
-        // overflow: hidden
-        // background-image: url('~assets/images/design-header.png')
-        // background-size: cover
-        // background-position: center
-        // background-attachment: fixed
-        // height: 100%
-        // width: 100%
+        margin-bottom: 120px
         img
             width: 100%
             height: 100%
 
     .header-name-work
-        margin-top: 180px
+        margin-top: 120px
         margin-bottom: 120px
-        font-size: 120px
+        font-size: 80px
         letter-spacing: 0px
 
-    .title-container-tickle
-        height: auto
-        margin-top: 120px
-        margin-bottom: 80px
+    // .title-container-tickle
+    //     height: auto
+    //     margin-top: 24px
+    //     margin-bottom: 24px
 
     .intro-title
-        font-size: 40px
+        font-size: 32px
         font-weight: 700
-        // margin-top: 120px
-        margin-bottom: 16px
+        margin-top: -4px
+        margin-bottom: 18px
         line-height: 42px
         width: 400px
         margin-left: 0px
         margin-right: 0px
 
     .intro-content
-        font-size: 26px
+        font-size: 18px
         font-weight: 300
-        margin-top: 24px
+        margin-top: 0px
         margin-bottom: 24px
         margin-left: 0px
         margin-right: 0px
-        line-height: 36px
+        line-height: 30px
         max-width: 800px
 
     .intro-content-center
-        font-size: 26px
+        font-size: 18px
         font-weight: 400
         margin-top: 100px
         margin-bottom: 32px
         margin-left: auto
         margin-right: auto
-        line-height: 42px
-        width: 720px
+        line-height: 32px
+        width: 640px
         text-align: center
 
 
@@ -400,8 +417,8 @@
         margin-bottom: 16px
 
     .tickle-1
-        width: 1200px
-        height: 600px
+        width: 800px
+        height: 400px
         background-image: url('~assets/images/hero-tickle5.png')
         background-size: cover
         background-position: center
@@ -413,26 +430,16 @@
 
     .tickle-ui-1
         width: 100%
-        height: 920px
-        margin-top: 60px
-        margin-bottom: 60px
-        background-image: url('~assets/images/design-tickle-iphone.png')
-        background-size: cover
-        background-position: center
-
+        height: auto
+        margin-top: 32px
+        margin-bottom: 32px
 
     .tickle-ui-2
-        width: 1600px
-        height: 1400px
-        // background: #222222
-        // display: inline-block
-        background-image: url('~assets/images/design-tickle-ipad.png')
-        background-size: cover
-        background-position: center
+        width: 100%
+        height: auto
         margin-left: auto
         margin-right: auto
-        // float: right
-        margin-top: 100px
+        margin-top: 32px
 
 
     .tickle-ui-3
@@ -454,12 +461,12 @@
         vertical-align: center
         display: flex
         align-items: center
-        margin-top: 60px
-        margin-bottom: 60px
+        margin-top: 48px
+        margin-bottom: 120px
 
     .tickle-code
         width: 100%
-        height: 200px
+        height: 140px
         display: inline-block
         img
             height: 100%
@@ -467,7 +474,7 @@
 
     .tickle-analytics-1
         width: 100%
-        height: 200px
+        height: 140px
         display: inline-block
         img
             height: 100%
@@ -475,7 +482,7 @@
 
     .tickle-analytics-2
         width: 100%
-        height: 100px
+        height: 80px
         display: inline-block
         img
             height: 100%
@@ -487,19 +494,16 @@
         // background-color: #141414
 
     .tickle-visual
-        width: 50%
-        height: 720px
+        width: 100%
+        height: auto
         margin-bottom: 0px
-        margin-top: 120px
-        background-size: cover
-        background-position: center
-        background-image: url('~assets/images/design-tickle-guide.png')
+        margin-top: 48px
         margin-left: auto
         margin-right: auto
 
     .tickle-icon
-        width: 960px
-        height: 400px
+        width: 720px
+        height: 300px
         margin-bottom: 60px
         margin-top: 0px
         // float: right
@@ -515,80 +519,37 @@
         display: flex
         justify-content: center
         align-content: flex-start
-    .ar-icon
-        width: 256px
-        height: 256px
-        margin: 60px
-        background-size: cover
-        background-position: center
-        background-image: url('~assets/images/icon-ar.png')
-    .scenekit-icon
-        width: 256px
-        height: 256px
-        margin: 60px
-        background-size: cover
-        background-position: center
-        background-image: url('~assets/images/icon-scene.png')
-    .sprite-icon
-        width: 256px
-        height: 256px
-        margin: 60px
-        background-size: cover
-        background-position: center
-        background-image: url('~assets/images/icon-sprite.png')
+
     .tickle-ar
-        width: 1800px
-        height: 1100px
-        margin-bottom: 60px
-        margin-top: 60px
-        background-size: cover
-        background-position: center
-        background-image: url('~assets/images/design-tickle-ar-3d2.png')
-        margin-left: auto
-        margin-right: auto
+        width: 80%
+        height: auto
+        margin: 48px auto
+        display: block
+
 
     .tickle-flow-0
-        width: 1340px
-        height: 320px
-        // max-width: 2400px
-        margin-top: 60px
-        margin-bottom: 60px
-        background-image: url('~assets/images/design-tickle-flow-0.png')
-        background-size: cover
-        background-position: center
-        margin-left: auto
-        margin-right: auto
+        width: 100%
+        height: auto
+        margin-top: 48px
+        margin-bottom: 48px
 
     .tickle-flow-1
         width: 100%
-        height: 840px
-        // max-width: 2400px
-        margin-top: 60px
-        margin-bottom: 60px
-        background-image: url('~assets/images/design-tickle-flow-1.png')
-        background-size: cover
-        background-position: center
-        margin-left: auto
-        margin-right: auto
-        // float: right
+        height: auto
+        margin-top: 48px
+        margin-bottom: 48px
+        
     .tickle-flow-2
-        width: 1440px
-        height: 600px
-        // max-width: 2400px
-        margin-top: 60px
-        margin-bottom: 60px
-        background-image: url('~assets/images/design-tickle-devices.png')
-        background-size: cover
-        background-position: center
-        margin-left: auto
-        margin-right: auto
+        width: 100%
+        height: auto
+        margin-top: 48px
+        margin-bottom: 48px
 
     .tickle-flow-3
         width: 100%
-        height: 840px
-        // max-width: 2400px
-        margin-top: 60px
-        margin-bottom: 60px
+        height: auto
+        margin-top: 48px
+        margin-bottom: 48px
         background-image: url('~assets/images/design-tickle-sphero-tutorial.png')
         background-size: cover
         background-position: center
@@ -600,7 +561,7 @@
         margin-top: 60px
 
     .tickle-banner
-        height: 240px
+        height: 200px
         width: 49%
         background: #222222
         display: inline-block
@@ -610,7 +571,7 @@
         background-position: center
 
     .tickle-banner-right
-        height: 240px
+        height: 200px
         width: 49%
         background: #222222
         display: inline-block
@@ -636,7 +597,7 @@
     .section-asset
         display: inline-flex
         flex-wrap: wrap
-        justify-content: space-between
+        justify-content: center
         align-content: flex-start
 
     .section-asset-left
@@ -646,17 +607,17 @@
         // align-content: flex-start
 
     .tickle-assets
-        width: 280px
-        height: 280px
+        width: 180px
+        height: 180px
         margin-right: 24px
-        margin-top: 24px
+        margin-top: 24pxxx
         background-size: cover
         background-position: center
 
     .tickle-assets-l
-        width: 380px
-        height: 380px
-        margin-right: 31px
+        width: 220px
+        height: 220px
+        margin-right: 30px
         margin-top: 24px
         background-size: cover
         background-position: center
@@ -690,7 +651,7 @@
     .assets-14
         background-image: url('~assets/images/design-asset-14.png')
     .assets-15
-        width: 400px
+        width: 260px
         background-image: url('~assets/images/design-asset-15.png')
     .assets-16
         background-image: url('~assets/images/design-asset-16.png')

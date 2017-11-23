@@ -6,7 +6,7 @@
                     <!-- <div class="menu"></div> -->
                     <!-- <menuButton></menuButton> -->
                 <!-- </el-col> -->
-                <el-col :span="21" :offset="2">
+                <el-col :span="21" :offset="3">
                     <ul class="link-container">
                         <li v-if="showWorks" class="link-item">
                             <a class="link" href="/#/">Works
@@ -71,7 +71,7 @@
         width: 100%
         // margin-bottom: -60px
         z-index: 2
-        padding-top: 120px
+        padding-top: 60px
 
     .menu
         +size(40px, 40px)
@@ -94,11 +94,11 @@
         width: auto
         top: 50%
         transform: translateY(-50%)
-        margin-right: 60px
-        font-size: 22px
+        margin-right: 56px
 
         a
-            font-size: 22px
+            font-size: 16px
+            font-weight: 500
             text-decoration: none
             transition-duration: 0.1s
 

@@ -4,7 +4,7 @@
             <el-row :gutter="16">
                 <el-col :span="4">
                     <div class="rope"></div>
-                    <div v-show="showcolorline"class="rope-line rope-line-1-1"></div>
+                    <div v-show="showcolorline"class="rope-line rope-line-1-1  rellax" data-rellax-speed="2"></div>
                 </el-col>
                 <el-col :span="4">
                     <div class="rope"></div>
@@ -16,6 +16,7 @@
                     <div class="rope"></div>
                     <div v-show="showcolorline" class="rope-line rope-line-3-1 rellax" data-rellax-speed="5"></div>
                     <div v-show="showcolorline" class="rope-line rope-line-3-2 rellax" data-rellax-speed="4"></div>
+                    <div v-show="showcolorline" class="rope-line rope-line-3-3 rellax" data-rellax-speed="3"></div>
                 </el-col>
                 <el-col :span="4">
                     <div class="rope"></div>
@@ -70,7 +71,7 @@
         background-color: #222222
         width: 2px
         height: 100%
-        opacity: 0.4
+        opacity: 0.3
         z-index: 0
         margin-left: auto
         margin-right: auto
@@ -79,23 +80,26 @@
         position: absolute
         width: 2px
         left: 50%
-        opacity: 0.2
+        opacity: 0.5
         transform: translateX(-50%)
 
     .rope-line-1-1
+        height: 80px
+        top: 56%
+        background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
 
     .rope-line-2-1
         height: 120px
-        top: 28%
+        top: 36%
         background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
     .rope-line-2-2
-        height: 200px
-        top: 52%
-        background: linear-gradient(to bottom, $gradient-light-yellow, $gradient-dark-yellow)
+        // height: 80px
+        // top: 56%
+        // background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
     .rope-line-2-3
         height: 240px
         top: 90%
-        background: linear-gradient(to bottom, $gradient-light-green, $gradient-dark-green)
+        background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
 
     .rope-line-3-1
         height: 200px
@@ -105,23 +109,25 @@
         height: 120px
         top: 20%
         background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
+    .rope-line-3-3
+        height: 200px
+        top: 68%
+        background: linear-gradient(to bottom, $gradient-light-purple, $gradient-dark-purple)
 
     .rope-line-4-1
         height: 200px
         top: 20%
         background: linear-gradient(to bottom, $gradient-light-green, $gradient-dark-green)
-    .rope-line-4-2
-        height: 200px
-        top: 68%
-        background: linear-gradient(to bottom, $gradient-light-purple, $gradient-dark-purple)
+    
     .rope-line-4-3
-        height: 200px
+        height: 160px
         top: 90%
-        background: linear-gradient(to bottom, $gradient-light-yellow, $gradient-dark-yellow)
+        // background: linear-gradient(to bottom, $gradient-light-yellow, $gradient-dark-yellow)
+        background: linear-gradient(to bottom, $gradient-light-green, $gradient-dark-green)
 
     .rope-line-5-1
         height: 200px
-        top: 60%
+        top: 50%
         background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
     .rope-line-6-1
 

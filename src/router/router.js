@@ -25,6 +25,14 @@ export default new Router({
         path: '/design-element', 
         component: DesignElement 
     },
+    {   
+        path: '/design-ios', 
+        component: DesignIOS 
+    },
+    {   
+        path: '/design-web', 
+        component: DesignWeb 
+    },
     { 
     	path: '/', 
     	component: App 

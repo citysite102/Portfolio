@@ -21,7 +21,7 @@
             <el-row class="button-container" type="flex" justify="center">
                 <el-col :span="18">
                     <div class="more-button">
-                        <a class="link" :href="'/#/' + directLink">MORE</a>
+                        <a class="link" :href="'/#/' + directLink">More</a>
                     </div>
                 </el-col>
             </el-row>
@@ -94,7 +94,7 @@
         height: auto
 
     .title
-        font-size: 28px
+        font-size: 20px
         font-weight: 700
         margin-bottom: 0px
         letter-spacing: 1px
@@ -105,20 +105,18 @@
 
 
     .description
-        font-size: 18px
-        line-height: 24px
+        font-size: 14px
+        line-height: 18px
         opacity: 0
         transform: translateY(50px)
         transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
 
     .more-button
-        width: 140px
-        height: 36px
-        border: solid 3px white
+        width: 112px
+        height: 32px
+        border: solid 2px white
         cursor: pointer
 
-        font-size: 18px
-        font-weight: 600
         margin-top: 10px
         margin-bottom: 10px
         margin-left: auto
@@ -132,13 +130,13 @@
 
         a
             text-decoration: none
-            font-size: 18px
+            font-size: 16px
             font-weight: 600
             display: block
             width: 100%
             height: 100%
             margin: 0px
-            margin-top: 2px
+            margin-top: 5px
             &:hover
                 color: $default-background-color
 

@@ -52,11 +52,11 @@
         width: auto
         box-sizing: border-box
         vertical-align: top
-        line-height: 56px
-        margin-left: 18px
+        line-height: 52px
+        margin-left: 22px
         // padding-left: 16px
         transition: all 1.0s cubic-bezier(0,1.09,0.56,1)
-        font-size: 22px
+        font-size: 18px
 
         // &:before, &:after
         //     content: '';
@@ -93,10 +93,10 @@
         transition: all 1.0s cubic-bezier(0,1.09,0.56,1) 0.05s
 
     .more-button
-        width: 210px
-        height: 56px
+        width: 180px
+        height: 52px
         cursor: pointer
-        font-size: 22px
+        font-size: 20px
         font-weight: 600
         margin-top: 88px
         margin-bottom: 88px
@@ -149,8 +149,8 @@
     .bg-container
         // height: 100%
         // width: 100%
-        width: 214px
-        height: 58px
+        width: 184px
+        height: 54px
         margin: 0px
         position: absolute
         top: -1px

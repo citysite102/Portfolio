@@ -52,10 +52,10 @@
         width: 40px
 
     .line
-        width: 18px
-        height: 4px
-        margin-top 16px
-        margin-bottom: 16px
+        width: 15px
+        height: 3px
+        margin-top 12px
+        margin-bottom: 12px
         background: $page-color-gray
         // transform-origin: 100% 50%
         transform-origin: 0% 50%

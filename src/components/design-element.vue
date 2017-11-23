@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="container-work">
-        <headerBar class="about-header" :showWorks="true"></headerBar>
+        <headerBar class="work-header" :showWorks="true"></headerBar>
         <backgroundRope class="background-ropes"></backgroundRope>
         <el-row :gutter="16">
             <el-col :span="16" :offset="2">
@@ -49,6 +49,13 @@
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">
                 <div class="hero-image-element">
+                    <img src="../assets/images/design-element-16.png"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="18" :offset="3">
+                <div class="hero-image-element">
                     <img src="../assets/images/design-element-2.png"/>
                 </div>
             </el-col>
@@ -57,6 +64,13 @@
             <el-col :span="18" :offset="3">
                 <div class="hero-image-element">
                     <img src="../assets/images/design-element-10.png"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="18" :offset="3">
+                <div class="hero-image-element">
+                    <img src="../assets/images/design-element-15.png"/>
                 </div>
             </el-col>
         </el-row>
@@ -182,32 +196,32 @@
         margin-right: auto
 
     .header-name-work
-        margin-top: 180px
+        margin-top: 120px
         margin-bottom: 120px
-        font-size: 120px
+        font-size: 80px
         letter-spacing: 0px
 
     .intro-title-element
-        font-size: 40px
+        font-size: 32px
         font-weight: 700
-        margin-top: 60px
-        margin-bottom: 16px
+        margin-top: -4px
+        margin-bottom: 18px
         line-height: 42px
         width: 400px
         margin-left: 0px
         margin-right: 0px
 
     .intro-title-element-sub
-        margin-top: 200px
+        margin-top: 120px
 
     .intro-content-element
-        font-size: 26px
+        font-size: 18px
         font-weight: 300
-        margin-top: 24px
+        margin-top: 0px
         margin-bottom: 24px
         margin-left: 0px
         margin-right: 0px
-        line-height: 36px
+        line-height: 30px
         max-width: 800px
 
     .hero-image-element
