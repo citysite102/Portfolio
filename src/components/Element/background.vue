@@ -106,9 +106,9 @@
         top: 48%
         background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
     .rope-line-3-2
-        height: 120px
-        top: 20%
-        background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
+        // height: 120px
+        // top: 20%
+        // background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
     .rope-line-3-3
         height: 200px
         top: 68%
@@ -116,7 +116,7 @@
 
     .rope-line-4-1
         height: 200px
-        top: 20%
+        top: 18%
         background: linear-gradient(to bottom, $gradient-light-green, $gradient-dark-green)
     
     .rope-line-4-3

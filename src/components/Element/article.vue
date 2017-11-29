@@ -24,7 +24,7 @@
         font-style: italic
         font-size: 28px
         font-weight: 300
-        letter-spacing: 2px
+        letter-spacing: 1px
         line-height: 34px
 
     .description

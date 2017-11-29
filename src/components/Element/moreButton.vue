@@ -3,7 +3,7 @@
     <div class="more-button" @mouseover="isHover=true" @mouseleave="isHover=false" v-bind:class="{ hover: isHover}">
         <div class="bg-container">
         </div>
-        <div class="text">MORE WORKS</div>
+        <div class="text">更多作品</div>
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
                     <!-- <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="

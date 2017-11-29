@@ -38,7 +38,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-3">
                                         <h3 class="skill-item-supplement">
-                                            Mobile UI Design, Web UI Design 
+                                            移動裝置介面設計, 網頁介面設計
                                         </h3>
                                     </transition>
                                 </a>
@@ -66,7 +66,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-5">
                                         <h3 class="skill-item-supplement">
-                                            iOS, Web, UI/UX, Communication
+                                            iOS/Web 開發 , UI/UX, 跨領域溝通
                                         </h3>
                                     </transition>
                                 </a>
@@ -115,7 +115,7 @@
                         </transition>
                         <transition name="fade-delay1">
                             <el-col v-show="isDesignContentShow" :span="8" :offset="2">
-                                <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="I am a Mobile/Web UI designer. My daily tasks also include visual design and business content design. Hence, a strong focus is put on design skills learning in my time."></titleContainer>
+                                <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="2015 年開始接觸介面設計；目前是一位專注在「移動裝置」和「前端網頁」的介面設計師；工作的範圍涵蓋產品主視覺、介面設計、視覺設計以及部分商業設計的內容（素材、Banner）。"></titleContainer>
                                 <moreButton>
                                 </moreButton>
                                 <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
@@ -125,7 +125,7 @@
                         <transition name="fade-delay2">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-1-container work-image-container">
-                                    <hoverPicture class="work" title="Tickle" description="iOS Development,  Flow Planning, Interface Design, Web Development and Design, Product Planning, Character and Stage Planning and Banner Design." imageSource="../../src/assets/images/design-tickle.png" directLink="design-tickle">
+                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="../../src/assets/images/design-tickle.png" directLink="design-tickle">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@
                         <transition name="fade-delay3">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-2-container work-image-container">
-                                    <hoverPicture class="work" title="Daily UI" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png" directLink="design-element">
+                                    <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="../../src/assets/images/design-element.png" directLink="design-element">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                         <transition name="fade-delay4">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-3-container work-image-container">
-                                    <hoverPicture class="work" title="iOS Interface Design" description=" Wireframe, interface guideline, flow and interface design." imageSource="../../src/assets/images/sample-2.png" directLink="design-ios">
+                                    <hoverPicture class="work" title="iOS 介面" description="iOS 設計專案：包含 Moment 的 Redesign 概念、Hahow 課程示範的 Howhow 與中國投資人合作提案的「等等」。" imageSource="../../src/assets/images/design-ios.png" directLink="design-ios">
                                         
                                     </hoverPicture>
                                 </div>
@@ -154,7 +154,7 @@
                         <transition name="fade-delay5">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-4-container work-image-container">
-                                    <hoverPicture class="work" title="Web Interface Design" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png" directLink="design-web">
+                                    <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（持續開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="../../src/assets/images/design-web.png" directLink="design-web">
                                         
                                     </hoverPicture>
                                 </div>
@@ -189,28 +189,34 @@
                         <div class="work-developer-separator">
                         </div> -->
                         <transition name="fade-text" mode="out-in">
-                            <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
-                                2016.8 &nbsp ─ &nbsp 2017.12
+                            <h3 class="work-developer-subtitle" :key=projectTimes[projectIndex]>
+                                {{projectTimes[projectIndex]}}
                             </h3>
                         </transition>
                         <transition name="fade-text" mode="in-out">
                             <div v-if="projectIndex==0" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-2.png"></hoverPicture>
+                                <hoverPicture class="work" title="Tickle" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" imageSource="../../src/assets/images/design-tickle.png"></hoverPicture>
                                 <!-- <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
                                     2016/8 - 2017/12
                                 </h3> -->
                             </div>
                             <div v-else-if="projectIndex==1" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-3.png"></hoverPicture>
+                                <hoverPicture class="work" title="KAPI 找咖啡" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" imageSource="../../src/assets/images/design-kapi.png"></hoverPicture>
                             </div>
                             <div v-else-if="projectIndex==2" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="SAMPLE" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit." imageSource="../../src/assets/images/sample-4.png"></hoverPicture>
+                                <hoverPicture class="work" title="The Cosign Studio" description="與兩位設計師 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能；同時也提供各類型 Side Project 的合作機會。" imageSource="../../src/assets/images/design-cosign.png"></hoverPicture>
+                            </div>
+                            <div v-else-if="projectIndex==3" class="developer-container work-image-container">
+                                <hoverPicture class="work" title="TalkUX" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" imageSource="../../src/assets/images/design-talkux.png"></hoverPicture>
+                            </div>
+                            <div v-else-if="projectIndex==4" class="developer-container work-image-container">
+                                <hoverPicture class="work" title="Fetus Care" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" imageSource="../../src/assets/images/design-fetus.png"></hoverPicture>
                             </div>
                         </transition>
                     </el-col>
                     <el-col :span="10">
                         <transition name="fade-delay1">
-                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Developer" description="In real life, I am a full-time engineer. I code and have project development experiences in Swift, ObjectiveC, Html, CSS, Sass, Javascript, Jquery and Vue.js languages."></titleContainer>
+                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="畢業於 NTUST 積體電路所，目前是一位資深軟體工程師（主要開發 iOS ）；具有 iOS（Swift, ObjectiveC）， 前端（Html, CSS, Sass, Javascript 和 Vue.js） ，Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
                         </transition>
                         <transition name="fade-delay2">
                             <div v-show="isDeveloperContentShow" class= "developer-project-select">
@@ -220,8 +226,8 @@
                                     <li v-bind:class="{ projectSelected: projectIndex==2}" v-on:click="selectProject(2)">003</li>
                                 </ul>
                                 <ul>
-                                    <li v-bind:class="{ projectSelected: projectIndex==4}" v-on:click="selectProject(4)">004</li>
-                                    <li v-bind:class="{ projectSelected: projectIndex==5}" v-on:click="selectProject(5)">005</li>
+                                    <li v-bind:class="{ projectSelected: projectIndex==3}" v-on:click="selectProject(3)">004</li>
+                                    <li v-bind:class="{ projectSelected: projectIndex==4}" v-on:click="selectProject(4)">005</li>
                                 </ul>
                             </div>
                         </transition>
@@ -248,9 +254,14 @@
                     </h1>
                     <transition name="fade-delay1">
                         <el-col v-show="isEducatorContentShow" :span="7" :offset="2">
-                            <titleContainer class="educator-titlecontainer" index="03" title="Speaker" description="I teach a co-hosted online course ‘iOS Development and Interface Design’, attended remotely by 350 students approx. I have also been invited as a speaker at Tatung University and NTUST to host seminars/speech. Finally, I am an active host for organising meet-ups and workshops in front-end field."></titleContainer>
+                            <titleContainer class="educator-titlecontainer" index="03" title="Speaker" description="2016年與 David 在 Hahow 開設「iOS 入門-從介面設計到開發」的線上課程，負責介面設計與部分程式開發的課程，目前已經有超過 380 位的學生；曾受邀擔任大同大學介面體驗客座講師、NTUST 客座講師與 NTU 資工系客座講師。同時持續的在國內舉辦與前端領域、跨領域相關的小型工作坊。"></titleContainer>
                             <div class="contact">
-                                <a>Contact Me</a>
+                                <a class="contact-link" href="mailto:citysite1025@gmail.com">聯絡我</a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
+                    <line x1="-24" y1="0" x2="30" y2="0"></line>
+                    <polyline fill="none" stroke="#5EEBA5" stroke-width="5" stroke-linecap="round" points="
+                    18.0,-12.0 30,0 18.0,12.0 "/>
+                </svg>
                             </div>
                         </el-col>
                     </transition>
@@ -279,7 +290,7 @@
                     <transition name="fade-delay1">
                         <el-col v-show="isWriterContentShow" :span="7" :offset="2">
                             <div class="ball-5 rellax" data-rellax-speed="2"></div>
-                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description=" I am a content contributor, penning my pieces on knowledge in Interface Design and Engineering via Medium, on which I have more than 1500 followers and more than 100k post clicks."></titleContainer>
+                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享經驗；目前是一位持續透過 Medium 分享和介面設計、工程開發、跨領域溝通相關知識的 Content Creator；在 Medium 有著 1500 位的 Follower 以及超過 20 萬的文章點閱數量。"></titleContainer>
                             <moreButton>
                             </moreButton>
                         </el-col>
@@ -290,21 +301,21 @@
                                 <el-col v-show="isWriterContentShow" class="writer-container" :span="24" :offset="0">
                                     <div class="writer-work writer-work-1">
                                     </div>
-                                    <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="If you’re a newcomer to design, here’s the right place!! If you’re a newcomer to design, here’s the right place!! "></articleContainer>
+                                    <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="如果你是一位對於設計、顏色沒有完整概念的夥伴，這篇文章就是專門為你而準備的！這系列的文章會帶著你一步一步的理解漸層在介面上是如何被應用的。 "></articleContainer>
                                 </el-col>
                             </transition>
                             <transition name="fade-delay3">
                                 <el-col v-show="isWriterContentShow" class="writer-container" :span="24" :offset="0">
                                     <div class="writer-work writer-work-2">
                                     </div>
-                                    <articleContainer class="article-info" title="Name Card Printing Basic" description="名片再送印前其實有許多第一次可能會犯的錯誤，作者透過自身慘痛的經驗來告訴你再送印前，我們還需要特別注意些什麼事情！"></articleContainer>
+                                    <articleContainer class="article-info" title="Name Card Printing Basic" description="名片在送印前其實有許多第一次可能會犯的錯誤，我會透過自身慘痛的經驗來告訴你再送印名片之前，我們還需要特別注意些什麼事情！"></articleContainer>
                                 </el-col>
                             </transition>
                             <transition name="fade-delay4">
                                 <el-col v-show="isWriterContentShow" class="writer-container" :span="24" :offset="0">
                                     <div class="writer-work writer-work-3">
                                     </div>
-                                    <articleContainer class="article-info" title="Presentation Layout" description="Often bugged by the arranging the perfect layout for your slides? This article is to give you some insight on how to build up a nice layout by using grid system step-by-step."></articleContainer>
+                                    <articleContainer class="article-info" title="Presentation Layout" description="對於簡報排版總是感到苦惱嗎？這篇文章會一步一步的帶著你透過格線系統來進行高效率的版面規劃，同時也會補充許多簡報排版時應該要注意到的細節。"></articleContainer>
                                     <div class="ball-7 rellax"></div>
                                 </el-col>
                             </transition>
@@ -361,11 +372,11 @@
                 pageIndex: 1,
                 projectIndex: 0,
                 projectTitles: ['Tickle', 'Kapi', 'Cosign'],
-                projectTimes: ['2016.1-2017.1', '2016.2-2017.2', '2016.3-2017.3'],
+                projectTimes: ['2015.8 ─ 現在', '2017.1 ─ 現在', '2017.4 ─ 2017.10', '2017.8 ─ 現在', '2015.1 ─ 2015.8'],
                 projectDescriptions: ['1Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '2Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '3Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet'],
                 projectJobs: ['Engineer, UI Deisgn and Script','Cofounder, iOS developement','Cofunder, web developement'],
-                projectIndexs: ['001','002','003'],
-                projectImages: ['../../src/assets/images/sample-2.png', '../../src/assets/images/sample-3.png', '../../src/assets/images/sample-4.png']
+                projectIndexs: ['001','002','003','004','005'],
+                projectImages: ['../../src/assets/images/design-tickle.png', '../../src/assets/images/sample-3.png', '../../src/assets/images/sample-4.png']
             }
         },
         methods: {
@@ -622,17 +633,17 @@
     .design-background
         position: absolute
         opacity: 0.04
-        font-size: 200px
+        font-size: 180px
         font-weight: 800
         letter-spacing: 0px
         line-height: 150px
-        left: -2%
+        left: 2%
         top: -56%
 
     .developer-background
         position: absolute
         opacity: 0.04
-        font-size: 200px
+        font-size: 180px
         font-weight: 800
         letter-spacing: 0px
         line-height: 150px
@@ -642,7 +653,7 @@
     .educator-background
         position: absolute
         opacity: 0.04
-        font-size: 300px
+        font-size: 240px
         font-weight: 800
         letter-spacing: 0px
         line-height: 150px
@@ -956,8 +967,8 @@
             font-size: 16px
             position: absolute
             transform: rotate(-90deg) translateX(40%)
-            bottom: 10%
-            left: -15% 
+            bottom: -2%
+            left: -13% 
             text-align: right
             line-height: 28px
             letter-spacing: 1px
@@ -1041,15 +1052,22 @@
             max-width: 400px
 
         .contact
-            margin-top: 16px
+            margin-top: 64px
             margin-bottom: 32px
+            display: flex
+            align-items: center
+            &:hover
+                svg
+                    transform: translateX(8px)
+                // a:after
+                //     transform: scale3d(1, 1, 1)
+
+            .contact-link
+                text-decoration: none
             a
                 color: $text-color-green
                 cursor: pointer
-                font-weight: 500
-                &:hover
-                    &:after
-                        transform: scale3d(1, 1, 1)
+                font-weight: 300
                 &:after
                     content: ''
                     position: absolute
@@ -1106,6 +1124,15 @@
             text-align: left
             width: 280px
             top: 50%
+
+        svg
+            transition: all 1.5s cubic-bezier(0,1.09,0.56,1)
+            box-sizing: border-box
+
+        line
+            stroke: $text-color-green
+            stroke-width: 5px
+            stroke-linecap: round
 
 
     .section-writer

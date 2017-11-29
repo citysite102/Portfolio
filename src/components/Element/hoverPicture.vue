@@ -106,7 +106,7 @@
 
     .description
         font-size: 14px
-        line-height: 18px
+        line-height: 20px
         opacity: 0
         transform: translateY(50px)
         transition: all 0.8s cubic-bezier(0,1.09,0.56,1)

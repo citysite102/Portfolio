@@ -15,12 +15,17 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="3" :offset="3">
+                <el-col :span="10" :offset="3">
                     <h2 class="intro-title">
                         關於 Tickle
                     </h2>
                 </el-col>
             </transition>
+            <el-col :span="5" :offset="3">
+                <h2 class="info-content-time">
+                    2015-2018 <br>Mobile & Web
+                </h2>
+            </el-col>
         </el-row>
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
@@ -31,10 +36,20 @@
                     </h2>
                 </el-col>
             </transition>
+            <el-col :span="5" :offset="3">
+                <h3 class="info-content-job">
+                    Senior Software Developer<br>
+                    UI Designer
+                </h3>
+            </el-col>
         </el-row>
-        <div class="hero-image">
-            <img src="../assets/images/design-header.png"/>
-        </div>
+        <el-row :gutter="16">
+            <el-col :span="18" :offset="3">
+                <div class="hero-image">
+                    <img src="../assets/images/design-header.png"/>
+                </div>
+            </el-col>
+        </el-row>
         <!-- <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
@@ -49,8 +64,8 @@
             </el-col>
         </el-row> -->
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     介面設計
                 </h2>
             </el-col>
@@ -58,8 +73,8 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
-                    <h2 class="intro-content">
+                <el-col :span="20" :offset="2">
+                    <h2 class="intro-content-center">
                         在 Tickle 團隊中，我主要負責 iOS 的產品開發以及不同平台產品的介面設計（包含 iPad, iPhone 與 Web）；我需要持續的確保產品視覺的一制性，調整與優化使用者的操作流程，同時考慮使用者與行銷團隊的需求來進行介面設計。<br><br>由於同時作為團隊的工程師與設計師，在設計與規劃的過程中，我需要同時考慮程式開發的可行性，並評估在時限內該如何完成各種不同的挑戰。
                     </h2>
                 </el-col>
@@ -81,12 +96,12 @@
             </transition>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3">
+            <el-col :span="20" :offset="2">
                 <img class="tickle-work tickle-ui-2" src="../assets/images/design-tickle-ipad.png"/>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="16" :offset="2">
+            <el-col :span="20" :offset="2">
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
                     <h1 class="header-name-work">
@@ -96,16 +111,16 @@
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     視覺規範
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
-                    Tickle 的主要設計規範是由前輩 Sean 所設計與規劃，在前輩離職後由我接手進行和調整。<br><br>Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為 San Francisco；在暗色系背景上的配色基本以明亮色系為主，標準色沿用舊版本的海洋藍綠色。
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
+                    Tickle 的主要設計規範是由前輩 Sean 所設計與規劃，在後期由我負責接手進行。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為 San Francisco；在暗色系背景上的配色基本以明亮色系為主，標準色沿用舊版本的海洋藍綠色。
                 </h2>
             </el-col>
         </el-row>
@@ -127,35 +142,35 @@
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     AR / 3D
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     Tickle 在 5.0 版本以前搭配 iOS 的 SpriteKit 做出了相當令人驚豔的 2D 操作介面，讓使用者可以透過拖拉程式區塊來做出自己的 2D 遊戲，在新版本的 Tickle 中，我們進一步的支援了 3D 和 AR 的功能。<br><br>對於使用者而言，從 2D 轉移到 3D 甚至是 AR 肯定是一個截然不同的操作體驗；對於我們而言，從地板材質的選擇、程式運作的效能、角色與使用者的互動到照相機的視角等等，每一個環節都是介面設計上一個新的嘗試。
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="20" :offset="2">
+            <el-col :span="18" :offset="3">
                 <img class="tickle-work tickle-ar" src="../assets/images/design-tickle-ar-3d2.png"/>
 
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     流程規劃
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     在 Tickle 這個團隊中，新功能的迭代或者需求上的修改都是相當頻繁的。從確定新功能開始，我會著手開始進行流程上的規劃，同時持續和團隊成員討論確定有沒有開發上的困難或者步驟上的遺漏；由於人力分配和時間的因素，通常我們不會進行 Prototype 的測試， 而是直接進入視覺設計與開發的步驟。<br><br>視覺設計與程式開發的階段是一個相當彈性的合作過程；由於同時作為團隊的設計師與其中一位工程師，我能夠清楚的瞭解不同組件或者客製化介面所需的開發時間，並進一步決定應該要先完成哪些畫面的視覺內容。
 
                 </h2>
@@ -167,8 +182,8 @@
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     通常在視覺完成到一定程度後，我們會透過流程圖的方式再次檢視是否有遺漏的部分；舉例來說，由於 Tickle 有大量來自學校的學生使用者，在會員註冊的流程裡面就需要另外加入家長認證的步驟，除此之外，我們也在不停的嘗試透過用字、流程的改善來提升會員註冊的成功率。<br><br>
                 </h2>
             </el-col>
@@ -179,15 +194,15 @@
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     機器人與裝置
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     Tickle 是一個整合了許多不一樣的機器人或裝置的平台；不同的裝置可能會因為連線方式的差異（Wifi，Bluetooth，BLE），或是產品性質的不同而需要另外設計一套完全不同的連線流程。
                 </h2>
             </el-col>
@@ -197,9 +212,9 @@
                 <img class="tickle-work tickle-flow-2" src="../assets/images/design-tickle-devices.png"/>
             </el-col>
         </el-row>
-                <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+        <el-row :gutter="16">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     以下面的流程圖為例，Sphero 是一個透過藍牙連線的機器人，使用者必須要先從設定畫面中的藍芽與 Sphero 進行配對後才能在 Tickle 中連線使用，因此我們另外設計了一套教學流程提供給使用者。
                 </h2>
             </el-col>
@@ -210,21 +225,21 @@
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     介面素材
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     除了介面設計以外，我也會需要配合行銷團隊的需求來製作一些行銷使用的 Banner 或者素材。
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3" class="section-asset-left">
+            <el-col :span="18" :offset="3" class="section-asset">
                 <div class="tickle-work tickle-assets-l assets-6"></div>
                 <div class="tickle-work tickle-assets-l assets-7"></div>
                 <div class="tickle-work tickle-assets-l assets-8"></div>
@@ -234,7 +249,7 @@
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3" class="section-asset-left">
+            <el-col :span="18" :offset="3" class="section-asset">
                 <div class="tickle-work tickle-assets assets-1"></div>
                 <div class="tickle-work tickle-assets assets-2"></div>
                 <div class="tickle-work tickle-assets assets-3"></div>
@@ -246,18 +261,8 @@
                 <div class="tickle-work tickle-assets assets-15"></div>
             </el-col>
         </el-row>
-        <!-- <el-row :gutter="16">
-            <el-col :span="20" :offset="2" class="section-asset-left">
-                <div class="tickle-work tickle-assets-l assets-6"></div>
-                <div class="tickle-work tickle-assets-l assets-7"></div>
-                <div class="tickle-work tickle-assets-l assets-8"></div>
-                <div class="tickle-work tickle-assets-l assets-9"></div>
-                <div class="tickle-work tickle-assets-l assets-10"></div>
-                <div class="tickle-work tickle-assets-l assets-11"></div>
-            </el-col>
-        </el-row> -->
         <el-row :gutter="16">
-            <el-col :span="16" :offset="2">
+            <el-col :span="20" :offset="2">
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
                     <h1 class="header-name-work">
@@ -267,15 +272,15 @@
             </el-col>
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     程式與分析
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     數據一直都是一個介面調整上相當重要的考量因素，Tickle 透過 Google Analytic 和 Amplitude 持續觀察使用者的操作行為，不同流程的完成狀況等等來作為後續更新的依據。
                 </h2>
             </el-col>
@@ -301,15 +306,15 @@
             </el-col> -->
         </el-row>
         <el-row :gutter="16" class="title-container-tickle">
-            <el-col :span="3" :offset="3">
-                <h2 class="intro-title">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-title-center">
                     行銷資源
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="10" :offset="3">
-                <h2 class="intro-content">
+            <el-col :span="20" :offset="2">
+                <h2 class="intro-content-center">
                     除了介面設計以外，我也會需要配合行銷團隊的需求來製作一些行銷使用的 Banner 或者素材。
                 </h2>
             </el-col>
@@ -375,13 +380,20 @@
         font-size: 80px
         letter-spacing: 0px
 
+    .header-name-work-center
+        margin-top: 120px
+        margin-bottom: 120px
+        font-size: 80px
+        letter-spacing: 0px
+        text-align: center
+
     // .title-container-tickle
     //     height: auto
     //     margin-top: 24px
     //     margin-bottom: 24px
 
     .intro-title
-        font-size: 32px
+        font-size: 30px
         font-weight: 700
         margin-top: -4px
         margin-bottom: 18px
@@ -389,6 +401,14 @@
         width: 400px
         margin-left: 0px
         margin-right: 0px
+
+    .intro-title-center
+        font-size: 30px
+        font-weight: 700
+        margin: 0px
+        line-height: 42px
+        margin-left: 0px
+        text-align: center
 
     .intro-content
         font-size: 18px
@@ -400,16 +420,34 @@
         line-height: 30px
         max-width: 800px
 
+    .info-content-time
+        font-size: 20px
+        margin-top: 0px
+        margin-bottom: 24px
+        margin-left: 0px
+        margin-right: 0px
+        line-height: 30px
+        max-width: 800px
+        text-align: right
+
+    .info-content-job
+        font-size: 16px
+        font-weight: 300
+        margin-top: 0px
+        margin-bottom: 24px
+        margin-left: 0px
+        margin-right: 0px
+        line-height: 24px
+        max-width: 800px
+        text-align: right
+
     .intro-content-center
-        font-size: 18px
-        font-weight: 400
-        margin-top: 100px
-        margin-bottom: 32px
-        margin-left: auto
-        margin-right: auto
-        line-height: 32px
-        width: 640px
-        text-align: center
+        font-size: 16px
+        font-weight: 300
+        margin: 16px auto
+        line-height: 30px
+        max-width: 720px
+        text-align: left
 
 
     .tickle-work
@@ -426,20 +464,20 @@
         margin-right: auto
         margin-top: 180px
         margin-bottom: 80px
-        // float: right
 
     .tickle-ui-1
         width: 100%
         height: auto
-        margin-top: 32px
-        margin-bottom: 32px
+        margin-top: 40px
+        margin-bottom: 40px
 
     .tickle-ui-2
         width: 100%
         height: auto
         margin-left: auto
         margin-right: auto
-        margin-top: 32px
+        margin-top: 40px
+        margin-bottom: -40px
 
 
     .tickle-ui-3

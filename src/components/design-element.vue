@@ -7,7 +7,7 @@
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
                     <h1 class="header-name-work">
-                        Works
+                        UI Works
                     </h1>   
                 </transition>
             </el-col>
@@ -27,7 +27,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="3">
                     <h2 class="intro-content-element">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                        利用時間挑戰了連續 30 天的 Daily UI。過程中透過 Daily UI 嘗試了許多不同類型的介面設計：包含 App Icon、Apple Watch 視覺、計算機、聊天介面、擬物化元件等等，對於介面的熟悉度也因此更加的成熟；從裡面挑選了完成度比較高的作品。
                     </h2>
                 </el-col>
             </transition>
@@ -103,6 +103,13 @@
             </el-col>
         </el-row>
         <el-row :gutter="16">
+            <el-col :span="18" :offset="3">
+                <div class="hero-image-element">
+                    <img src="../assets/images/design-element-17.png"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content">
                 <el-col :span="3" :offset="3">
@@ -117,7 +124,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="3">
                     <h2 class="intro-content-element">
-                        It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions : )
+                        除了 Daily UI 的主題，平常也會嘗試一些不同風格的 ICON、Banner、擬物化練習與視覺繪圖設計，透過這些平常的練習來讓自己對於設計的元素更加敏銳。
                     </h2>
                 </el-col>
             </transition>
