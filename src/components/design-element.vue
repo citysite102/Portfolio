@@ -33,11 +33,14 @@
             </transition>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3">
-                <div class="hero-image-element">
-                    <img src="../assets/images/design-element-1.png"/>
-                </div>
-            </el-col>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="18" :offset="3">
+                    <div class="hero-image-element">
+                        <img src="../assets/images/design-element-1.png"/>
+                    </div>
+                </el-col>
+            </transition>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">

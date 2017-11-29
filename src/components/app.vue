@@ -116,7 +116,7 @@
                         <transition name="fade-delay1">
                             <el-col v-show="isDesignContentShow" :span="8" :offset="2">
                                 <titleContainer class="designer-titlecontainer" index="01" title="Designer" description="2015 年開始接觸介面設計；目前是一位專注在「移動裝置」和「前端網頁」的介面設計師；工作的範圍涵蓋產品主視覺、介面設計、視覺設計以及部分商業設計的內容（素材、Banner）。"></titleContainer>
-                                <moreButton>
+                                <moreButton title="更多作品" directLink="www.google.com">
                                 </moreButton>
                                 <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
                             </el-col>
@@ -181,36 +181,36 @@
                     <div class="developer-square">
                     </div>
                     <el-col :span="11" :offset="3">
-                        <!-- <transition name="fade-text" mode="out-in">
+      <!--                   <transition name="fade-text" mode="out-in">
                             <h3 class="work-developer-index" :key=projectIndexs[projectIndex]>
                                 {{projectIndexs[projectIndex]}}
                             </h3>
                         </transition>
                         <div class="work-developer-separator">
-                        </div> -->
+                        </div>
                         <transition name="fade-text" mode="out-in">
                             <h3 class="work-developer-subtitle" :key=projectTimes[projectIndex]>
                                 {{projectTimes[projectIndex]}}
                             </h3>
-                        </transition>
+                        </transition> -->
                         <transition name="fade-text" mode="in-out">
                             <div v-if="projectIndex==0" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="Tickle" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" imageSource="../../src/assets/images/design-tickle.png"></hoverPicture>
+                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ 現在" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" imageSource="../../src/assets/images/design-tickle.png"></hoverPictureLarge>
                                 <!-- <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
                                     2016/8 - 2017/12
                                 </h3> -->
                             </div>
                             <div v-else-if="projectIndex==1" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="KAPI 找咖啡" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" imageSource="../../src/assets/images/design-kapi.png"></hoverPicture>
+                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ 現在" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" imageSource="../../src/assets/images/design-kapi.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==2" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="The Cosign Studio" description="與兩位設計師 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能；同時也提供各類型 Side Project 的合作機會。" imageSource="../../src/assets/images/design-cosign.png"></hoverPicture>
+                                <hoverPictureLarge class="work" title="The Cosign Studio" time="2017.8 ─ 現在" description="與兩位夥伴 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能。" imageSource="../../src/assets/images/design-cosign.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==3" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="TalkUX" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" imageSource="../../src/assets/images/design-talkux.png"></hoverPicture>
+                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" imageSource="../../src/assets/images/design-talkux.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==4" class="developer-container work-image-container">
-                                <hoverPicture class="work" title="Fetus Care" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" imageSource="../../src/assets/images/design-fetus.png"></hoverPicture>
+                                <hoverPictureLarge class="work" title="Fetus Care" time="2015.1 ─ 2015.8" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" imageSource="../../src/assets/images/design-fetus.png"></hoverPictureLarge>
                             </div>
                         </transition>
                     </el-col>
@@ -291,7 +291,7 @@
                         <el-col v-show="isWriterContentShow" :span="7" :offset="2">
                             <div class="ball-5 rellax" data-rellax-speed="2"></div>
                             <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享經驗；目前是一位持續透過 Medium 分享和介面設計、工程開發、跨領域溝通相關知識的 Content Creator；在 Medium 有著 1500 位的 Follower 以及超過 20 萬的文章點閱數量。"></titleContainer>
-                            <moreButton>
+                            <moreButton title="更多文章">
                             </moreButton>
                         </el-col>
                     </transition>
@@ -335,6 +335,7 @@
     import PageIndicator from './Element/pageIndication.vue';
     import BackgroundRope from './Element/background.vue';
     import HoverPicture from './Element/hoverPicture.vue';
+    import HoverPictureLarge from './Element/hoverPictureLarge.vue';
     import TitleContainer from './Element/title.vue';
     import WorksContainer from './Element/works.vue';
     import ArticleContainer from './Element/article.vue';
@@ -375,7 +376,7 @@
                 projectTimes: ['2015.8 ─ 現在', '2017.1 ─ 現在', '2017.4 ─ 2017.10', '2017.8 ─ 現在', '2015.1 ─ 2015.8'],
                 projectDescriptions: ['1Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '2Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '3Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet'],
                 projectJobs: ['Engineer, UI Deisgn and Script','Cofounder, iOS developement','Cofunder, web developement'],
-                projectIndexs: ['001','002','003','004','005'],
+                projectIndexs: ['Tickle','KAPI','Cosign','TalkUX','Fetus'],
                 projectImages: ['../../src/assets/images/design-tickle.png', '../../src/assets/images/sample-3.png', '../../src/assets/images/sample-4.png']
             }
         },
@@ -561,6 +562,7 @@
             ArticleContainer,
             BackgroundRope,
             HoverPicture,
+            HoverPictureLarge,
             MoreButton,
             PageIndicator
         }

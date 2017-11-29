@@ -32,11 +32,14 @@
             </transition>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3">
-                <div class="hero-image">
-                    <img src="../assets/images/web-tickle-dashboard.png"/>
-                </div>
-            </el-col>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="18" :offset="3">
+                    <div class="hero-image">
+                        <img src="../assets/images/web-tickle-dashboard.png"/>
+                    </div>
+                </el-col>
+            </transition>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">

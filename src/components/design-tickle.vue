@@ -21,11 +21,14 @@
                     </h2>
                 </el-col>
             </transition>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content">
             <el-col :span="5" :offset="3">
                 <h2 class="info-content-time">
                     2015-2018 <br>Mobile & Web
                 </h2>
             </el-col>
+            </transition>
         </el-row>
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
@@ -36,19 +39,25 @@
                     </h2>
                 </el-col>
             </transition>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
             <el-col :span="5" :offset="3">
                 <h3 class="info-content-job">
                     Senior Software Developer<br>
                     UI Designer
                 </h3>
             </el-col>
+            </transition>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3">
-                <div class="hero-image">
-                    <img src="../assets/images/design-header.png"/>
-                </div>
-            </el-col>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="18" :offset="3">
+                    <div class="hero-image">
+                        <img src="../assets/images/design-header.png"/>
+                    </div>
+                </el-col>
+            </transition>
         </el-row>
         <!-- <el-row :gutter="16">
             <el-col :span="20" :offset="2">
@@ -428,6 +437,7 @@
         margin-right: 0px
         line-height: 30px
         max-width: 800px
+        font-weight: 700
         text-align: right
 
     .info-content-job

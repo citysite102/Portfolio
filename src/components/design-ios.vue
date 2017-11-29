@@ -32,11 +32,14 @@
             </transition>
         </el-row>
         <el-row :gutter="16">
-            <el-col :span="18" :offset="3">
-                <div class="hero-image">
-                    <img src="../assets/images/design-moment.png"/>
-                </div>
-            </el-col>
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="18" :offset="3">
+                    <div class="hero-image">
+                        <img src="../assets/images/design-moment.png"/>
+                    </div>
+                </el-col>
+            </transition>
         </el-row>
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
@@ -61,6 +64,13 @@
         <el-row :gutter="16">
             <el-col :span="18" :offset="3">
                 <div class="hero-image">
+                    <img src="../assets/images/design-howhow-wireframe.png"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="18" :offset="3">
+                <div class="hero-image">
                     <img src="../assets/images/hero-howhow.png"/>
                 </div>
             </el-col>
@@ -70,7 +80,7 @@
                                 appear-active-class="fade-enter-active-profile-content">
                 <el-col :span="3" :offset="3">
                     <h2 class="intro-title">
-                        Waiting
+                        等等（Waiting）
                     </h2>
                 </el-col>
             </transition>
@@ -80,7 +90,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="3">
                     <h2 class="intro-content">
-                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體，除此之外，Tickle 可以讓你輕鬆地透過程式來控制各種不同的機器人和智慧型家電。
+                        等等（Waiting）是針對「等待」這個主題進行設計的社群平台；中國的使用者往往會在例如排隊、塞車等狀況面臨長時間等待的狀況，我們構想了一個基於 LBS，針對「等待」的主題進行討論，提供資訊的平台。考慮在地化「彈幕」的盛行，在聊天的介面上面我們也加入彈幕的概念來提供使用者更熟悉的體驗。
                     </h2>
                 </el-col>
             </transition>
