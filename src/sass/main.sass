@@ -29,6 +29,43 @@ $gradient-dark-purple: #853CFF
 $gradient-light-green: #61FAFF
 $gradient-dark-green: #18DB60
 
+$pc-media-l: 1440px
+$pc-media: 1200px
+$pcs-media: 959px
+$pad-media: 760px
+$pads-media: 759px
+$phone-media: 480px
+$phones-media: 479px
+
+//電腦
+
+@mixin pc-width-l() 
+	@media all and (min-width: $pc-media-l) 
+       	@content;
+
+@mixin pc-width() 
+	@media all and (min-width: $pc-media) 
+       	@content;
+     
+//平板
+@mixin pad-width() 
+	@media all and (min-width:$pad-media) and (max-width: $pcs-media) 
+            @content;
+      
+
+//小平板
+@mixin small-pad-width() 
+    @media all and (min-width: $phone-media) and (max-width:$pads-media) 
+        @content;
+      
+
+//手機
+@mixin phone-width() 
+    @media all and (max-width: $phones-media) 
+        @content
+
+
+
 @mixin size($width, $height)
 	width: $width
 	height: $height

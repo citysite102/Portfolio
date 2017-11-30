@@ -81,15 +81,15 @@
                                     <div class="revealer">
                                     </div>
                                 </transition>
-                                <h3 id="header-location">
+                                <!-- <h3 id="header-location">
                                     2017_<br>Sanfrancisco
-                                </h3>
+                                </h3> -->
                             </div>
                         </div>
                     </el-col>
                 </el-row>
                 <el-row>
-                    <el-col :span="24" :offset="0">
+                    <el-col class="scroll-hint-col" :span="24" :offset="0">
                         <div class="section-scroll-hint">
                             <transition appear appear-to-class="fade-enter-content"
                                         appear-active-class="fade-enter-active-scroll" name="slide-fade">
@@ -109,25 +109,25 @@
                 </el-row>
             </section>
             <section class="section-designer">
-                    <el-row :gutter="16">
-                        <transition name="fade-delay-bg">
-                            <h1 v-show="isDesignContentShow" class="design-background">
-                                DESIGN
-                            </h1>
-                        </transition>
-                        <transition name="fade-delay1">
-                            <el-col v-show="isDesignContentShow" :span="8" :offset="2">
-                                <titleContainer class="designer-titlecontainer"更多作品 index="01" title="Designer" description="2015 年開始接觸介面設計；目前是一位專注在「移動裝置」和「前端網頁」的介面設計師；工作的範圍涵蓋產品主視覺、介面設計、視覺設計以及部分商業設計的內容（素材、Banner）。"></titleContainer>
-                                <moreButton title="更多作品" directLink="https://www.facebook.com/citysite1025?ref=bookmarks">
-                                </moreButton>
-                                <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
-                            </el-col>
-                        </transition>
-                    <el-col :span="13">
+                <el-row :gutter="16">
+                    <transition name="fade-delay-bg">
+                        <h1 v-show="isDesignContentShow" class="design-background">
+                            DESIGN
+                        </h1>
+                    </transition>
+                    <transition name="fade-delay1">
+                        <el-col v-show="isDesignContentShow" :span="8" :offset="2">
+                            <titleContainer class="designer-titlecontainer"更多作品 index="01" title="Designer" description="2015 年開始接觸介面設計；目前是一位專注在「移動裝置」和「前端網頁」的介面設計師；工作的範圍涵蓋產品主視覺、介面設計、視覺設計以及部分商業設計的內容（素材、Banner）。"></titleContainer>
+                            <moreButton title="更多作品" directLink="https://www.facebook.com/citysite1025?ref=bookmarks">
+                            </moreButton>
+                            <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
+                        </el-col>
+                    </transition>
+                    <el-col :span="12" :offset="1">
                         <transition name="fade-delay2">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-1-container work-image-container">
-                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/Xojoutp.png" directLink="design-tickle">
+                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/dXLvLKV.png" directLink="design-tickle">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@
                         <transition name="fade-delay3">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-2-container work-image-container">
-                                    <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="https://i.imgur.com/o0XVSV6.png" directLink="design-element">
+                                    <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="https://i.imgur.com/bAyGOa3.png" directLink="design-element">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                     </el-col>
                 </el-row>
                 <el-row :gutter="16">
-                    <el-col :span="13" :offset="10">
+                    <el-col :span="12" :offset="11">
                         <transition name="fade-delay4">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-3-container work-image-container">
@@ -156,7 +156,7 @@
                         <transition name="fade-delay5">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-4-container work-image-container">
-                                    <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（持續開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="https://i.imgur.com/D70zvyp.png" directLink="design-web">
+                                    <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（持續開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="https://i.imgur.com/r7FKoiG.png" directLink="design-web">
                                         
                                     </hoverPicture>
                                 </div>
@@ -203,16 +203,16 @@
                                 </h3> -->
                             </div>
                             <div v-else-if="projectIndex==1" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ 現在" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" directLink="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?mt=8" imageSource="https://i.imgur.com/EOGFJIe.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ 現在" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" directLink="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?mt=8" imageSource="https://i.imgur.com/xbniT6x.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==2" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="The Cosign Studio" time="2017.8 ─ 現在" description="與兩位夥伴 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能。" directLink="https://www.facebook.com/groups/207617269772052/" imageSource="../../src/assets/images/design-cosign.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="The Cosign Studio" time="2017.8 ─ 現在" description="與兩位夥伴 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能。" directLink="https://www.facebook.com/groups/207617269772052/" imageSource="https://i.imgur.com/pZfgIz3.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==3" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" directLink="http://www.talk-ux.com/" imageSource="https://i.imgur.com/YL2PRLa.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" directLink="http://www.talk-ux.com/" imageSource="https://i.imgur.com/iKSDiM6.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==4" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="Fetus Care" time="2015.1 ─ 2015.8" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" directLink="http://www.red-dot.sg/en/" imageSource="https://i.imgur.com/UTUydUr.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="Fetus Care" time="2015.1 ─ 2015.8" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" directLink="http://www.red-dot.sg/en/" imageSource="https://i.imgur.com/xnXq5hS.png"></hoverPictureLarge>
                             </div>
                         </transition>
                     </el-col>
@@ -261,7 +261,7 @@
                                 <a class="contact-link" href="mailto:citysite1025@gmail.com">聯絡我</a>
                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
                     <line x1="-24" y1="0" x2="30" y2="0"></line>
-                    <polyline fill="none" stroke="#5EEBA5" stroke-width="5" stroke-linecap="round" points="
+                    <polyline fill="none" stroke="#57FCF8" stroke-width="5" stroke-linecap="round" points="
                     18.0,-12.0 30,0 18.0,12.0 "/>
                 </svg>
                             </div>
@@ -792,12 +792,13 @@
             text-shadow: 2px 2px 4px black
             transform: translateZ(20px)
 
+    // .scroll-hint-col
+    //     height: 100px
+
     .section-scroll-hint
-        bottom: 8px
+        bottom: 0px
         right: 80px
         position: fixed
-        // height: 88px
-        // width: 100%
 
     .scroll-line
         width: 3px
@@ -872,7 +873,7 @@
         margin-right: auto
         margin-top: 180px
         margin-bottom: 0px
-        height: 820px
+        height: 800px
 
         .designer-titlecontainer
             max-width: 400px
@@ -881,24 +882,36 @@
             display: inline-block
 
         .work-1-container
-            +size(320px, 320px)
-            top: -160px
+            +size(260px, 260px)
+            top: -80px
             display: inline-block
+            @include pc-width-l
+                top: -160px
+                +size(320px, 320px)
 
         .work-2-container
-            +size(320px, 320px)
-            top: -40px
+            +size(260px, 260px)
+            top: 0px
             margin-left: 60px
             display: inline-block
+            @include pc-width-l
+                top: -40px
+                +size(320px, 320px)
 
         .work-3-container
-            +size(320px, 320px)
-            top: -200px
+            +size(260px, 260px)
+            top: -180px
+            @include pc-width-l
+                top: -200px
+                +size(320px, 320px)
 
         .work-4-container
-            +size(320px, 320px)
+            +size(260px, 260px)
             margin-left: 60px
-            top: -80px
+            top: -100px
+            @include pc-width-l
+                top: -80px
+                +size(320px, 320px)
 
         .work
             height: 100%
@@ -908,7 +921,7 @@
 
 
     .section-motto
-        margin-top: 60px
+        margin-top: 0px
         margin-bottom: 0px
 
         #motto
@@ -1083,13 +1096,13 @@
             .contact-link
                 text-decoration: none
             a
-                color: $text-color-green
+                color: $text-color-blue
                 cursor: pointer
                 font-weight: 300
                 &:after
                     content: ''
                     position: absolute
-                    background: #5EEBA5
+                    background: white
                     transition: transform 0.4s
                     transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9)
                     bottom: -8px
@@ -1106,6 +1119,7 @@
 
         .educator-work-1-col
             height: 360px
+
         .educator-work-1
             +size(100%, 100%)
             background-image: url('~assets/images/speaker-1.png')
@@ -1114,6 +1128,7 @@
 
         .educator-work-2-col
             height: 400px
+
         .educator-work-2
             +size(100%, 100%)
             background-image: url('~assets/images/speaker-2.png')
@@ -1124,6 +1139,7 @@
         .educator-work-3-col
             top: 320px
             height: 240px
+
         .educator-work-3
             +size(280px, 280px)
             background-image: url('~assets/images/speaker-ios.png')
@@ -1148,7 +1164,7 @@
             box-sizing: border-box
 
         line
-            stroke: $text-color-green
+            stroke: $text-color-blue
             stroke-width: 5px
             stroke-linecap: round
 
@@ -1157,7 +1173,7 @@
         max-width: 1920px
         margin-left: auto
         margin-right: auto
-        height: 720px
+        height: 700px
 
         .writer-titlecontainer
             margin-top: 80px
@@ -1167,13 +1183,18 @@
             margin-top: 0px
 
         .writer-work
-            +size(140px, 140px)
+            +size(120px, 120px)
             background-size: cover
-            margin: 32px 24px
+            margin: 32px 0px
             margin-left: 0px
             display: inline-block
             vertical-align: middle
             cursor: pointer
+
+            @include pc-width-l
+                +size(140px, 140px)
+                margin: 32px 24px
+
 
         .writer-work-1
             background-image: url('~assets/images/article-1.png')

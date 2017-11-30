@@ -71,7 +71,7 @@
         background-color: #222222
         width: 2px
         height: 100%
-        opacity: 0.3
+        opacity: 0.2
         z-index: 0
         margin-left: auto
         margin-right: auto
