@@ -73,6 +73,7 @@
         margin: 0px
         font-size: 16px
         font-weight: 500
+        text-decoration: none
 
     .more-button
         width: 130px

@@ -28,7 +28,8 @@
             <el-row class="button-container" type="flex" justify="center">
                 <el-col :span="18">
                     <div class="more-button">
-                        <a class="link" :href="'/#/' + directLink">More</a>
+                        <!-- <a class="link" :href="'/#/' + directLink">More</a> -->
+                        <a class="link" :href="directLink">More</a>
                     </div>
                 </el-col>
             </el-row>
