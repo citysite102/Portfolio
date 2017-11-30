@@ -15,7 +15,7 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content">
-                <el-col :span="10" :offset="3">
+                <el-col :span="10" :offset="2">
                     <h2 class="intro-title">
                         關於 Tickle
                     </h2>
@@ -23,7 +23,7 @@
             </transition>
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content">
-            <el-col :span="5" :offset="3">
+            <el-col :span="5" :offset="5">
                 <h2 class="info-content-time">
                     2015-2018 <br>Mobile & Web
                 </h2>
@@ -33,7 +33,7 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="10" :offset="3">
+                <el-col :span="10" :offset="2">
                     <h2 class="intro-content">
                         Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體；除此之外，Tickle 也可以讓你輕鬆地透過程式來控制各種不同的機器人和控制器。
                     </h2>
@@ -41,7 +41,7 @@
             </transition>
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
-            <el-col :span="5" :offset="3">
+            <el-col :span="5" :offset="5">
                 <h3 class="info-content-job">
                     Senior Software Developer<br>
                     UI Designer
@@ -52,7 +52,7 @@
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
-                <el-col :span="18" :offset="3">
+                <el-col :span="20" :offset="2">
                     <div class="hero-image">
                         <img src="../assets/images/design-header.png"/>
                     </div>
@@ -113,7 +113,7 @@
             <el-col :span="20" :offset="2">
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
-                    <h1 class="header-name-work">
+                    <h1 class="header-name-work-center">
                         Design.
                     </h1>   
                 </transition>
@@ -274,7 +274,7 @@
             <el-col :span="20" :offset="2">
                 <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-title">
-                    <h1 class="header-name-work">
+                    <h1 class="header-name-work-center">
                         Marketing.
                     </h1>   
                 </transition>
@@ -342,6 +342,20 @@
                 <div class="tickle-work tickle-banner-right banner-6"></div>
             </el-col>
         </el-row>
+        <el-row :gutter="16" class="title-container-tickle">
+            <el-col :span="20" :offset="2">
+                <h2 class="next-title">
+                    Next Project
+                </h2>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="20" :offset="2">
+                <div class="next-content">
+                    <a class="next-link" href="/#/design-element">介面視覺元件</a>
+                </div>
+            </el-col>
+        </el-row>
         <footerBar></footerBar>
     </div>
 </template>
@@ -366,7 +380,6 @@
 
 <style scope lang="sass">
     @import '~styles/main.sass'
-
 
     .container-work
         width: 100%
@@ -395,11 +408,6 @@
         font-size: 80px
         letter-spacing: 0px
         text-align: center
-
-    // .title-container-tickle
-    //     height: auto
-    //     margin-top: 24px
-    //     margin-bottom: 24px
 
     .intro-title
         font-size: 30px
@@ -458,7 +466,6 @@
         line-height: 30px
         max-width: 720px
         text-align: left
-
 
     .tickle-work
         margin-top: 64px

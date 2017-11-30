@@ -131,12 +131,12 @@
         transition: all 0.8s cubic-bezier(0,1.09,0.56,1)
 
     .more-button
-        width: 140px
-        height: 40px
+        width: 120px
+        height: 36px
         border: solid 2px white
         cursor: pointer
 
-        margin-top: 10px
+        margin-top: 16px
         margin-bottom: 10px
         margin-left: auto
         margin-right: auto
@@ -149,13 +149,13 @@
 
         a
             text-decoration: none
-            font-size: 20px
-            font-weight: 600
+            font-size: 18px
+            font-weight: 500
             display: block
             width: 100%
             height: 100%
             margin: 0px
-            margin-top: 8px
+            margin-top: 6px
             &:hover
                 color: $default-background-color
 
@@ -164,6 +164,8 @@
             background-color: white
             color: $default-background-color
             border-color: transparent
+            a
+                color: $default-background-color
 
 
 

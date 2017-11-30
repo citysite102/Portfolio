@@ -216,7 +216,7 @@
                     </el-col>
                     <el-col :span="10">
                         <transition name="fade-delay1">
-                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="畢業於 NTUST 積體電路所，目前是一位資深軟體工程師（主要開發 iOS ）；具有 iOS（Swift, ObjectiveC）， 前端（Html, CSS, Sass, Javascript 和 Vue.js） ，Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
+                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="畢業於 NTUST 積體電路所，目前是一位資深軟體工程師；具有 iOS（Swift, ObjectiveC），前端（Html, CSS, Sass, Javascript, Node.js 和 Vue.js） ，Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
                         </transition>
                         <transition name="fade-delay2">
                             <div v-show="isDeveloperContentShow" class= "developer-project-select">
@@ -302,7 +302,7 @@
                                     <a href="https://medium.com/as-a-product-designer/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E6%BC%B8%E5%B1%A4%E9%85%8D%E8%89%B2-%E4%B8%8A-b1f9771dd803">
                                         <div class="writer-work writer-work-1">
                                         </div>
-                                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="如果你是一位對於設計、顏色沒有完整概念的夥伴，這篇文章就是專門為你而準備的！漸層系列的文章會帶著你一步一步的理解「漸層」在介面上是如何被應用的。 "></articleContainer>
+                                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="如果你是一位對於設計、顏色沒有完整概念的夥伴，這篇文章就是專門為你而準備的！漸層系列的文章會帶著你一步一步的理解「漸層」在介面上是如何被應用的。"></articleContainer>
                                     </a>
                                 </el-col>
                             </transition>

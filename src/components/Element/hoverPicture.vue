@@ -117,7 +117,7 @@
         border: solid 2px white
         cursor: pointer
 
-        margin-top: 10px
+        margin-top: 12px
         margin-bottom: 10px
         margin-left: auto
         margin-right: auto
@@ -145,6 +145,8 @@
             background-color: white
             color: $default-background-color
             border-color: transparent
+            a
+                color: $default-background-color
 
 
 
