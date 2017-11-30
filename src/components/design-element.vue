@@ -300,25 +300,5 @@
         img
             width: 100%
             height: 100%
-  
-
-    .fade-enter-content
-        opacity: 0
-        transition: all 0.0s
-    .fade-enter-active-profile-title
-        animation: aboutTitleIn 0.4s ease-out 0.3s forwards
-    .fade-enter-active-profile-content
-        animation: aboutTitleIn 0.4s ease-out 0.4s forwards
-    .fade-enter-active-profile-content-1
-        animation: aboutTitleIn 0.4s ease-out 0.5s forwards
-    .fade-enter-active-profile-content-2
-        animation: aboutTitleIn 0.4s ease-out 0.6s forwards
-    @keyframes aboutTitleIn 
-        0%
-            transform: translateY(60px)
-            opacity: 0
-        100%
-            transform: translateY(0px)
-            opacity: 1.0
 
 </style>

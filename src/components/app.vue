@@ -96,7 +96,7 @@
                     </el-col>
                 </el-row>
                 <el-row>
-                    <el-col class="scroll-hint-col" :span="24" :offset="0">
+                    <el-col :span="24" :offset="0">
                         <div class="section-scroll-hint">
                             <transition appear appear-to-class="fade-enter-content"
                                         appear-active-class="fade-enter-active-scroll" name="slide-fade">
@@ -418,12 +418,7 @@
                   once: true
                 }, document.body, window);
 
-                console.log("已加入" + trigger);
-
                 var callback = function(scrollLeft, scrollTop, width, height){
-                    console.log("Left:"+scrollLeft+ " Top:"+ scrollTop);
-                    // console.log(instance.pageIndex);
-                    // console.log($(document))
 
                     if (scrollTop > 100) {
                         instance.isScrollHintShow = false;
@@ -450,25 +445,15 @@
 
                     if (scrollTop > 200) {
                         instance.isDesignContentShow = true;
-                        // if (scrollTop < 4300) {
-                            // instance.pageIndex = 2;
-                            // $(document).trigger('index.update', [2]);
-                        // }
                     }
                     if (scrollTop > 2000) {
                         instance.isDeveloperContentShow = true;
                     }
                     if (scrollTop > 3000) {
                         instance.isEducatorContentShow = true;
-                        // if (scrollTop < 5300) {
-                            // instance.pageIndex = 3;
-                            // $(document).trigger('index.update', [3]);
-                        // }
                     }
                     if (scrollTop > 3800) {
                         instance.isWriterContentShow = true;
-                        // instance.pageIndex = 4;
-                        // $(document).trigger('index.update', [4]);
                     }
                 };
 
@@ -491,7 +476,6 @@
             }
         },
         created() {
-            // window.addEventListener('scroll', this.handleScroll);
             var instance = this;
             document.addEventListener('DOMContentLoaded', this.triggerEvent(this));
             window.addEventListener("resize", this.setWindowHeight);
@@ -500,7 +484,6 @@
             // 記得要移除掉 Evenet Listener，否則再下一次進來這個 Component 時就會不運作
             var instance = this;
             document.removeEventListener('DOMContentLoaded', this.triggerEvent(instance))
-            // window.removeEventListener('scroll', this.handleScroll);
         },
         mounted() { 
             console.log(this.isDesignContentShow);
@@ -809,9 +792,6 @@
             text-shadow: 2px 2px 4px black
             transform: translateZ(20px)
 
-    // .scroll-hint-col
-    //     height: 100px
-
     .section-scroll-hint
         bottom: 0px
         right: 80px
@@ -869,13 +849,11 @@
             opacity: 0
 
     #separator-3
-        // +size(480px, 2px)
         background-color: white
         margin-top: 40px
         margin-bottom: 16px
 
     #slogan-small
-        // font-family: 'Playfair Display', serif
         font-size: 36px
         line-height: 48px
         margin-left: auto
@@ -1021,13 +999,6 @@
             line-height: 28px
             letter-spacing: 1px
             font-weight: 500
-            // opacity: 0.8
-            // font-weight: 700
-            // font-size: 140px
-            // left: -8%
-            // bottom: 12%
-            // text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3)
-            // z-index: 5
 
         .developer-project-select
             font-size: 36px
@@ -1433,12 +1404,10 @@
     @keyframes selectFadeIn 
         0%
             opacity: 0
-            // transform: translateY(10px)
             transform: scale3d(0,1,1)
             transform-origin: 0% 50%
         100%
             opacity: 1.0
-            // transform: translateY(0px)
             transform: scale3d(1,1,1)
             transform-origin: 0% 50%
 
