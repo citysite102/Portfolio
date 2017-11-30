@@ -391,11 +391,6 @@
         },
         methods: {
             selectProject: function(index) {
-                console.log("Select");
-                // var projectName = document.getElementsByClassName("project-name");
-                // console.log(projectName);
-                // console.log(projectName[0]);
-                // projectName[0].innerHTML="123";
                 this.projectIndex = index;
             },
             handleScroll: function(event) {
@@ -403,9 +398,6 @@
                 let {top,bottom} = obj.getBoundingClientRect();
             },
             triggerEvent: function(instance) {
-                console.log(instance);
-                console.log("已加入");
-
                 var trigger = new ScrollTrigger({
                   toggle: {
                     visible: 'visibleClass',
