@@ -11,7 +11,9 @@
                 <!-- <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="
                 0.375,0.375 45.63,38.087 0.375,75.8 "/> -->
                 <line x1="-40" y1="0" x2="32" y2="0"></line>
-                <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" points="
+                <!-- <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" points="
+                18.0,-12.0 30,0 18.0,12.0 "/></polyline> -->
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="5" points="
                 18.0,-12.0 30,0 18.0,12.0 "/></polyline>
             </svg>
         </div>
@@ -44,7 +46,7 @@
 
         line
             stroke: white
-            stroke-width: 6px
+            stroke-width: 5px
 
     .text
         display: inline-block
