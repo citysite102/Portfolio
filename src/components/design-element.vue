@@ -174,6 +174,47 @@
                 </div>
             </el-col>
         </el-row>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content">
+                <el-col :span="3" :offset="2">
+                    <h2 class="intro-title-element intro-title-element-sub">
+                        Photoshop 視覺合成
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="10" :offset="2">
+                    <h2 class="intro-content-element">
+                        早期的一些 Photoshop 視覺合成作品。
+                    </h2>
+                </el-col>
+            </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="20" :offset="2">
+                <div class="hero-image-element">
+                    <img src="../assets/images/photoshop-1.png"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="20" :offset="2">
+                <div class="hero-image-element">
+                    <img src="../assets/images/photoshop-2.png"/>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="20" :offset="2">
+                <div class="hero-image-element">
+                    <img src="../assets/images/photoshop-3.png"/>
+                </div>
+            </el-col>
+        </el-row>
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="20" :offset="2">
                 <h2 class="next-title">

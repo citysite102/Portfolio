@@ -1,5 +1,12 @@
 <template lang="html">
     <div>
+        <div class="unavailable-container">
+            <h1 class="header-name">
+                Hello, <br>I'm Samuel.
+            </h1>
+
+            目前尚未支援 RWD 尺寸的頁面（趕工中。）
+        </div>
         <div class="container">
             <transition appear appear-to-class="fade-enter-content"
                                     appear-active-class="fade-enter-active-headerbar">
@@ -592,10 +599,20 @@
     [v-cloak]
         display: none;
     
+    .unavailable-container
+        display: block
+        padding: 24px
+        @include pc-width
+            display: none
+
     .container
+        display: none
         max-width: 1600px
         margin-left: auto
         margin-right: auto
+
+        @include pc-width
+            display: block
 
     .section-about
         background-color: transparent
