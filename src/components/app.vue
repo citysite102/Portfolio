@@ -88,21 +88,23 @@
                         </div>
                     </el-col>
                 </el-row>
-                <el-row class="section-scroll-hint">
-                    <el-col :span="20" :offset="2">
-                        <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-scroll" name="slide-fade">
-                            <div v-show="isScrollHintShow" class="mouse">
-                                <div class="mouse-icon">
-                                    <span class="mouse-wheel"></span>
+                <el-row>
+                    <el-col :span="24" :offset="0">
+                        <div class="section-scroll-hint">
+                            <transition appear appear-to-class="fade-enter-content"
+                                        appear-active-class="fade-enter-active-scroll" name="slide-fade">
+                                <div v-show="isScrollHintShow" class="mouse">
+                                    <div class="mouse-icon">
+                                        <span class="mouse-wheel"></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </transition>
-                        <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-scroll" name="slide-fade">
-                            <div v-show="isScrollHintShow" class="scroll-hint">SCROLL&nbsp&nbsp
-                            </div>
-                        </transition>
+                            </transition>
+                            <transition appear appear-to-class="fade-enter-content"
+                                        appear-active-class="fade-enter-active-scroll" name="slide-fade">
+                                <div v-show="isScrollHintShow" class="scroll-hint">SCROLL
+                                </div>
+                            </transition>
+                        </div>
                     </el-col>
                 </el-row>
             </section>
@@ -125,7 +127,7 @@
                         <transition name="fade-delay2">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-1-container work-image-container">
-                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="../../src/assets/images/design-tickle.png" directLink="design-tickle">
+                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/Xojoutp.png" directLink="design-tickle">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -133,7 +135,7 @@
                         <transition name="fade-delay3">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-2-container work-image-container">
-                                    <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="../../src/assets/images/design-element.png" directLink="design-element">
+                                    <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="https://i.imgur.com/o0XVSV6.png" directLink="design-element">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -145,7 +147,7 @@
                         <transition name="fade-delay4">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-3-container work-image-container">
-                                    <hoverPicture class="work" title="iOS 介面" description="iOS 設計專案：包含 Moment 的 Redesign 概念、Hahow 課程示範的 Howhow 與中國投資人合作提案的「等等」。" imageSource="../../src/assets/images/design-ios.png" directLink="design-ios">
+                                    <hoverPicture class="work" title="iOS 介面" description="iOS 設計專案：包含 Moment 的 Redesign 概念、Hahow 課程示範的 Howhow 與中國投資人合作提案的「等等」。" imageSource="https://i.imgur.com/VCrQzop.png" directLink="design-ios">
                                         
                                     </hoverPicture>
                                 </div>
@@ -154,7 +156,7 @@
                         <transition name="fade-delay5">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-4-container work-image-container">
-                                    <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（持續開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="../../src/assets/images/design-web.png" directLink="design-web">
+                                    <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（持續開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="https://i.imgur.com/D70zvyp.png" directLink="design-web">
                                         
                                     </hoverPicture>
                                 </div>
@@ -195,22 +197,22 @@
                         </transition> -->
                         <transition name="fade-text" mode="in-out">
                             <div v-if="projectIndex==0" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ 現在" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" directLink="https://itunes.apple.com/us/app/tickle-app-learn-to-code/id1063639403?mt=8" imageSource="../../src/assets/images/design-tickle.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ 現在" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" directLink="https://itunes.apple.com/us/app/tickle-app-learn-to-code/id1063639403?mt=8" imageSource="https://i.imgur.com/Xojoutp.png"></hoverPictureLarge>
                                 <!-- <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
                                     2016/8 - 2017/12
                                 </h3> -->
                             </div>
                             <div v-else-if="projectIndex==1" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ 現在" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" directLink="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?mt=8" imageSource="../../src/assets/images/design-kapi.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ 現在" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" directLink="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?mt=8" imageSource="https://i.imgur.com/EOGFJIe.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==2" class="developer-container work-image-container">
                                 <hoverPictureLarge class="work" title="The Cosign Studio" time="2017.8 ─ 現在" description="與兩位夥伴 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能。" directLink="https://www.facebook.com/groups/207617269772052/" imageSource="../../src/assets/images/design-cosign.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==3" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" directLink="http://www.talk-ux.com/" imageSource="../../src/assets/images/design-talkux.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" directLink="http://www.talk-ux.com/" imageSource="https://i.imgur.com/YL2PRLa.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==4" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="Fetus Care" time="2015.1 ─ 2015.8" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" directLink="http://www.red-dot.sg/en/" imageSource="../../src/assets/images/design-fetus.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="Fetus Care" time="2015.1 ─ 2015.8" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" directLink="http://www.red-dot.sg/en/" imageSource="https://i.imgur.com/UTUydUr.png"></hoverPictureLarge>
                             </div>
                         </transition>
                     </el-col>
@@ -349,7 +351,8 @@
     import ScrollTrigger from 'scrolltrigger-classes';
     import ScrollTo from 'vue-scrollto';
     import Rellax from 'rellax';
-    import tilt from 'tilt.js';
+    import VanillaTilt from 'vanilla-tilt';
+    // import tilt from 'tilt.js';
 
 
     var VueScrollTo = require('vue-scrollto');
@@ -506,58 +509,74 @@
             this.isEducatorContentShow = false;
             this.isWriterContentShow = false;
             this.setWindowHeight()
-            $('.header-picture-container').tilt({
-                // glare: true,
-                scale: 1.05,
-                perspective: 1500,
-                transition: true,
-                speed: 2000
-            });
-            $('.work-1-container').tilt({
-                scale: 1.1,
-                maxGlare: .5,
-                perspective: 1500,
-                transition: true
-            });
-            $('.work-2-container').tilt({
-                scale: 1.1,
-                perspective: 1500,
-                transition: true
-            });
-            $('.work-3-container').tilt({
-                scale: 1.1,
-                perspective: 1500,
-                transition: true
-            });
-            $('.work-4-container').tilt({
-                scale: 1.1,
-                perspective: 1500,
-                transition: true
-            });
-            $('.developer-container').tilt({
-                scale: 1.02,
-                perspective: 3000,
-                transition: true
-            });
-            $('.educator-work-1').tilt({
-                scale: 1.05,
-                perspective: 900,
-                transition: true
-            });
-            $('.educator-work-2').tilt({
-                scale: 1.05,
-                perspective: 900,
-                transition: true
-            });
-            $('.educator-work-3').tilt({
-                scale: 1.05,
-                perspective: 900,
-                transition: true
-            });
             var rellax = new Rellax('.rellax', {
                 speed: 4,
                 center: false,
                 round: true,
+            });
+
+            VanillaTilt.init(document.querySelector(".header-picture-container"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.05,
+                perspective: 1500
+
+            });
+
+            VanillaTilt.init(document.querySelector(".work-1-container"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.05,
+                perspective: 1500
+            });
+
+            VanillaTilt.init(document.querySelector(".work-2-container"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.05,
+                perspective: 1500
+            });
+
+            VanillaTilt.init(document.querySelector(".work-3-container"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.05,
+                perspective: 1500
+            });
+
+            VanillaTilt.init(document.querySelector(".work-4-container"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.05,
+                perspective: 1500
+            });
+
+            VanillaTilt.init(document.querySelector(".developer-container"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.02,
+                perspective: 1500
+            });
+
+            VanillaTilt.init(document.querySelector(".educator-work-1"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.02,
+                perspective: 1000
+            });
+
+            VanillaTilt.init(document.querySelector(".educator-work-2"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.02,
+                perspective: 1000
+            });
+
+            VanillaTilt.init(document.querySelector(".educator-work-3"), {
+                max: 20,
+                speed: 1000,
+                scale: 1.02,
+                perspective: 1000
             });
         },
         components: {
@@ -671,7 +690,6 @@
     .header-separator
         position: absolute
         +size(200px, 16px)
-        // background-color: white
         top: 118px
         left: 80px
         background: linear-gradient(to right, $gradient-light-blue, $gradient-dark-blue)
@@ -783,17 +801,11 @@
             transform: translateZ(20px)
 
     .section-scroll-hint
-        bottom: 64px
+        bottom: 8px
         right: 80px
         position: fixed
-        height: 88px
-
-    .scroll-hint
-        font-size: 12px
-        // font-weight: 300
-        letter-spacing: 1px
-        margin: 16px auto 
-        text-align: center
+        // height: 88px
+        // width: 100%
 
     .scroll-line
         width: 3px
@@ -817,6 +829,12 @@
         text-align: center
         margin-left: auto
         margin-right: auto
+
+    .scroll-hint
+        font-size: 12px
+        letter-spacing: 1px
+        margin: 16px auto 
+        text-align: center
 
     .mouse-wheel
         height: 4px

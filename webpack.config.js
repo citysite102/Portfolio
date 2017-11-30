@@ -148,7 +148,12 @@ var config = {
           'root.jQuery': 'jquery',
           tilt: 'tilt.js',
       	}),
-  	]
+  	],
+
+ //  	externals: {
+	//   	tilt: 'tilt'
+	// }
+
 
   	/* Externals */
   	// 防止将某些 import 的包(package)打包到 bundle 中，而是在运

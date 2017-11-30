@@ -12,13 +12,13 @@
                                 <a href="https://www.facebook.com/citysite1025?ref=bookmarks" class="icon facebook"></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/citysite1025?ref=bookmarks" class="icon linkedin"></a>
+                                <a href="https://www.linkedin.com/in/samuel-kao-87972482/" class="icon linkedin"></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/citysite1025?ref=bookmarks" class="icon medium"></a>
+                                <a href="https://medium.com/@citysite1025" class="icon medium"></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/citysite1025?ref=bookmarks" class="icon github"></a>
+                                <a href="https://github.com/citysite102" class="icon github"></a>
                             </li>
                         </ul>
                     </div>
