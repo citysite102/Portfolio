@@ -25,7 +25,7 @@
                             </h1>
                             <transition appear appear-to-class="fade-enter-content"
                                     appear-active-class="fade-enter-active-div-1">
-                                <div v-cloak class="header-separator">
+                                <div v-cloak--hidden class="header-separator">
                                 </div>
                             </transition>
                             <transition appear appear-to-class="fade-enter-content"
@@ -579,9 +579,14 @@
 <style scope lang="sass">
     @import '~styles/main.sass'
 
-    [v-cloak]
-        display: none;
+    // [v-cloak]
+    //     display: none
     
+    [v-cloak] .v-cloak--hidden
+        display: none
+    
+
+
     .unavailable-container
         display: block
         padding: 24px

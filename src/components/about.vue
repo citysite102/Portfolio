@@ -61,12 +61,24 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
             </el-col>
             <el-col :span="10" :offset="2">
                 <h2 class="intro-content-about">
-                    <b>Facebook, Instagram</b> | May, 2016 - August 2016<br>
+                    
+                    <b><a class="work-company">Tickle App</a></b> &nbsp | &nbsp May 2017 - Present<br>
+                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+
+                    <b><a class="work-company">The Cosign Studio</a></b> &nbsp | &nbsp May 2017 - Present<br>
+                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+
+                    <b><a class="work-company">Kapi</a></b> &nbsp | &nbsp Jan 2017 - Present<br>
+                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+
+                    <b><a class="work-company">Hahow</a></b> &nbsp | &nbsp Sep 2016 - Present<br>
+                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+
+                    <b>M.S in EE, NTUST</b> &nbsp | &nbsp Aug 2013 - Aug 2015<br>
                     It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions.<br><br>
-                    <b>Expii, Inc.</b> | May, 2016 - August 2016<br>
-                    Designed the problem solving experience for Expii, an educational platform designed to empower individualized learning experience.<br><br>
-                    <b>Groupon</b> | May, 2016 - August 2016<br>
-                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.
+
+                    <b><a class="work-company">iFit</a></b> &nbsp | &nbsp July 2014 - Sep 2014<br>
+                    Designed the problem solving experience for Expii, an educational platform designed to empower individualized learning experience.
                 </h2>
             </el-col>
         </el-row>
@@ -98,6 +110,11 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
 <style scope lang="sass">
     @import '~styles/main.sass'
 
+
+    .work-company
+        font-size: 18px
+        font-weight: 700
+
     .container-about
         width: 100%
         max-width: 2200px
@@ -120,11 +137,11 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
         // float: right
 
     .intro-content-about
-        font-size: 20px
+        font-size: 18px
         font-weight: 300
-        margin-top: 100px
+        margin-top: 106px
         margin-bottom: 32px
-        line-height: 32px
+        line-height: 28px
         width: 100%
         float: right
 

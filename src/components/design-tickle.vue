@@ -35,7 +35,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="2">
                     <h2 class="intro-content">
-                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體；除此之外，Tickle 也可以讓你輕鬆地透過程式來控制各種不同的機器人和控制器。
+                        Tickle 是一款能夠幫助小朋友和任何對於寫程式有興趣的夥伴快速上手的「程式學習軟體」；除此之外，Tickle 也可以讓你輕鬆地透過程式來控制各種不同的機器人和控制板。
                     </h2>
                 </el-col>
             </transition>
@@ -59,19 +59,6 @@
                 </el-col>
             </transition>
         </el-row>
-        <!-- <el-row :gutter="16">
-            <el-col :span="20" :offset="2">
-                <h2 class="intro-content-center">
-                    在團隊中，我主要負責的工作內容包含 iOS 的產品開發以及不同平台產品的介面設計（包含 iOS 與 Web）；我需要持續的確保產品視覺的一制性，調整與優化使用者的操作流程，同時考慮使用者的需求與行銷團隊的需求來規劃介面上的平衡點。
-
-                </h2>
-            </el-col>
-        </el-row>
-        <el-row :gutter="16">
-            <el-col :span="20" :offset="2">
-                <div class="tickle-work tickle-1"></div>
-            </el-col>
-        </el-row> -->
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-title-center">
@@ -84,7 +71,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
                     <h2 class="intro-content-center">
-                        在 Tickle 團隊中，我主要負責 iOS 的產品開發以及不同平台產品的介面設計（包含 iPad, iPhone 與 Web）；我需要持續的確保產品視覺的一制性，調整與優化使用者的操作流程，同時考慮使用者與行銷團隊的需求來進行介面設計。<br><br>由於同時作為團隊的工程師與設計師，在設計與規劃的過程中，我需要同時考慮程式開發的可行性，並評估在時限內該如何完成各種不同的挑戰。
+                        在 Tickle 團隊，我主要負責 iOS 的產品開發以及不同平台的介面設計（包含 iPad, iPhone 與 Web 等平台）；在設計的過程中，需要持續的維持產品視覺的一制性，調整與優化使用者的操作流程，並同時考慮使用者與行銷團隊的業務需求。<br><br>同時作為團隊的工程師與設計師，在設計與規劃的過程中，我能夠同時考慮視覺與程式開發的可行性，並評估在時限內該如何完成各種不同的挑戰。
                     </h2>
                 </el-col>
             </transition>
@@ -99,7 +86,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
                     <h2 class="intro-content-center">
-                        Tickle 的設計不單純只有角色、介面等視覺上面的內容，由於它是一個架構和功能都相當複雜的產品，這樣的因素也大幅度的提升不同螢幕尺寸設計上的困難度。如何在開發或規劃新功能時兼顧操作性、可讀性和娛樂性，一直都是我在 Tickle 團隊中相當具有挑戰性的過程。
+                        Tickle App 的設計不單純只有角色設計和介面；由於它是一個架構和功能都相當複雜的產品，這樣的因素也大幅度的提升了不同螢幕尺寸在設計上的困難程度。如何在開發或規劃新功能時兼顧操作性、可讀性和娛樂性，一直都是我在 Tickle 團隊中相當具有挑戰性的過程。
                     </h2>
                 </el-col>
             </transition>
@@ -129,7 +116,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    Tickle 的主要設計規範是由前輩 Sean 所設計與規劃，在後期由我負責接手進行。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為 San Francisco；在暗色系背景上的配色基本以明亮色系為主，標準色沿用舊版本的海洋藍綠色。
+                    Tickle App 的主要設計規範是由前輩 Sean 所制定，包含角色的型態、視覺用色和介面架構等等，在2016年後期由我負責接手設計。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為新版本的 iOS 標準字 San Francisco；在視覺配色上，主要是暗色系的背景上搭配明亮色系的文字、按鈕為主，標準色則沿用舊版本的海洋藍綠色。
                 </h2>
             </el-col>
         </el-row>
@@ -141,7 +128,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    由於 Tickle App 目前的使用者大部分是孩童（學生），在設計 icon 時的第一原則就是確保它的可辨識性，如何快速的讓使用者瞭解按鈕的用途一直是我持續努力的目標。
+                    由於 Tickle App 目前的使用者大部分是孩童（學生），在設計 Icon 時的第一原則就是確保它的可辨識性，如何快速的讓使用者瞭解按鈕的用途一直是 Tickle App 設計 Icon 時的第一目標。
                 </h2>
             </el-col>
         </el-row>
@@ -160,7 +147,8 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    Tickle 在 5.0 版本以前搭配 iOS 的 SpriteKit 做出了相當令人驚豔的 2D 操作介面，讓使用者可以透過拖拉程式區塊來做出自己的 2D 遊戲，在新版本的 Tickle 中，我們進一步的支援了 3D 和 AR 的功能。<br><br>對於使用者而言，從 2D 轉移到 3D 甚至是 AR 肯定是一個截然不同的操作體驗；對於我們而言，從地板材質的選擇、程式運作的效能、角色與使用者的互動到照相機的視角等等，每一個環節都是介面設計上一個新的嘗試。
+                    Tickle App 在舊版本中搭配 iOS 的 SpriteKit 做出了相當令人驚豔的 2D 操作介面，讓使用者可以透過拖拉程式區塊的方式來做出自己的 2D 遊戲，在新版本的 Tickle App 中，透過 ScenekKit 和 ARKit，
+                    我們進一步的支援了 3D 和 AR 的酷炫功能。<br><br>對於使用者而言，從 2D 轉移到 3D 甚至是 AR 肯定是一個截然不同的操作體驗；對於我們而言，從地板材質的選擇、程式運作的效能、角色的光影與使用者的互動，甚至是到照相機的視角等等，每一個環節都是介面設計上一個新的嘗試。
                 </h2>
             </el-col>
         </el-row>
@@ -180,7 +168,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    在 Tickle 這個團隊中，新功能的迭代或者需求上的修改都是相當頻繁的。從確定新功能開始，我會著手開始進行流程上的規劃，同時持續和團隊成員討論確定有沒有開發上的困難或者步驟上的遺漏；由於人力分配和時間的因素，通常我們不會進行 Prototype 的測試， 而是直接進入視覺設計與開發的步驟。<br><br>視覺設計與程式開發的階段是一個相當彈性的合作過程；由於同時作為團隊的設計師與其中一位工程師，我能夠清楚的瞭解不同組件或者客製化介面所需的開發時間，並進一步決定應該要先完成哪些畫面的視覺內容。
+                    在 Tickle 這個團隊，新功能的迭代或者需求上的修改都是相當頻繁的；從確定新的目標開始，我就會著手開始進行流程上的規劃，同時持續和團隊夥伴討論有沒有開發上的困難或者步驟上的瑕疵；由於 Tickle 是個相當精實的團隊，考慮到人力分配和時間的因素，通常我們不會進行 Prototype 的測試， 而是直接進入視覺設計與開發的步驟，也因為如此，流程規劃的過程就顯得相當重要！<br><br>視覺設計與程式開發的階段在 Tickle 中是一個相當彈性的合作過程；由於同時作為團隊的設計師與其中一位工程師，我能夠清楚得瞭解不同組件、架構或者客製化介面所需的開發時間，並進一步的決定應該要先完成的畫面或者功能順序上的調整。
 
                 </h2>
             </el-col>
@@ -193,7 +181,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    通常在視覺完成到一定程度後，我們會透過流程圖的方式再次檢視是否有遺漏的部分；舉例來說，由於 Tickle 有大量來自學校的學生使用者，在會員註冊的流程裡面就需要另外加入家長認證的步驟，除此之外，我們也在不停的嘗試透過用字、流程的改善來提升會員註冊的成功率。<br><br>
+                    通常在視覺完成到一定程度時，我們會透過「流程圖」再次檢視是否有遺漏的步驟；舉例來說，由於 Tickle 有大量來自學校的學生使用者，會員註冊的流程裡面就需要另外加入家長認證的步驟，同時考慮第三方平台登入整合的需求性；除此之外，我們也在不停的嘗試透過用字、流程的改善來提升會員註冊的成功率。<br><br>
                 </h2>
             </el-col>
         </el-row>
@@ -212,7 +200,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    Tickle 是一個整合了許多不一樣的機器人或裝置的平台；不同的裝置可能會因為連線方式的差異（Wifi，Bluetooth，BLE），或是產品性質的不同而需要另外設計一套完全不同的連線流程。
+                    Tickle App 最特別的地方在於它是一個整合了各式各樣不同機器人和裝置的程式平台；不同的裝置可能會因為連線方式的差異（Wifi，Bluetooth，BLE），或是產品性質的不同而需要另外設計一套完全不同的連線流程。
                 </h2>
             </el-col>
         </el-row>
@@ -224,7 +212,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    以下面的流程圖為例，Sphero 是一個透過藍牙連線的機器人，使用者必須要先從設定畫面中的藍芽與 Sphero 進行配對後才能在 Tickle 中連線使用，因此我們另外設計了一套教學流程提供給使用者。
+                    以下面的連線流程圖為例，Sphero 是一個透過藍牙連線的機器人，使用者必須要先在 iOS 的藍芽設定畫面中與 Sphero 進行配對，接下來才能在 Tickle App 中連線使用，因為這樣繁雜的步驟，我們也另外設計了一套教學流程提供給使用者參考。
                 </h2>
             </el-col>
         </el-row>
@@ -236,14 +224,14 @@
         <el-row :gutter="16" class="title-container-tickle">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-title-center">
-                    介面素材
+                    視覺素材
                 </h2>
             </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    除了介面設計以外，我也會需要配合行銷團隊的需求來製作一些行銷使用的 Banner 或者素材。
+                    Tickle App 考慮到為數眾多的學生使用者；在角色和場景的初期設計上，選擇了 Flat Design 類型的可愛插畫風格，透過漸層與明亮的用色帶著使用者加入 Tickle 這個大家庭。在開發與設計的過程中，我也會持續的根據這樣的視覺風格來設計類似的場景與角色。
                 </h2>
             </el-col>
         </el-row>
@@ -259,11 +247,11 @@
         </el-row>
         <el-row :gutter="16">
             <el-col :span="18" :offset="3" class="section-asset">
-                <div class="tickle-work tickle-assets assets-1"></div>
-                <div class="tickle-work tickle-assets assets-2"></div>
-                <div class="tickle-work tickle-assets assets-3"></div>
-                <div class="tickle-work tickle-assets assets-4"></div>
-                <div class="tickle-work tickle-assets assets-5"></div>
+                <div class="tickle-work tickle-assets tickle-assets-top assets-1"></div>
+                <div class="tickle-work tickle-assets tickle-assets-top assets-2"></div>
+                <div class="tickle-work tickle-assets tickle-assets-top assets-3"></div>
+                <div class="tickle-work tickle-assets tickle-assets-top assets-4"></div>
+                <div class="tickle-work tickle-assets tickle-assets-top assets-5"></div>
                 <div class="tickle-work tickle-assets assets-12"></div>
                 <div class="tickle-work tickle-assets assets-13"></div>
                 <div class="tickle-work tickle-assets assets-14"></div>
@@ -290,7 +278,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    數據一直都是一個介面調整上相當重要的考量因素，Tickle 透過 Google Analytic 和 Amplitude 持續觀察使用者的操作行為，不同流程的完成狀況等等來作為後續更新的依據。
+                    使用者的數據是一個介面調整上相當重要的因素，Tickle App 透過 Google Analytic 和 Amplitude 這兩個平台持續觀察使用者的操作行為，包含註冊的流程、操作的習慣、使用的時間和放棄的步驟等等來作為後續版本更新的內容。
                 </h2>
             </el-col>
         </el-row>
@@ -324,7 +312,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    除了介面設計以外，我也會需要配合行銷團隊的需求來製作一些行銷使用的 Banner 或者素材。
+                    除了 Tickle App 的介面設計以外，在不同的時間點（Hour of Code, Christmas），我也會需要配合行銷團隊的需求來製作一些能夠在行銷上使用的 Banner 或者素材。
                 </h2>
             </el-col>
         </el-row>
@@ -353,6 +341,11 @@
             <el-col :span="20" :offset="2">
                 <div class="next-content">
                     <a class="next-link" href="/#/design-element">介面視覺元件</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
+                        <line x1="-24" y1="0" x2="30" y2="0"></line>
+                        <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" points="
+                        18.0,-12.0 30,0 18.0,12.0 "/>
+                    </svg>
                 </div>
             </el-col>
         </el-row>
@@ -471,17 +464,6 @@
         margin-top: 64px
         margin-bottom: 16px
 
-    .tickle-1
-        width: 800px
-        height: 400px
-        background-image: url('~assets/images/hero-tickle5.png')
-        background-size: cover
-        background-position: center
-        margin-left: auto
-        margin-right: auto
-        margin-top: 180px
-        margin-bottom: 80px
-
     .tickle-ui-1
         width: 100%
         height: auto
@@ -495,21 +477,6 @@
         margin-right: auto
         margin-top: 40px
         margin-bottom: -40px
-
-
-    .tickle-ui-3
-        width: 800px
-        height: 600px
-        // background: #222222
-        // margin-top: 15%
-        // display: inline-block
-        background-image: url('~assets/images/hero-tickle3.png')
-        background-size: cover
-        background-position: center
-        margin-left: auto
-        margin-right: auto
-        margin-top: 80px
-        // float: right
 
 
     .container-logo
@@ -662,12 +629,15 @@
         // align-content: flex-start
 
     .tickle-assets
-        width: 180px
-        height: 180px
+        width: 160px
+        height: 160px
         margin-right: 24px
-        margin-top: 24pxxx
+        margin-top: 12px
         background-size: cover
         background-position: center
+    
+    .tickle-assets-top
+        margin-top: 32px
 
     .tickle-assets-l
         width: 220px

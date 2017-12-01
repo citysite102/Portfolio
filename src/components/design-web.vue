@@ -121,6 +121,11 @@
             <el-col :span="20" :offset="2">
                 <div class="next-content">
                     <a class="next-link" href="/#/design-tickle">Tickle App</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
+                        <line x1="-24" y1="0" x2="30" y2="0"></line>
+                        <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" points="
+                        18.0,-12.0 30,0 18.0,12.0 "/>
+                    </svg>
                 </div>
             </el-col>
         </el-row>
