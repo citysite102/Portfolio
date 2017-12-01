@@ -60,25 +60,26 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
                 </h2>
             </el-col>
             <el-col :span="10" :offset="2">
-                <h2 class="intro-content-about">
+                <h2 class="intro-content-work">
                     
                     <b><a class="work-company">Tickle App</a></b> &nbsp | &nbsp May 2017 - Present<br>
-                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+                    <span class="work-description">I currently act as a Senior iOS engineer and UI/UX designer for the core product - Tickle app. My tasks include product function planning, flow design and coding framework design. Meanwhile, I am also responsible for the front-end development of the web version, marketing material design for BD team and educational training for interns.</span><br><br>
 
                     <b><a class="work-company">The Cosign Studio</a></b> &nbsp | &nbsp May 2017 - Present<br>
-                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+                    <span class="work-description">Co-founded The Cosign Studio with teammates Money and Gwynne. I am responsible for website development, event organizing and act as the speaker for front-end development workshop. The Cosign Studio regularly hosts workshops for engineers and designers, with the aim of providing a venue for everyone to share and exchange ideas of their profession and related work, or learn basic skills in relevant skills through the workshops.</span><br><br>
 
                     <b><a class="work-company">Kapi</a></b> &nbsp | &nbsp Jan 2017 - Present<br>
-                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+                    
+<span class="work-description">Co-founded KAPI app with teammates and I am responsible for iOS version development and interface interactive design. KAPI app aims to help users to quickly locate and find the best suitable cafe. It reaches one thousand downloads within the first week after launch.</span><br><br>
 
                     <b><a class="work-company">Hahow</a></b> &nbsp | &nbsp Sep 2016 - Present<br>
-                    Designed merchant pages, a set of consumer-facing websites for people to discover merchants and deals.<br><br>
+                    <span class="work-description">I teach a co-hosted online course ‘iOS Development and Interface Design’, attended remotely by 380 students approx., on Hahow, while engaging in conversation with students on the platform and holding offline events to discuss the content of courses, career consulting and exchange feedback with them.</span><br><br>
 
                     <b>M.S in EE, NTUST</b> &nbsp | &nbsp Aug 2013 - Aug 2015<br>
-                    It seems that the cycling apps have already got all of the possible functions. You could even feel like a pro by using some of them.It seems that the cycling apps have already got all of the possible functions.<br><br>
+                    <span class="work-description">Graduated from NTUST Electrical Engineering. My papers ‘Data-locality aware Hadoop MapReduce real-time task scheduling’ and ‘Adaptive thermal-aware task scheduling for multi-core systems’ are published on Journal of Systems and Software</span><br><br>
 
                     <b><a class="work-company">iFit</a></b> &nbsp | &nbsp July 2014 - Sep 2014<br>
-                    Designed the problem solving experience for Expii, an educational platform designed to empower individualized learning experience.
+                    <span class="work-description">iOS Development and User Interface Intern. During the internship, I worked with the team to develop and launched first iOS app for the company. My major task included the interface design of the product, the development of data form and personal information system.</span>
                 </h2>
             </el-col>
         </el-row>
@@ -114,6 +115,9 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
     .work-company
         font-size: 18px
         font-weight: 700
+    .work-description
+        display: block
+        margin-top: 8px
 
     .container-about
         width: 100%
@@ -121,6 +125,7 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
         margin-left: auto
         margin-right: auto
         // height: 1200px
+
     .header-name-about
         margin-top: 180px
         font-size: 80px
@@ -142,6 +147,15 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
         margin-top: 106px
         margin-bottom: 32px
         line-height: 28px
+        width: 100%
+        float: right
+
+    .intro-content-work
+        font-size: 16px
+        font-weight: 300
+        margin-top: 106px
+        margin-bottom: 32px
+        line-height: 25px
         width: 100%
         float: right
 

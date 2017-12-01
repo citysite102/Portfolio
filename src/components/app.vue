@@ -25,7 +25,7 @@
                             </h1>
                             <transition appear appear-to-class="fade-enter-content"
                                     appear-active-class="fade-enter-active-div-1">
-                                <div v-cloak--hidden class="header-separator">
+                                <div v-cloak class="header-separator">
                                 </div>
                             </transition>
                             <transition appear appear-to-class="fade-enter-content"
@@ -124,7 +124,7 @@
                     </transition>
                     <transition name="fade-delay1">
                         <el-col v-show="isDesignContentShow" :span="8" :offset="2">
-                            <titleContainer class="designer-titlecontainer"更多作品 index="01" title="Designer" description="2015 年開始接觸介面設計；目前是一位專注在「移動裝置」和「前端網頁」的介面設計師；工作的範圍涵蓋產品主視覺、介面設計、視覺設計以及部分商業設計的內容（素材、Banner）。"></titleContainer>
+                            <titleContainer class="designer-titlecontainer"更多作品 index="01" title="Designer" description="2015 年開始接觸設計領域，長期關注「移動裝置」和「前端網頁」的介面設計。工作的範圍涵蓋產品視覺、介面設計、商業/行銷設計等內容（行銷素材、Banner）。"></titleContainer>
                             <moreButton title="更多作品" directLink="https://www.facebook.com/citysite1025?ref=bookmarks">
                             </moreButton>
                             <div v-show="isDesignContentShow" class="ball-2 rellax"></div>
@@ -204,19 +204,19 @@
                         </transition> -->
                         <transition name="fade-text" mode="in-out">
                             <div v-if="projectIndex==0" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ 現在" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" directLink="https://itunes.apple.com/us/app/tickle-app-learn-to-code/id1063639403?mt=8" imageSource="https://i.imgur.com/oj2MSF2.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ Present" description="擔任資深軟體工程師與介面設計師，負責主產品 iOS 開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等內容。" directLink="https://itunes.apple.com/us/app/tickle-app-learn-to-code/id1063639403?mt=8" imageSource="https://i.imgur.com/oj2MSF2.png"></hoverPictureLarge>
                                 <!-- <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
                                     2016/8 - 2017/12
                                 </h3> -->
                             </div>
                             <div v-else-if="projectIndex==1" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ 現在" description="與夥伴共同開發/創辦「KAPI 找咖啡」這個 Side Project。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" directLink="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?mt=8" imageSource="https://i.imgur.com/xbniT6x.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="KAPI 找咖啡" time="2017.1 ─ Present" description="共同開發/創辦「KAPI 找咖啡」。在團隊中負責 iOS 版本的開發、介面的互動設計與粉絲團經營。KAPI 找咖啡的主要目的在於快速的幫助使用者找到最適合自己的咖啡店，上架一週內即突破千次下載。" directLink="https://itunes.apple.com/tw/app/kapi%E6%89%BE%E5%92%96%E5%95%A1/id1261224197?mt=8" imageSource="https://i.imgur.com/xbniT6x.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==2" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="The Cosign Studio" time="2017.8 ─ 現在" description="與兩位夥伴 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發的工作坊講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能。" directLink="https://www.facebook.com/groups/207617269772052/" imageSource="https://i.imgur.com/pZfgIz3.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="The Cosign Studio" time="2017.8 ─ Present" description="與 Money, Gwynne 共同創辦 The Cosign Studio，在團隊中負責網頁開發，活動企劃以及前端開發工作坊的講師；The Cosign Studio 定期舉辦工程師與設計師的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，創造合作的機會，或者透過工作坊學習相關的基礎技能。" directLink="https://www.facebook.com/groups/207617269772052/" imageSource="https://i.imgur.com/pZfgIz3.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==3" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 組織，於2017年加入擔任 TalkUX Web Team 的志工前端工程師；在團隊中支援 Talk UX 台北場的網頁開發，以及視覺優化的內容。" directLink="http://www.talk-ux.com/" imageSource="https://i.imgur.com/iKSDiM6.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="TalkUX" time="2017.4 ─ 2017.8" description="Talk UX 是一個國際型的 UX 專業組織，2017 年加入擔任 TalkUX Web Team 的志工前端工程師，支援 Talk UX 台北場的網頁開發，以及視覺優化等內容。" directLink="http://www.talk-ux.com/" imageSource="https://i.imgur.com/iKSDiM6.png"></hoverPictureLarge>
                             </div>
                             <div v-else-if="projectIndex==4" class="developer-container work-image-container">
                                 <hoverPictureLarge class="work" title="Fetus Care" time="2015.1 ─ 2015.8" description="Fetus Care 是 2015 年 Reddot Design Award 的得獎作品，同時也是碩士時期的國科會計畫；在團隊中負責 Android App 的產品開發、藍牙/Wifi 通訊、Arduino 電路設計以及胎心音偵測感測器實作。" directLink="http://www.red-dot.sg/en/" imageSource="https://i.imgur.com/xnXq5hS.png"></hoverPictureLarge>
@@ -225,7 +225,7 @@
                     </el-col>
                     <el-col :span="10">
                         <transition name="fade-delay1">
-                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="畢業於 NTUST 積體電路所，目前是一位資深軟體工程師；具有 iOS（Swift, ObjectiveC），前端（Html, CSS, Sass, Javascript, Node.js 和 Vue.js） ，Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
+                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="畢業於 NTUST 積體電路研究所，現職為資深軟體工程師，熱愛透過程式創造不一樣的事物；具有 iOS（Swift, ObjectiveC）、前端（Html, CSS, Sass, Javascript, Node.js 和 Vue.js） 、Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
                         </transition>
                         <transition name="fade-delay2">
                             <div v-show="isDeveloperContentShow" class= "developer-project-select">
@@ -263,15 +263,15 @@
                     </h1>
                     <transition name="fade-delay1">
                         <el-col v-show="isEducatorContentShow" :span="7" :offset="2">
-                            <titleContainer class="educator-titlecontainer" index="03" title="Speaker" description="2016 年與 David 在 Hahow 開設「iOS 入門-從介面設計到開發」的線上課程，負責介面設計與部分程式開發的課程，目前已經有超過 380 位的學生；曾受邀擔任大同大學介面體驗客座講師、NTUST 客座講師與 NTU 資工系客座講師。同時持續的在國內舉辦與前端領域、跨領域相關的小型工作坊。"></titleContainer>
-                            <div class="contact">
+                            <titleContainer class="educator-titlecontainer" index="03" title="Speaker" description="和夥伴 David 在 Hahow 平台開設 iOS 開發與介面設計的線上課程，目前已經有超過 380 位的學生；曾擔任大同大學介面體驗講師、NTUST 程式開發講師與 NTU 資工系客座講師。目前持續的在國內舉辦與前端領域、跨領域相關的小型工作坊。"></titleContainer>
+                            <!-- <div class="contact">
                                 <a class="contact-link" href="mailto:citysite1025@gmail.com">聯絡我</a>
                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
                     <line x1="-24" y1="0" x2="30" y2="0"></line>
                     <polyline fill="none" stroke="#57FCF8" stroke-width="5" stroke-linecap="round" points="
                     18.0,-12.0 30,0 18.0,12.0 "/>
                 </svg>
-                            </div>
+                            </div> -->
                         </el-col>
                     </transition>
                     <transition name="fade-delay3">
@@ -299,7 +299,7 @@
                     <transition name="fade-delay1">
                         <el-col v-show="isWriterContentShow" :span="7" :offset="2">
                             <div class="ball-5 rellax" data-rellax-speed="2"></div>
-                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享經驗；目前是一位持續透過 Medium 分享和介面設計、工程開發、跨領域溝通相關知識的 Content Creator；在 Medium 有著 1500 位的 Follower 以及超過 20 萬的文章點閱數量。"></titleContainer>
+                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享/紀錄經驗的 Content Creator，並持續的透過 Medium 平台分享和介面設計、工程開發以及跨領域溝通相關的知識；在 Medium 有超過 1500 位的 Follower 以及超過 20 萬的文章點閱量。"></titleContainer>
                             <moreButton title="更多文章" directLink="https://medium.com/@citysite1025">
                             </moreButton>
                         </el-col>
@@ -311,7 +311,7 @@
                                     <a href="https://medium.com/as-a-product-designer/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E6%BC%B8%E5%B1%A4%E9%85%8D%E8%89%B2-%E4%B8%8A-b1f9771dd803">
                                         <div class="writer-work writer-work-1">
                                         </div>
-                                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="如果你是一位對於設計、顏色沒有完整概念的夥伴，這篇文章就是專門為你而準備的！漸層系列的文章會帶著你一步一步的理解「漸層」在介面上是如何被應用的。"></articleContainer>
+                                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="對於介面設計和漸層色彩完全沒有概念嗎？「漸層系列」就是專門為你而準備的！文章中會帶著你一步一步的理解「漸層」在介面上是如何被應用的。"></articleContainer>
                                     </a>
                                 </el-col>
                             </transition>
@@ -320,7 +320,7 @@
                                     <a href="https://medium.com/@citysite1025/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E5%90%8D%E7%89%87%E8%A3%BD%E4%BD%9C-2187cd29e227">
                                         <div class="writer-work writer-work-2">
                                         </div>
-                                        <articleContainer class="article-info" title="Name Card Printing Basic" description="名片在送印前其實有許多第一次可能會犯的錯誤；這篇文章透過自身慘痛的經驗來告訴你再送印名片之前，我們       還需要特別注意些什麼事情！"></articleContainer>
+                                        <articleContainer class="article-info" title="Name Card Printing Basic" description="名片在送印前，其實有許多第一次可能會犯的錯誤；這篇文章透過作者自身慘痛的經驗來告訴你，在送印名片之前我們應該要特別注意哪些環節。"></articleContainer>
                                     </a>
                                 </el-col>
                             </transition>
@@ -329,7 +329,7 @@
                                     <a href="https://medium.com/@citysite1025/%E7%B0%A1%E5%A0%B1%E5%9F%BA%E7%A4%8E%E6%8E%92%E7%89%88-a0ef7d4606ec">
                                         <div class="writer-work writer-work-3">
                                         </div>
-                                        <articleContainer class="article-info" title="Presentation Layout" description="對於簡報排版總是感到苦惱嗎？這篇文章會一步一步的帶著你透過格線系統來進行高效率的版面規劃，同時也會補充許多簡報排版時應該要注意到的細節。"></articleContainer>
+                                        <articleContainer class="article-info" title="Presentation Layout" description="對於簡報排版總是感到苦惱嗎？「簡報系列」文章會帶著你透過格線系統來進行高效率的版面規劃，同時也會補充各種在簡報排版時應該要注意到的細節。"></articleContainer>
                                         <div class="ball-7 rellax"></div>
                                     </a>
                                 </el-col>
@@ -389,7 +389,7 @@
                 pageIndex: 1,
                 projectIndex: 0,
                 projectTitles: ['Tickle', 'Kapi', 'Cosign'],
-                projectTimes: ['2015.8 ─ 現在', '2017.1 ─ 現在', '2017.4 ─ 2017.10', '2017.8 ─ 現在', '2015.1 ─ 2015.8'],
+                projectTimes: ['2015.8 ─ Present', '2017.1 ─ Present', '2017.4 ─ 2017.10', '2017.8 ─ Present', '2015.1 ─ 2015.8'],
                 projectDescriptions: ['1Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '2Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet', '3Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet'],
                 projectJobs: ['Engineer, UI Deisgn and Script','Cofounder, iOS developement','Cofunder, web developement'],
                 projectIndexs: ['Tickle','KAPI','Cosign','TalkUX','Fetus'],
@@ -486,7 +486,6 @@
             document.removeEventListener('DOMContentLoaded', this.triggerEvent(instance))
         },
         mounted() { 
-            console.log(this.isDesignContentShow);
             this.isDesignContentShow = false;
             this.isEducatorContentShow = false;
             this.isWriterContentShow = false;
@@ -582,7 +581,7 @@
     // [v-cloak]
     //     display: none
     
-    [v-cloak] .v-cloak--hidden
+    [v-cloak]
         display: none
     
 
@@ -703,7 +702,7 @@
     .skill-item:hover .skill-item-supplement
         color: white
         transform: translateX(8px)
-        font-weight: 500
+        font-weight: 400
 
     .skill-item
         display: block
@@ -887,7 +886,7 @@
             display: inline-block
             @include pc-width-l
                 top: -160px
-                +size(320px, 320px)
+                +size(310px, 310px)
 
         .work-2-container
             +size(260px, 260px)
@@ -896,14 +895,14 @@
             display: inline-block
             @include pc-width-l
                 top: -40px
-                +size(320px, 320px)
+                +size(310px, 310px)
 
         .work-3-container
             +size(260px, 260px)
             top: -180px
             @include pc-width-l
                 top: -200px
-                +size(320px, 320px)
+                +size(310px, 310px)
 
         .work-4-container
             +size(260px, 260px)
@@ -911,7 +910,7 @@
             top: -100px
             @include pc-width-l
                 top: -80px
-                +size(320px, 320px)
+                +size(310px, 310px)
 
         .work
             height: 100%

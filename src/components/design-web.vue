@@ -26,7 +26,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="2">
                     <h2 class="intro-content">
-                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體，除此之外，Tickle 可以讓你輕鬆地透過程式來控制各種不同的機器人和智慧型家電。<br><br>目前 Tickle App 只有支援 <a class="project-link" href="/#/design-tickle">iOS 版本</a>，於 2017 年開始規劃網頁版的開發。在介面設計上面，我們透過維持暗色系與 Tickle 主視覺的藍綠色，保留使用者的設計視覺體驗，同時也支援跨平台專案的整合，讓使用者能夠無縫的在不同平台上完成自己的作品。
+                        Tickle 是一款能夠幫助小朋友或者任何對於寫程式有興趣的人快速上手的學習軟體，除此之外，Tickle 可以讓你輕鬆地透過程式來控制各種不同的機器人和智慧型家電。<br><br>目前 Tickle App 只有支援 <a class="project-link" href="/#/design-tickle">iOS 版本</a>，但已經著手開始進行網頁版的開發。在介面設計上面，我們維持暗色系的背景與 Tickle 主視覺的藍綠色，保留使用者的視覺體驗一致性，在功能上面也會支援跨平台的專案整合，讓使用者能夠無縫的在不同平台上完成自己的作品。
                     </h2>
                 </el-col>
             </transition>
@@ -75,6 +75,13 @@
                     </h2>
                 </el-col>
             </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <el-col :span="20" :offset="2">
+                <div class="hero-image">
+                    <img src="../assets/images/website-longweb-mock.png"/>
+                </div>
+            </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
