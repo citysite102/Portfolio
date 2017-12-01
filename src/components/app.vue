@@ -134,7 +134,7 @@
                         <transition name="fade-delay2">
                             <div class="inline-container" v-show="isDesignContentShow">
                                 <div class="work-1-container work-image-container">
-                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/dXLvLKV.png" directLink="design-tickle">
+                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/oj2MSF2.png" directLink="design-tickle">
                                     </hoverPicture>
                                 </div>
                             </div>
@@ -204,7 +204,7 @@
                         </transition> -->
                         <transition name="fade-text" mode="in-out">
                             <div v-if="projectIndex==0" class="developer-container work-image-container">
-                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ 現在" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" directLink="https://itunes.apple.com/us/app/tickle-app-learn-to-code/id1063639403?mt=8" imageSource="https://i.imgur.com/Xojoutp.png"></hoverPictureLarge>
+                                <hoverPictureLarge class="work" title="Tickle" time="2015.9 ─ 現在" description="擔任資深 iOS 工程師與介面設計師，負責 iOS 主產品開發：包含 API 的設計與規劃、會員系統、商城系統、課程系統、ARKit、Device 藍芽傳輸、客製化 UI 等等。" directLink="https://itunes.apple.com/us/app/tickle-app-learn-to-code/id1063639403?mt=8" imageSource="https://i.imgur.com/oj2MSF2.png"></hoverPictureLarge>
                                 <!-- <h3 class="work-developer-subtitle" :key=projectJobs[projectIndex]>
                                     2016/8 - 2017/12
                                 </h3> -->
