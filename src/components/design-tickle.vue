@@ -16,7 +16,7 @@
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content">
                 <el-col :span="10" :offset="2">
-                    <h2 class="intro-title">
+                    <h2 class="intro-title-tickle">
                         關於 Tickle
                     </h2>
                 </el-col>
@@ -402,7 +402,7 @@
         letter-spacing: 0px
         text-align: center
 
-    .intro-title
+    .intro-title-tickle
         font-size: 30px
         font-weight: 700
         margin-top: -4px
