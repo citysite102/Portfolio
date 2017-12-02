@@ -311,7 +311,7 @@
                                     <a href="https://medium.com/as-a-product-designer/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E6%BC%B8%E5%B1%A4%E9%85%8D%E8%89%B2-%E4%B8%8A-b1f9771dd803">
                                         <div class="writer-work writer-work-1">
                                         </div>
-                                        <articleContainer class="article-info" title="Gradient Color 101 - Part1" description="對於介面設計和漸層色彩完全沒有概念嗎？「漸層系列」就是專門為你而準備的！文章中會帶著你一步一步的理解「漸層」在介面上是如何被應用的。"></articleContainer>
+                                        <articleContainer class="article-info" title="寫給不是設計師的-漸層配色(上)" description="對於介面設計和漸層色彩完全沒有概念嗎？「漸層系列」就是專門為你而準備的！文章中會帶著你一步一步的理解「漸層」在介面上是如何被應用的。"></articleContainer>
                                     </a>
                                 </el-col>
                             </transition>
@@ -320,7 +320,7 @@
                                     <a href="https://medium.com/@citysite1025/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E5%90%8D%E7%89%87%E8%A3%BD%E4%BD%9C-2187cd29e227">
                                         <div class="writer-work writer-work-2">
                                         </div>
-                                        <articleContainer class="article-info" title="Name Card Printing Basic" description="名片在送印前，其實有許多第一次可能會犯的錯誤；這篇文章透過作者自身慘痛的經驗來告訴你，在送印名片之前我們應該要特別注意哪些環節。"></articleContainer>
+                                        <articleContainer class="article-info" title="寫給不是設計師的-名片基礎" description="名片在送印前，其實有許多第一次可能會犯的錯誤；這篇文章透過作者自身慘痛的經驗來告訴你，在送印名片之前我們應該要特別注意哪些環節。"></articleContainer>
                                     </a>
                                 </el-col>
                             </transition>
@@ -329,7 +329,7 @@
                                     <a href="https://medium.com/@citysite1025/%E7%B0%A1%E5%A0%B1%E5%9F%BA%E7%A4%8E%E6%8E%92%E7%89%88-a0ef7d4606ec">
                                         <div class="writer-work writer-work-3">
                                         </div>
-                                        <articleContainer class="article-info" title="Presentation Layout" description="對於簡報排版總是感到苦惱嗎？「簡報系列」文章會帶著你透過格線系統來進行高效率的版面規劃，同時也會補充各種在簡報排版時應該要注意到的細節。"></articleContainer>
+                                        <articleContainer class="article-info" title="簡報基礎排版" description="對於簡報排版總是感到苦惱嗎？「簡報系列」文章會帶著你透過格線系統來進行高效率的版面規劃，同時也會補充各種在簡報排版時應該要注意到的細節。"></articleContainer>
                                         <div class="ball-7 rellax"></div>
                                     </a>
                                 </el-col>

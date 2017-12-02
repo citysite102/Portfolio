@@ -21,7 +21,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-    @import url('https://fonts.googleapis.com/css?family=Yrsa:300,400,500');
     @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
     .index

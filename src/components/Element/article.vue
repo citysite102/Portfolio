@@ -20,11 +20,9 @@
 <style scoped lang="sass">
 
     .title
-        font-family: 'Yrsa', serif
-        font-style: italic
-        font-size: 28px
-        font-weight: 300
-        letter-spacing: 1px
+        font-family: 'Noto Sans TC', sans-serif
+        font-size: 20px
+        font-weight: 500
         line-height: 34px
 
     .description
