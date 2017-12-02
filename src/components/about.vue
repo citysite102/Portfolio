@@ -63,7 +63,7 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
                 <h2 class="intro-content-work">
                     
                     <b><a class="work-company">Tickle App</a></b> &nbsp | &nbsp May 2017 - Present<br>
-                    <span class="work-description">I currently act as a Senior iOS engineer and UI/UX designer for the core product - Tickle app. My tasks include product function planning, flow design and coding framework design. Meanwhile, I am also responsible for the front-end development of the web version, marketing material design for BD team and educational training for interns.</span><br><br>
+                    <span class="work-description">I currently act as a Senior iOS engineer and UI/UX designer for the core product - Tickle app. My tasks include product function planning, flow design and code structure design. Meanwhile, I am also responsible for the front-end development of the web version, marketing material design for BD team and educational training for interns.</span><br><br>
 
                     <b><a class="work-company">The Cosign Studio</a></b> &nbsp | &nbsp May 2017 - Present<br>
                     <span class="work-description">Co-founded The Cosign Studio with teammates Money and Gwynne. I am responsible for website development, event organizing and act as the speaker for front-end development workshop. The Cosign Studio regularly hosts workshops for engineers and designers, with the aim of providing a venue for everyone to share and exchange ideas of their profession and related work, or learn basic skills in relevant skills through the workshops.</span><br><br>

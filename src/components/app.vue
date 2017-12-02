@@ -73,7 +73,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-5">
                                         <h3 class="skill-item-supplement">
-                                            iOS/Web 開發 , UI/UX, 跨領域溝通
+                                            iOS/Web 開發 , UI/UX, 跨領域合作
                                         </h3>
                                     </transition>
                                 </a>
