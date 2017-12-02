@@ -10,7 +10,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
                 <!-- <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="
                 0.375,0.375 45.63,38.087 0.375,75.8 "/> -->
-                <line x1="-40" y1="0" x2="32" y2="0"></line>
+                <line class="line-more" x1="-40" y1="0" x2="29" y2="0"></line>
                 <!-- <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" points="
                 18.0,-12.0 30,0 18.0,12.0 "/></polyline> -->
                 <polyline fill="none" stroke="#FFFFFF" stroke-width="5" points="
@@ -47,6 +47,9 @@
         line
             stroke: white
             stroke-width: 5px
+
+        .line-more
+            stroke-linecap: square
 
     .text
         display: inline-block
@@ -88,7 +91,7 @@
         letter-spacing: 1px
         transition: all 1.0s cubic-bezier(0,1.09,0.56,1)
         vertical-align: top
-        border: 3px solid transparent
+        border: 2px solid transparent
         border-image: linear-gradient(to bottom right, $gradient-light-blue 0%, $gradient-dark-blue 100%)
         border-image-slice: 1
         white-space: nowrap

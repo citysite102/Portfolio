@@ -1250,7 +1250,7 @@
     .ball-6
         +size(140px, 140px)
         left: 70%
-        bottom: 0%
+        bottom: 200%
         position: absolute
         filter: drop-shadow(0px 4px 6px rgba(182, 117, 255, 0.4))
         background-image: url('~assets/images/circle-purple.png')
