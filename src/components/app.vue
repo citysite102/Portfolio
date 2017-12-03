@@ -131,44 +131,48 @@
                         </el-col>
                     </transition>
                     <el-col :span="12" :offset="1">
-                        <transition name="fade-delay2">
-                            <div class="inline-container" v-show="isDesignContentShow">
-                                <div class="work-1-container work-image-container">
-                                    <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/oj2MSF2.png" directLink="design-tickle">
-                                    </hoverPicture>
+                        <div class="inline-top-container">
+                            <transition name="fade-delay2">
+                                <div class="inline-container" v-show="isDesignContentShow">
+                                    <div class="work-1-container work-image-container">
+                                        <hoverPicture class="work" title="Tickle App" description="在團隊中負責 Tickle App iOS、Web 整體的流程與介面設計；根據決策團隊的需求完成產品功能的設計，角色場景繪製以及支援行銷團隊的素材設計。" imageSource="https://i.imgur.com/oj2MSF2.png" directLink="design-tickle">
+                                        </hoverPicture>
+                                    </div>
                                 </div>
-                            </div>
-                        </transition>
-                        <transition name="fade-delay3">
-                            <div class="inline-container" v-show="isDesignContentShow">
-                                <div class="work-2-container work-image-container">
-                                    <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="https://i.imgur.com/bAyGOa3.png" directLink="design-element">
-                                    </hoverPicture>
+                            </transition>
+                            <transition name="fade-delay3">
+                                <div class="inline-container" v-show="isDesignContentShow">
+                                    <div class="work-2-container work-image-container">
+                                        <hoverPicture class="work" title="介面視覺元件" description="App Icon、擬物化光影練習與 Daily UI 等介面視覺元件。" imageSource="https://i.imgur.com/bAyGOa3.png" directLink="design-element">
+                                        </hoverPicture>
+                                    </div>
                                 </div>
-                            </div>
-                        </transition>
+                            </transition>
+                        </div>
                     </el-col>
                 </el-row>
                 <el-row :gutter="16">
                     <el-col :span="12" :offset="11">
-                        <transition name="fade-delay4">
-                            <div class="inline-container" v-show="isDesignContentShow">
-                                <div class="work-3-container work-image-container">
-                                    <hoverPicture class="work" title="iOS 介面" description="iOS 設計專案：包含 Moment 的 Redesign 概念、Hahow 課程示範的 Howhow 與中國投資人合作提案的「等等」。" imageSource="https://i.imgur.com/VCrQzop.png" directLink="design-ios">
-                                        
-                                    </hoverPicture>
+                        <div class="inline-top-container">
+                            <transition name="fade-delay4">
+                                <div class="inline-container" v-show="isDesignContentShow">
+                                    <div class="work-3-container work-image-container">
+                                        <hoverPicture class="work" title="iOS 介面" description="iOS 設計專案：包含 Moment 的 Redesign 概念、Hahow 課程示範的 Howhow 與中國投資人合作提案的「等等」。" imageSource="https://i.imgur.com/VCrQzop.png" directLink="design-ios">
+                                            
+                                        </hoverPicture>
+                                    </div>
                                 </div>
-                            </div>
-                        </transition>
-                        <transition name="fade-delay5">
-                            <div class="inline-container" v-show="isDesignContentShow">
-                                <div class="work-4-container work-image-container">
-                                    <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（持續開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="https://i.imgur.com/r7FKoiG.png" directLink="design-web">
-                                        
-                                    </hoverPicture>
+                            </transition>
+                            <transition name="fade-delay5">
+                                <div class="inline-container" v-show="isDesignContentShow">
+                                    <div class="work-4-container work-image-container">
+                                        <hoverPicture class="work" title="網頁介面" description="Web 設計專案：包含 Tickle 網頁版介面（開發中），The Long Web 的 Redesign 概念與 Cosign 的視覺提案。" imageSource="https://i.imgur.com/r7FKoiG.png" directLink="design-web">
+                                            
+                                        </hoverPicture>
+                                    </div>
                                 </div>
-                            </div>
-                        </transition>
+                            </transition>
+                        </div>
                     </el-col>
                 </el-row>    
             </section>
@@ -225,7 +229,7 @@
                     </el-col>
                     <el-col :span="10">
                         <transition name="fade-delay1">
-                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="畢業於 NTUST 積體電路研究所，現職為資深軟體工程師，熱愛透過程式創造不一樣的事物；具有 iOS（Swift, ObjectiveC）、前端（Html, CSS, Sass, Javascript, Node.js 和 Vue.js） 、Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
+                            <titleContainer v-show="isDeveloperContentShow" class="developer-titlecontainer" index="02" title="Software Developer" description="資深軟體工程師，熱愛透過程式創造不一樣的事物；具有 iOS（Swift, ObjectiveC）、前端（Html, CSS, Sass, Javascript, Node.js 和 Vue.js） 、Arduino 和嵌入式系統等平台開發經驗。"></titleContainer>
                         </transition>
                         <transition name="fade-delay2">
                             <div v-show="isDeveloperContentShow" class= "developer-project-select">
@@ -359,7 +363,6 @@
     import ScrollTo from 'vue-scrollto';
     import Rellax from 'rellax';
     import VanillaTilt from 'vanilla-tilt';
-    // import tilt from 'tilt.js';
 
 
     var VueScrollTo = require('vue-scrollto');
@@ -877,11 +880,17 @@
         .designer-titlecontainer
             max-width: 400px
 
+        .inline-top-container
+            display: flex
+            align-items: flex-start
+
         .inline-container
             display: inline-block
+            width: 310px
+            height: 310px
 
         .work-1-container
-            +size(260px, 260px)
+            +size(270px, 270px)
             top: -80px
             display: inline-block
             @include pc-width-l
@@ -889,27 +898,29 @@
                 +size(310px, 310px)
 
         .work-2-container
-            +size(260px, 260px)
+            +size(270px, 270px)
             top: 0px
-            margin-left: 60px
+            margin-left: 20px
             display: inline-block
             @include pc-width-l
-                top: -40px
+                top: -60px
+                margin-left: 60px
                 +size(310px, 310px)
 
         .work-3-container
-            +size(260px, 260px)
+            +size(270px, 270px)
             top: -180px
             @include pc-width-l
                 top: -200px
                 +size(310px, 310px)
 
         .work-4-container
-            +size(260px, 260px)
-            margin-left: 60px
+            +size(270px, 270px)
+            margin-left: 20px
             top: -100px
             @include pc-width-l
-                top: -80px
+                top: -100px
+                margin-left: 60px
                 +size(310px, 310px)
 
         .work
@@ -1206,8 +1217,8 @@
 
     .ball-1
         +size(160px, 160px)
-        left: -200%
-        top: 250%
+        left: -150%
+        top: 300%
         position: absolute
         filter: drop-shadow(0px 0px 6px rgba(116, 231, 255, 0.4))
         background-image: url('~assets/images/circle-blue-blur.png')
@@ -1257,12 +1268,12 @@
         background-size: contain
         background-repeat: no-repeat
     .ball-7
-        +size(140px, 140px)
+        +size(120px, 120px)
         left: 73%
         bottom: -240%
         position: absolute
         filter: drop-shadow(0px 0px 6px rgba(116, 231, 255, 0.4))
-        background-image: url('~assets/images/circle-blue.png')
+        background-image: url('~assets/images/circle-green.png')
         background-size: contain
         background-repeat: no-repeat
 

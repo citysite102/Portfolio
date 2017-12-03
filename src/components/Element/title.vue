@@ -28,7 +28,7 @@
         font-style: italic
         font-size: 24px
         font-weight: 300
-        letter-spacing: 4px
+        letter-spacing: 2px
     .title 
         margin-top: 12px
     .description

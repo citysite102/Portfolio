@@ -105,7 +105,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="2">
                     <h2 class="intro-content">
-                        The Cosign Studio 是我和兩位設計師 Money, Gwynne 所共同創辦；定期舉辦工程師、設計師和 PM 的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能；除此之外，我們也盡力提供各類型 Side Project 的合作機會，達到媒合，尋找未來夥伴的目標。<br><br>在合作的過程中，我們彼此都會設計各種不同類型的 Landing Page 進行討論，並試著找出 Studio 的核心概念與設計風格。
+                        The Cosign Studio 是和兩位設計師 Money, Gwynne 所共同創辦的跨領域工作團隊；定期舉辦工程師、設計師和 PM 的交流活動，目的在於提供一個場合讓夥伴們分享彼此在專業和工作上面的心得，或者透過工作坊學習相關的基礎技能；除此之外，我們也盡力提供各類型 Side Project 的合作機會，達到媒合，尋找未來夥伴的目標。<br><br>在合作的過程中，我們彼此都會設計各種不同類型的 Landing Page 進行討論，並試著找出 Studio 的核心概念與設計風格。
                     </h2>
                 </el-col>
             </transition>
@@ -203,13 +203,13 @@
         margin-right: 0px
 
     .intro-content
-        font-size: 18px
+        font-size: 17px
         font-weight: 300
         margin-top: 0px
         margin-bottom: 24px
         margin-left: 0px
         margin-right: 0px
-        line-height: 30px
+        line-height: 28px
         max-width: 800px
 
     .project-link

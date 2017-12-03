@@ -188,13 +188,13 @@
         margin-right: 0px
 
     .intro-content
-        font-size: 18px
+        font-size: 17px
         font-weight: 300
         margin-top: 0px
         margin-bottom: 24px
         margin-left: 0px
         margin-right: 0px
-        line-height: 30px
+        line-height: 28px
         max-width: 800px
   
 

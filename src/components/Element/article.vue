@@ -24,10 +24,17 @@
         font-size: 20px
         font-weight: 500
         line-height: 34px
+        margin-top: 8px
 
     .description
-        margin-top: 8px
+        font-family: 'Noto Sans TC', sans-serif
+        margin-top: 4px
         max-width: 400px
+        font-size: 14px
+        opacity: 0.8
+        transition-duration: 0.2s
+        &:hover
+            opacity: 1.0
 
 
 </style>

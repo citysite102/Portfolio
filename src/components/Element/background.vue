@@ -22,7 +22,7 @@
                     <div class="rope"></div>
                     <div v-show="showcolorline" class="rope-line rope-line-4-1 rellax" data-rellax-speed="3"></div>
                     <div v-show="showcolorline" class="rope-line rope-line-4-2 rellax" data-rellax-speed="3"></div>
-                    <div v-show="showcolorline" class="rope-line rope-line-4-3 rellax" data-rellax-speed="1"></div>
+                    <div v-show="showcolorline" class="rope-line rope-line-4-3 rellax" data-rellax-speed="2"></div>
                 </el-col>
                 <el-col :span="4">
                     <div class="rope"></div>
@@ -71,7 +71,7 @@
         background-color: #222222
         width: 2px
         height: 100%
-        opacity: 0.2
+        opacity: 0.3
         z-index: 0
         margin-left: auto
         margin-right: auto
@@ -80,7 +80,7 @@
         position: absolute
         width: 2px
         left: 50%
-        opacity: 0.5
+        opacity: 0.8
         transform: translateX(-50%)
 
     .rope-line-1-1
@@ -98,7 +98,7 @@
         // background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
     .rope-line-2-3
         height: 240px
-        top: 90%
+        top: 85%
         background: linear-gradient(to bottom, $gradient-light-blue, $gradient-dark-blue)
 
     .rope-line-3-1
@@ -121,7 +121,7 @@
     
     .rope-line-4-3
         height: 160px
-        top: 90%
+        top: 92%
         // background: linear-gradient(to bottom, $gradient-light-yellow, $gradient-dark-yellow)
         background: linear-gradient(to bottom, $gradient-light-green, $gradient-dark-green)
 

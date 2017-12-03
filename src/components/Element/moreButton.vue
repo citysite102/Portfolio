@@ -91,52 +91,21 @@
         letter-spacing: 1px
         transition: all 1.0s cubic-bezier(0,1.09,0.56,1)
         vertical-align: top
-        border: 2px solid transparent
+        border: 2px solid
         border-image: linear-gradient(to bottom right, $gradient-light-blue 0%, $gradient-dark-blue 100%)
         border-image-slice: 1
         white-space: nowrap
 
-        // &:before, &:after
-        //     content: '';
-        //     position: absolute;
-        //     background: $gradient-light-blue;
-        //     transition: transform 0.1s;
-        //     transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
-        //     top: 0;
-        //     width: 4px;
-        //     height: 100%;
-        //     transform: scale3d(1, 0, 1);
-        // &:before
-        //     left: 0;
-        //     -webkit-transform-origin: 50% 0%;
-        //     transform-origin: 50% 0%;
-        //     transition-delay: 0.0s
-        // &:after
-        //     right: 0;
-        //     -webkit-transform-origin: 50% 100%;
-        //     transform-origin: 50% 100%;
-        //     transition-delay: 0.2s
-
         &:hover
-            // &:before, &:after
-            //     transform: scale3d(1, 1, 1);
-            // .text
-            //     &:before, &:after
-            //         transform: scale3d(1, 1, 1);
-            // background: linear-gradient(to bottom right, $gradient-light-blue, $gradient-dark-blue)
-
             .text
                 transform: translateX(6px)
                 text-shadow: 6px 6px 10px #1A5FC0
             .icon
                 transform: translateX(12px)
-                // filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.8))
             .bg-container
                 transform: scale3d(1, 1, 1)
 
     .bg-container
-        // height: 100%
-        // width: 100%
         width: 132px
         height: 50px
         margin: 0px
@@ -147,17 +116,6 @@
         transition: all 0.4s cubic-bezier(0,1.09,0.56,1)
         transform: scale3d(0, 1, 1)
         transform-origin: 0% 50%
-    // .hover
-    //     &:before
-    //         transition-delay: 0.3s
-    //     &:after
-    //         transition-delay: 0.1s
-
-    //     .text
-    //         &:before
-    //             transition-delay: 0.0s
-    //         &:after
-    //             transition-delay: 0.2s
 
 
 </style>
