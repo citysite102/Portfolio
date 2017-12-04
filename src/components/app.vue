@@ -59,7 +59,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-4">
                                         <h3 class="skill-item-supplement" href="#" >
-                                            iOS, Web, Vue.js, Node.js
+                                            iOS 開發, 前端網頁開發（Vue）
                                         </h3>
                                     </transition>
                                 </a>
@@ -73,7 +73,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-5">
                                         <h3 class="skill-item-supplement">
-                                            iOS/Web 開發 , UI/UX, 跨領域合作
+                                            iOS/Web 開發, UI/UX, 跨領域合作
                                         </h3>
                                     </transition>
                                 </a>
@@ -312,7 +312,7 @@
                         <el-row :gutter="16">
                             <transition name="fade-delay2">
                                 <el-col v-show="isWriterContentShow" class="writer-container" :span="24" :offset="0">
-                                    <a href="https://medium.com/as-a-product-designer/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E6%BC%B8%E5%B1%A4%E9%85%8D%E8%89%B2-%E4%B8%8A-b1f9771dd803">
+                                    <a class="article-content" href="https://medium.com/as-a-product-designer/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E6%BC%B8%E5%B1%A4%E9%85%8D%E8%89%B2-%E4%B8%8A-b1f9771dd803">
                                         <div class="writer-work writer-work-1">
                                         </div>
                                         <articleContainer class="article-info" title="寫給不是設計師的-漸層配色(上)" description="對於介面設計和漸層色彩完全沒有概念嗎？「漸層系列」就是專門為你而準備的！文章中會帶著你一步一步的理解「漸層」在介面上是如何被應用的。"></articleContainer>
@@ -321,7 +321,7 @@
                             </transition>
                             <transition name="fade-delay3">
                                 <el-col v-show="isWriterContentShow" class="writer-container" :span="24" :offset="0">
-                                    <a href="https://medium.com/@citysite1025/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E5%90%8D%E7%89%87%E8%A3%BD%E4%BD%9C-2187cd29e227">
+                                    <a class="article-content" href="https://medium.com/@citysite1025/%E5%AF%AB%E7%B5%A6%E4%B8%8D%E6%98%AF%E8%A8%AD%E8%A8%88%E5%B8%AB%E7%9A%84-%E5%90%8D%E7%89%87%E8%A3%BD%E4%BD%9C-2187cd29e227">
                                         <div class="writer-work writer-work-2">
                                         </div>
                                         <articleContainer class="article-info" title="寫給不是設計師的-名片基礎" description="名片在送印前，其實有許多第一次可能會犯的錯誤；這篇文章透過作者自身慘痛的經驗來告訴你，在送印名片之前我們應該要特別注意哪些環節。"></articleContainer>
@@ -330,7 +330,7 @@
                             </transition>
                             <transition name="fade-delay4">
                                 <el-col v-show="isWriterContentShow" class="writer-container" :span="24" :offset="0">
-                                    <a href="https://medium.com/@citysite1025/%E7%B0%A1%E5%A0%B1%E5%9F%BA%E7%A4%8E%E6%8E%92%E7%89%88-a0ef7d4606ec">
+                                    <a class="article-content" href="https://medium.com/@citysite1025/%E7%B0%A1%E5%A0%B1%E5%9F%BA%E7%A4%8E%E6%8E%92%E7%89%88-a0ef7d4606ec">
                                         <div class="writer-work writer-work-3">
                                         </div>
                                         <articleContainer class="article-info" title="簡報基礎排版" description="對於簡報排版總是感到苦惱嗎？「簡報系列」文章會帶著你透過格線系統來進行高效率的版面規劃，同時也會補充各種在簡報排版時應該要注意到的細節。"></articleContainer>
@@ -868,7 +868,7 @@
         text-align: center
 
     .work-image-container
-        box-shadow: 16px 16px 50px $shadow-color-black
+        box-shadow: 5px 5px 20px $shadow-color-black
 
     .section-designer
         margin-left: auto
@@ -1153,7 +1153,7 @@
         .educator-triangle
             +size(280px, 280px)
             position: absolute
-            top: -400px
+            top: -395px
             left: 32px
             background: linear-gradient(to bottom right, $gradient-light-yellow 20%, $gradient-dark-yellow 100%)
 
@@ -1193,10 +1193,13 @@
             display: inline-block
             vertical-align: middle
             cursor: pointer
-
+            opacity: 0.75
+            transition-duration: 0.3s
             @include pc-width-l
                 +size(140px, 140px)
                 margin: 32px 24px
+
+
 
 
         .writer-work-1
@@ -1207,6 +1210,46 @@
 
         .writer-work-3
             background-image: url('~assets/images/article-3.png')
+
+
+
+        .article-content
+            display: block
+            &:hover
+                .writer-work
+                    opacity: 1.0
+                .article-info
+                    .article-title::before
+                        transform: scale3d(1,1,1)
+                    .article-description
+                        transform: translateX(8px)
+                        opacity: 1.0
+
+            .article-info
+                .article-title
+                    display: inline-block
+                    margin-bottom: 2px
+                    letter-spacing: 1px
+                    transition: transform 0.5s
+                    transition-timing-function: cubic-bezier(0.2,1,0.3,1)
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6)
+                    padding-right: 8px
+                    
+                    &:before
+                        content: ''
+                        position: absolute
+                        z-index: -1
+                        bottom: 3%
+                        left: -4px
+                        width: 100%
+                        height: 25%
+                        opacity: 1.0
+                        transform: scale3d(0,1,1)
+                        transform-origin: 0% 50%
+                        transition: transform 0.5s
+                        transition-timing-function: cubic-bezier(0.2,1,0.3,1)
+                        background: linear-gradient(to right, $gradient-dark-purple, $gradient-light-purple)
+
 
         .article-info
             cursor: pointer

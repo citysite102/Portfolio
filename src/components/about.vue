@@ -32,6 +32,15 @@
         </el-row>
         <el-row :gutter="16">
             <transition appear appear-to-class="fade-enter-content"
+                                appear-active-class="fade-enter-active-profile-content-1">
+                <el-col :span="10" :offset="12">
+                    <a class="intro-cv" href="https://goo.gl/oGKcqS">Download Resume</a>
+                    <div class="download-button"><a class="button-cv" href="https://goo.gl/oGKcqS"></a></div>
+                </el-col>
+            </transition>
+        </el-row>
+        <el-row :gutter="16">
+            <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-2">
                 <el-col :span="22">
                     <div class="profile-image">
@@ -149,6 +158,22 @@ Aside from work, Samuel likes to document his life through camera lenses. He oft
         line-height: 28px
         width: 100%
         float: right
+
+    .intro-cv
+        font-size: 18px
+        font-weight: 500
+
+    .download-button
+        background-image: url('~assets/images/download-button.png')
+        background-size: cover
+        width: 12px
+        height: 14px
+        margin-left: 8px
+        display: inline-block
+    .button-cv
+        display: block
+        width: 100%
+        height: 100%
 
     .intro-content-work
         font-size: 16px
