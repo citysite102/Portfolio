@@ -9,7 +9,7 @@
         </div>
         <div class="container">
             <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-headerbar">
+                                    appear-active-class="fade-enter-active-headerbar" after-enter="separatorAfterEnter">
                 <headerBar :showAbout="true" :showWork="false"></headerBar>
             </transition>
             <backgroundRope class="background-ropes" showcolorline=true></backgroundRope>
@@ -24,7 +24,7 @@
                                 HELLO
                             </h1>
                             <transition appear appear-to-class="fade-enter-content"
-                                    appear-active-class="fade-enter-active-div-1">
+                                    appear-active-class="fade-enter-active-div-1" v-on:after-enter="separatorAfterEnter">
                                 <div v-cloak class="header-separator">
                                 </div>
                             </transition>
@@ -400,6 +400,10 @@
             }
         },
         methods: {
+
+            separatorAfterEnter: function (el) {
+                el.style.opacity = 1.0;
+            },
             selectProject: function(index) {
                 this.projectIndex = index;
             },
@@ -588,6 +592,8 @@
         display: none
     
 
+    headerBar
+        opacity: 0
 
     .unavailable-container
         display: block
@@ -603,6 +609,7 @@
 
         @include pc-width
             display: block
+
 
     .section-about
         background-color: transparent
@@ -691,6 +698,7 @@
         +size(200px, 16px)
         top: 118px
         left: 80px
+        opacity: 0
         background: linear-gradient(to right, $gradient-light-blue, $gradient-dark-blue)
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4)
 
