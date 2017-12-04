@@ -71,7 +71,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
                     <h2 class="intro-content-center">
-                        在 Tickle 團隊，我主要負責 iOS 的產品開發以及不同平台的介面設計（包含 iPad, iPhone 與 Web 等平台）；在設計的過程中，需要持續的維持產品視覺的一制性，調整與優化使用者的操作流程，並同時考慮使用者與行銷團隊的業務需求。<br><br>同時作為團隊的工程師與設計師，在設計與規劃的過程中，我能夠同時考慮視覺與程式開發的可行性，並評估在時限內該如何完成各種不同的挑戰。
+                        在 Tickle 團隊中主要負責 iOS 的產品開發以及產品現階段不同平台的介面設計（包含 iPad, iPhone 與 Web 等平台）；設計的過程中需要持續的維持產品視覺的一制性，調整與優化使用者的操作流程，並同時考慮使用者和行銷團隊的業務需求。<br><br>同時作為團隊的工程師與設計師，在設計與規劃的過程中，我能夠同時考慮視覺與程式開發的可行性，並評估在不同階段的開發時限內該如何完成各種不一樣的挑戰。
                     </h2>
                 </el-col>
             </transition>
@@ -86,7 +86,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
                     <h2 class="intro-content-center">
-                        Tickle App 的設計不單純只有角色設計和介面；由於它是一個架構和功能都相當複雜的產品，這樣的因素也大幅度的提升了不同螢幕尺寸在設計上的困難程度。如何在開發或規劃新功能時兼顧操作性、可讀性和娛樂性，一直都是我在 Tickle 團隊中相當具有挑戰性的過程。
+                        Tickle App 的設計不單純只有角色設計和介面；由於它是一個架構和功能都相當複雜的產品，這樣的因素也大幅度的提升了不同螢幕尺寸在設計/規劃上的困難程度。如何在開發或規劃新功能時兼顧操作性、可讀性和娛樂性，一直都是我在加入 Tickle 團隊後相當具有挑戰的過程。
                     </h2>
                 </el-col>
             </transition>
@@ -116,7 +116,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    Tickle App 的主要設計規範是由前輩 Sean 所制訂，制訂的內容包含角色的樣貌、視覺用色和介面架構等等，在2016年後期由我負責接手設計。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為新版本的 iOS 標準字 San Francisco；在視覺配色上，主要是暗色系的背景上搭配明亮色系的文字、按鈕為主，標準色則沿用舊版本的海洋藍綠色。
+                    Tickle App 的主要設計規範是由前輩醒宇（Sean）所制訂，制訂的內容包含角色的外觀、產品視覺用色和介面主架構等等，在2016年後半年由開始我接手設計。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為新版本的 iOS 標準字 San Francisco；在視覺配色上，主要是暗色系的背景上搭配明亮色系的文字、按鈕為主，標準色則沿用舊版本的海洋藍綠色。
                 </h2>
             </el-col>
         </el-row>

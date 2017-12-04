@@ -60,7 +60,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-4">
                                         <h3 class="skill-item-supplement" href="#" >
-                                            iOS 開發, 前端網頁開發（Vue）
+                                            iOS 開發, 前端網頁開發（Vue.js）
                                         </h3>
                                     </transition>
                                 </a>
@@ -74,7 +74,7 @@
                                     <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-content-5">
                                         <h3 class="skill-item-supplement">
-                                            iOS/Web 開發, UI/UX, 跨領域合作
+                                            iOS/前端開發, UI/UX, 跨領域合作
                                         </h3>
                                     </transition>
                                 </a>
@@ -304,7 +304,7 @@
                     <transition name="fade-delay1">
                         <el-col v-show="isWriterContentShow" :span="7" :offset="2">
                             <div class="ball-5 rellax" data-rellax-speed="2"></div>
-                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享/紀錄經驗的 Content Creator，並持續的在 Medium 平台分享和介面設計、工程開發以及跨領域溝通相關的知識；在 Medium 有超過 1500 位的 Follower 以及 20 萬的文章點閱量。"></titleContainer>
+                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="喜歡透過文字分享經驗/教學的 Content Creator。持續的在 Medium 平台分享和介面設計、工程開發以及跨領域溝通相關的知識；在 Medium 有超過 1500 位的 Follower 以及 20 萬的文章點閱量。"></titleContainer>
                             <moreButton title="更多文章" directLink="https://medium.com/@citysite1025">
                             </moreButton>
                         </el-col>
