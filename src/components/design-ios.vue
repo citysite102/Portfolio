@@ -35,7 +35,7 @@
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
-                    <div class="hero-image">
+                    <div class="hero-image-ios">
                         <img src="../assets/images/design-moment.png"/>
                     </div>
                 </el-col>
@@ -63,14 +63,14 @@
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-ios">
                     <img src="../assets/images/design-howhow-wireframe.png"/>
                 </div>
             </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-ios">
                     <img src="../assets/images/hero-howhow.png"/>
                 </div>
             </el-col>
@@ -97,7 +97,7 @@
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-ios">
                     <img src="../assets/images/hero-waiting.png"/>
                 </div>
             </el-col>
@@ -152,7 +152,7 @@
         margin-left: auto
         margin-right: auto
     
-    .hero-image
+    .hero-image-ios
         width: 100%
         height: auto
         margin-top: 40px
