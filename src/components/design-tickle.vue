@@ -116,7 +116,7 @@
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
                 <h2 class="intro-content-center">
-                    Tickle App 的主要設計規範是由前輩 Sean 所制定，包含角色的型態、視覺用色和介面架構等等，在2016年後期由我負責接手設計。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為新版本的 iOS 標準字 San Francisco；在視覺配色上，主要是暗色系的背景上搭配明亮色系的文字、按鈕為主，標準色則沿用舊版本的海洋藍綠色。
+                    Tickle App 的主要設計規範是由前輩 Sean 所制訂，制訂的內容包含角色的樣貌、視覺用色和介面架構等等，在2016年後期由我負責接手設計。Tickle 的標準字是 Helvetica Neue，預計會在近期的改版中調整為新版本的 iOS 標準字 San Francisco；在視覺配色上，主要是暗色系的背景上搭配明亮色系的文字、按鈕為主，標準色則沿用舊版本的海洋藍綠色。
                 </h2>
             </el-col>
         </el-row>

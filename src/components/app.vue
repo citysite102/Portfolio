@@ -268,7 +268,7 @@
                     </h1>
                     <transition name="fade-delay1">
                         <el-col v-show="isEducatorContentShow" :span="7" :offset="2">
-                            <titleContainer class="educator-titlecontainer" index="03" title="Speaker" description="和夥伴 David 在 Hahow 平台開設 iOS 開發與介面設計的線上課程，目前已經有超過 380 位的學生；曾擔任大同大學介面體驗講師、NTUST 程式開發講師與 NTU 資工系客座講師。目前持續的在國內舉辦與前端領域、跨領域相關的小型工作坊。"></titleContainer>
+                            <titleContainer class="educator-titlecontainer" index="03" title="Speaker" description="和夥伴 David 在 Hahow 平台開設 iOS 開發與介面設計的線上課程，目前已經有超過 380 位的學生；擔任大同大學介面體驗講師、NTUST 程式開發講師與 NTU 資工系客座講師。目前持續的在國內舉辦與前端領域、跨領域相關的小型工作坊；推廣資訊傳遞和分享的價值。"></titleContainer>
                             <!-- <div class="contact">
                                 <a class="contact-link" href="mailto:citysite1025@gmail.com">聯絡我</a>
                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-50 -50 100 100" xml:space="preserve">
@@ -304,7 +304,7 @@
                     <transition name="fade-delay1">
                         <el-col v-show="isWriterContentShow" :span="7" :offset="2">
                             <div class="ball-5 rellax" data-rellax-speed="2"></div>
-                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享/紀錄經驗的 Content Creator，並持續的透過 Medium 平台分享和介面設計、工程開發以及跨領域溝通相關的知識；在 Medium 有超過 1500 位的 Follower 以及超過 20 萬的文章點閱量。"></titleContainer>
+                            <titleContainer class="writer-titlecontainer" index="04" title="Writer" description="熱愛透過文字分享/紀錄經驗的 Content Creator，並持續的在 Medium 平台分享和介面設計、工程開發以及跨領域溝通相關的知識；在 Medium 有超過 1500 位的 Follower 以及 20 萬的文章點閱量。"></titleContainer>
                             <moreButton title="更多文章" directLink="https://medium.com/@citysite1025">
                             </moreButton>
                         </el-col>
