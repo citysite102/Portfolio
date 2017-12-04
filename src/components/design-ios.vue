@@ -26,7 +26,7 @@
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="10" :offset="2">
                     <h2 class="intro-content">
-                        Moment App 的目標在於發掘、紀錄和收藏城市中的好所在，透過客製化的標籤、即時回報的功能來滿足使用者找到「好所在」的體驗；初步概念的主要目標會在於提供世界各地的咖啡店、選物店和獨立書店的資訊。 
+                        Moment App 是我基於 KAPI 找咖啡練習的一個概念型介面設計；產品的目標在於發掘、紀錄和收藏每座城市中的好所在，透過客製化的標籤、即時回報系統的功能來滿足使用者找到各地「好所在」的體驗；初步概念的主要目標會在於提供世界各地的咖啡店、選物店和獨立書店的資訊。 
                     </h2>
                 </el-col>
             </transition>
