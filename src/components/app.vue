@@ -1410,23 +1410,23 @@
         opacity: 0
         transition: all 0.0s
     .fade-enter-active-headerbar
-        animation: headerBarIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.6s forwards
+        animation: headerBarIn 1.2s cubic-bezier(1,0.01,0.38,1) 0.8s forwards
     .fade-enter-active-scroll
         animation: scrollIconIn 1.0s cubic-bezier(1,0.01,0.38,1) 0.6s forwards
     .fade-enter-active-div-1
         animation: divSlideIn 0.4s cubic-bezier(1,0.01,0.38,1) 0.5s forwards
     .fade-enter-active-content-1
-        animation: contentIn 0.4s ease-out 0.3s forwards
+        animation: contentIn 0.5s ease-out 0.3s forwards
     .fade-enter-active-content-2
-        animation: contentIn 0.4s ease-out 0.5s forwards
+        animation: contentIn 0.5s ease-out 0.5s forwards
     .fade-enter-active-content-3
-        animation: contentIn 0.4s ease-out 0.7s forwards
+        animation: contentIn 0.5s ease-out 0.7s forwards
     .fade-enter-active-content-4
-        animation: contentIn 0.5s ease-out 0.9s forwards
+        animation: contentIn 0.6s ease-out 0.9s forwards
     .fade-enter-active-content-5
-        animation: contentIn 0.5s ease-out 1.1s forwards
+        animation: contentIn 0.6s ease-out 1.1s forwards
     .fade-enter-active-content
-        animation: contentIn 0.8s ease-out 0.5s forwards
+        animation: contentIn 0.9s ease-out 0.5s forwards
 
     @keyframes imageIn 
         0%
