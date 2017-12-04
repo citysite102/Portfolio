@@ -6,6 +6,7 @@
             </h1>
 
             目前尚未支援 RWD 尺寸的頁面（趕工中。）
+            <footerBar></footerBar>
         </div>
         <div class="container">
             <transition appear appear-to-class="fade-enter-content"
@@ -342,8 +343,8 @@
                     </el-col>
                 </el-row>
             </section>
-        </div>
         <footerBar></footerBar>
+        </div>
     </div>
 </template>
 

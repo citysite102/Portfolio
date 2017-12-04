@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="container">
+    <div class="rope-container">
         <div class="ropes">
             <el-row :gutter="16">
                 <el-col :span="4">
@@ -59,7 +59,7 @@
         height: 100%
         background-color: transparent
         
-    .container
+    .rope-container
         position: absolute
     .ropes
         position: absolute

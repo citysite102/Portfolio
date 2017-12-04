@@ -63,7 +63,6 @@
 
     .unavailable-footer    
         background: $default-footer-color
-        padding: 24px
         margin-left: auto
         margin-right: auto
 
@@ -109,6 +108,7 @@
         margin-left: auto
         margin-right: auto
         display: none
+        max-width: 1600px
 
         @include pc-width
             display: block
