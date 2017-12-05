@@ -113,8 +113,8 @@
             content: ''
             position: absolute
             background: #5EEBA5
-            transition: transform 0.2s
-            transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9)
+            transition: transform 0.3s
+            transition-timing-function: cubic-bezier(.83,.01,.75,1)
             bottom: -6px
             left: -6px
             height: 3px
