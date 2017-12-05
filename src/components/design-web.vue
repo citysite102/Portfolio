@@ -35,7 +35,7 @@
             <transition appear appear-to-class="fade-enter-content"
                                 appear-active-class="fade-enter-active-profile-content-1">
                 <el-col :span="20" :offset="2">
-                    <div class="hero-image">
+                    <div class="hero-image-web">
                         <img src="../assets/images/web-tickle-dashboard.png"/>
                     </div>
                 </el-col>
@@ -43,14 +43,14 @@
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-web">
                     <img src="../assets/images/web-tickle-ide.png"/>
                 </div>
             </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-web">
                     <img src="../assets/images/web-tickle-login.png"/>
                 </div>
             </el-col>
@@ -78,14 +78,14 @@
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-web">
                     <img src="../assets/images/website-longweb-mock.png"/>
                 </div>
             </el-col>
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-web">
                     <img src="../assets/images/web-longweb.png"/>
                 </div>
             </el-col>
@@ -112,7 +112,7 @@
         </el-row>
         <el-row :gutter="16">
             <el-col :span="20" :offset="2">
-                <div class="hero-image">
+                <div class="hero-image-web">
                     <img src="../assets/images/web-cosign.png"/>
                 </div>
             </el-col>
@@ -168,7 +168,7 @@
         margin-left: auto
         margin-right: auto
     
-    .hero-image
+    .hero-image-web
         width: 100%
         height: auto
         margin-top: 40px
