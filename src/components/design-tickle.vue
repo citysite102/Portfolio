@@ -367,6 +367,9 @@
             BackgroundRope,
             HeaderBar,
             FooterBar
+        },
+        created() {
+            window.scrollTo(0, 0);
         }
   }
 </script>

@@ -15,9 +15,18 @@ var VueApp = new Vue({
 	},
 	mounted: function() { 
 		// 加載 D3 之類的 Library
-		router.beforeEach(function (to, from, next) {
-		  window.scrollTo(0, 0)
-		  next();
-		})
+		// router.beforeEach(function (to, from, next) {
+		// 	console.log('to:'+to+" from:"+from);
+		//  	window.scrollTo(0, 0)
+		//   	next();
+		// })
+		// router.beforeEach((to, from, next) => {
+		// 	console.log('beforeEach');
+		// 	next();
+		// });
+		// router.afterEach((to, from) => {
+		// 	console.log('to:'+to+" from:"+from);
+		//  	window.scrollTo(0, 0)
+		// });
 	}
 })

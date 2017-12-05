@@ -252,6 +252,15 @@
             BackgroundRope,
             HeaderBar,
             FooterBar
+        },
+
+        created() {
+            window.moveTo(0, 0); 
+            console.log(window.scrollY);
+        },
+        destroyed() {
+            console.log(window.scrollY);
+            window.scrollTo(0, window.scrollY);
         }
   }
 </script>

@@ -8,38 +8,37 @@ import DesignIOS from '../components/design-ios.vue';
 import DesignElement from '../components/design-element.vue';
 import DesignWeb from '../components/design-web.vue';
 
-
+export default new Router({  
+    routes: [
+        { 	
+            path: '/about', 
+            component: About 
+        },
+        {   
+            path: '/design-tickle', 
+            component: DesignTickle 
+        },
+        {   
+            path: '/design-element', 
+            component: DesignElement 
+        },
+        {   
+            path: '/design-ios', 
+            component: DesignIOS 
+        },
+        {   
+            path: '/design-web', 
+            component: DesignWeb 
+        },
+        { 
+        	path: '/', 
+        	component: App 
+        },
+        { 
+            path: '*', 
+            redirect: '/' 
+        }
+    ]
+});
 
 Vue.use(Router);
-export default new Router({  
-  routes: [
-    { 	
-    	path: '/about', 
-    	component: About 
-    },
-    {   
-        path: '/design-tickle', 
-        component: DesignTickle 
-    },
-    {   
-        path: '/design-element', 
-        component: DesignElement 
-    },
-    {   
-        path: '/design-ios', 
-        component: DesignIOS 
-    },
-    {   
-        path: '/design-web', 
-        component: DesignWeb 
-    },
-    { 
-    	path: '/', 
-    	component: App 
-    },
-    { 
-        path: '*', 
-        redirect: '/' 
-    }
-  ],
-});
