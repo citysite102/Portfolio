@@ -359,10 +359,6 @@
     import FooterBar from './Element/footer.vue';
 
     export default {
-        data () {
-            return {
-            }
-        },
         components: {
             BackgroundRope,
             HeaderBar,

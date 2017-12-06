@@ -21,7 +21,8 @@
             <el-row class="button-container" type="flex" justify="center">
                 <el-col :span="18">
                     <div class="more-button">
-                        <a class="link" :href="'/' + directLink">More</a>
+                        <!-- <router-link class="link" :to="{ name: directLink }">More</router-link> -->
+                        <a class="link" :href="'/#/' + directLink">More</a>
                     </div>
                 </el-col>
             </el-row>

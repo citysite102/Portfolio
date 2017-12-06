@@ -9,12 +9,12 @@
                 <el-col :span="21" :offset="3">
                     <ul class="link-container">
                         <li v-if="showWorks" class="link-item">
-                            <a class="link" href="/">Home
-                            </a>
+                            <a class="link" href="/#/">Home</a>
+                            <!-- <router-link class="link" :to="{ name: 'home' }">Home</router-link> -->
                         </li>
                         <li v-if="showAbout" class="link-item">
-                            <a class="link" href="/about">About
-                            </a>
+                            <a class="link" href="/#/about">About</a>
+                            <!-- <router-link class="link" :to="{ name: 'about' }">About</router-link> -->
                         </li>
                         <li class="link-item">
                             <a class="link" href="https://medium.com/@citysite1025">Medium
