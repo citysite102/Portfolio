@@ -9,11 +9,11 @@
                 <el-col :span="21" :offset="3">
                     <ul class="link-container">
                         <li v-if="showWorks" class="link-item">
-                            <a class="link" href="/#/">Home
+                            <a class="link" href="/">Home
                             </a>
                         </li>
                         <li v-if="showAbout" class="link-item">
-                            <a class="link" href="/#/about">About
+                            <a class="link" href="/about">About
                             </a>
                         </li>
                         <li class="link-item">

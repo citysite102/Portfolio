@@ -8,7 +8,8 @@ import DesignIOS from '../components/design-ios.vue';
 import DesignElement from '../components/design-element.vue';
 import DesignWeb from '../components/design-web.vue';
 
-export default new Router({  
+export default new Router({ 
+    mode: 'history', 
     routes: [
         { 	
             path: '/about', 

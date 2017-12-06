@@ -129,7 +129,8 @@ var config = {
 	// 但有時候會失效，因此建立透過CLI進行設定
 	devServer: {
   		inline: true,
-  		hot:true
+  		hot: true,
+  		historyApiFallback: true
 	},
 
 	// 开启source-map，webpack有多种source-map，在官网文档可以查到
