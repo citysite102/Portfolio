@@ -9,7 +9,7 @@ import DesignElement from '../components/design-element.vue';
 import DesignWeb from '../components/design-web.vue';
 
 export default new Router({ 
-    // mode: 'history', 
+    mode: 'history', 
     // scrollBehavior (to, from, savedPosition) {
     //     console.log(to, from);
     //     if (savedPosition) {
@@ -17,6 +17,19 @@ export default new Router({
     //         return savedPosition
     //     }
     // },
+    scrollBehavior (to, from, savedPosition) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(to, from);
+            console.log(savedPosition);
+            if (savedPosition) {
+                resolve(savedPosition);
+            } else {
+                resolve({ x: 0, y: 0 })
+            }
+        }, 800)
+      })
+    },
     routes: [
         { 	
             path: '/about', 
